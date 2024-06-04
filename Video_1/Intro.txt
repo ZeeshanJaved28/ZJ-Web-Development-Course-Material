@@ -1,0 +1,38 @@
+Code with Harry 
+Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1
+
+Command palette:
+Screen cast toggle  = 1 (BOTTOM)
+
+Frontend:
+Q How website work?
+1.Client
+2.Server
+3.Browser
+
+Response code : 200 From Server to Browser to Client ( OK Response)
+Error code 404,500
+
+Backend:
+
+The Backend is the server side of the website .
+It stores and arranges data, and also makes sure everything on the client side works fine.
+It is the part of the website that you cannot see and interact with.
+It is the portion of software that does not come in direct contact with the users.
+
+Frontend
+ Primarily make with these 3 languages i.e HTML,CSS & JS
+
+ Standard -> Skeleton -> HTML
+ Beauty -> Appearence -> CSS
+ Client Side Scripting -> Brain -> Javascript
+
+ Learn What matters
+
+ Q What is Request and Response?
+
+ Mousewheel + Ctrl -> Zoom In/Out
+
+ Shift Right Mouse Button
+
+ click on shift right and open with code
