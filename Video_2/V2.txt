@@ -1,0 +1,22 @@
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHM1a0k0QmlmWGVxbG95bWw1SWRieHJKcFE3UXxBQ3Jtc0tsdWhwVTJxQ2M1TFBvaWZtWHNFeGg5LXVQSjlzUXcyM1hWbWx4MmVsMVBULWhPdnBEaXZqMzZ0Umw5N245M0VoRkdULWhTT3U5UXF2elI4bHd6eTAzVjlxNXU1NHliSXMxck05OVh6SmlPSDVFMFRpdw&q=https%3A%2F%2Fgithub.com%2FCodeWithHarry%2FSigma-Web-Dev-Course&v=kJEsTjH5mVg
+
+Word Wrap Wrap -> Horizontal Scroll Hidden Option in View Tab
+
+VS Code Extension is used to enhance functionality
+GitHub Theme
+Material Theme
+JellyFish Theme
+Material Theme Icon
+VSCode-Icons
+Prettier
+es7 -> ES7+ React/Redux/React-Native Snippets
+live preview latest version from Microsoft 
+live server oldest version
+
+We write anything in our website, Its automatically show our written text without reload page.
+
+
+CSS link -> link:css in head section
+JS link -> script:src in body last module section
+
+Communication b/w User/Client and Server using Javascript without reload
