@@ -1,0 +1,90 @@
+HTML Structure Website
+<!DOCTYPE html>
+<head>
+meta charset tag
+meta viewport tag
+meta description tag
+title tag
+style.css tag  --> Link tag
+script tag  --> Link tag
+</head>
+<body>  --------> Main conent of the HTML Structure
+content
+<script tag
+</body>
+</html>
+
+Q Why we write all of these tags in html structure?
+
+If anything change in css file in case we reolad web page 
+If anything change in html file in case you don't reload web page it's automaticaly change ownself with the help of live preview.
+
+Q what is a meta tag and why we use this tag in html?
+Mata tag is a Self Closing tag
+Meta basically describes How HTML Document, Insert Keywords, Insert Description
+
+Meta Description tag is a important keyword for SEO.
+
+There ara a two main tags i.e
+Self Closing tag
+OR
+Paired tag : Opening tag and closing tag 
+
+Search engine used or passed Title tags.
+Title tag desribes page content
+Title change is the SEO Practice
+
+So the script tag you can put it just before the body and above and what is the difference
+we will talk about it in the next course. InshA'Allah...
+
+lang and name is the attirbute of the HTML structure.
+
+lang is equal to en is an attribute
+it is inside any tag
+lang is equal to en
+so lang is an attribute whose value is en
+so these key value pairs are used
+
+use copy paste wisely
+
+Mobile Preview Tip:
+
+Now I will tell you about a technique, with which you can see this website
+Whatever we will develop here, you will be able to see it in this mobile
+Now listen to the steps carefully, right click, open terminal
+And write ipconfig, if you are in the old version, then you can open command prompt or powershell after writing ipconfig, as soon as you enter
+you will see ipv4 address 192.168.1.199
+now the ip address we have got here, I will copy it
+so I will copy this ipv4 address
+and in my settings, I will write live preview
+this local IP host address to host your files on is written
+I will write my ip address in its place and on This is written I will write my IP address instead of this
+And after doing this
+I will restart my VS code
+You have to ensure one more thing
+That you go to your Wi-Fi settings
+Make your network a private network
+It should not be a public network
+It should be a private network
+Network and internet
+Wi-Fi
+Whichever Wi-Fi you are connected to
+Make it a private network
+And now you will right click and click on show preview
+and you will see your ip address
+I can use this on my phone as well
+so I will quickly enter my ip address
+so I have entered 192.168.1.199
+colon 5000, you can also enter 3000
+whatever your port is, you can enter that
+and you can see my website has been previewed on the mobile.
+This trick is very useful when we want to preview on our mobile.
+Because nowadays most of the websites are seen on the phone.
+So we want our phone users to be able to enjoy our website.
+And we are developing in the computer, so that testing will be done.
+
+
+The most important part of being a senior software developer is to where to copy paste from
+which stack overflow question to copy paste from and how to paste it from where
+Copyright Code Ve Dayari, 2026, whatever you understand I have said my copyright statement, 
+but this statement is very strong.
