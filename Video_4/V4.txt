@@ -1,0 +1,141 @@
+In this video I learn heading <h> , paragraph <p> and anchor <a> tags.
+And also we make a bookmark website.
+This bookmark website will help you in getting all your favorite websites in one place.
+
+
+we talked about the basic structure,
+we said that it tells that this is an HTML page
+HTML lang is equal to en
+lang is an attribute and its value is en
+this page's content is in English
+this tells the search engines
+or if anyone is sitting with the link of this web page
+then he will know that this web page is in English
+he can parse this web page according to that
+the browser will also know
+that your web page is in English
+
+
+heading level 1 <h1></h1> -> Major heading
+heading level 2 <h2></h2> -> Sub heading 
+Shortcut:
+alt+shift+down cursor -> replicate
+right mouse click + press hold alt key
+
+wherever i click, i will get multiple cursors
+then whatever i type will come in multiple cursors
+wherever there are cursors, whatever I type will be visible
+
+h6 is more than enough
+In HTML, headings have been put up to h6
+You will never need h7
+
+Shortcut:
+lorem(n) -> dummy paragraph in VS-code through Emmet  ; n=7,10,23,...100,...
+
+Now let's talk about what are the attributes in HTML.
+These are the attributes in HTML.
+Like I used the HTML tag,
+lang is equal to en,
+lang is an attribute.
+We did not use any attribute in the body.
+We did not use any attribute in H1.
+We did not use any attribute in P.
+But I can use a style attribute in P,
+which is also called inline CSS, if I make the background color red
+ok, like this, so its background color will be red
+this is called inline CSS through style attribute
+so if you put style is equal to CSS
+first we learned to put CSS here, but if you put style is equal to
+so you will get this background red here, let will show you, you got this red background, okay.
+
+so I can also put style inline, but when you make industry level websites,
+we use inline styles very less because the maintainability decreases,
+reusability decreases, okay.
+
+style is an attribute in the p tag
+rel and href is an attribute of link tag
+
+Create a Comment in VSCode, the easy way.
+You'll use this mainly to add information to the flow of your program that will help your future-self and your colleagues understand what's going on.
+
+First, place your cursor where you'd like to add the comment. Then, use the VS Code comment shortcut that corresponds to your platform below.
+
+On Windows, the shortcut is: CTRL + /
+On Mac, the shortcut is: Command + /
+The VSCode comment shortcut Mac is very similar to the Windows version.
+
+here you can see ahref is equal to open google
+this is called anchor tag which helps us to make links
+you must have seen many such links
+
+Shortcut:
+Now I tell you one more thing
+That here if we want it to open in a new tab,
+Like I am clicking on it, it is opening in the same tab,
+If you want to open it in a new tab, then you have two ways,
+Either you can click on the mouse wheel,
+Now I will tell you another way, if you want to open it in a new tab,
+Then you can use an attribute,
+You can write here that target is equal to
+underscore blank and VS code gives you suggestions
+so I wrote it by hitting two enter
+if you write in notepad or in any other
+cheap editor then what happens to you
+means according to quality, cheap
+free is also VS code but according to quality
+if you use a cheap editor
+then target is equal to underscore
+blank you have to type it completely, it is a little painful
+but if you write it in any way
+and what will happen now
+now I will click on it
+I am clicking
+I am not clicking the mouse wheel
+I am clicking
+I will click
+it came to the new tab
+ok
+I will click the mouse wheel
+then also it will open in the new tab
+
+Shortcut:
+I will press shift and right arrow key
+and then press control x, then press end key, all the cursors will go to end
+Because if you press end key on one cursor, then it goes to end, and then I will do ctrl v
+
+ <h1>My Bookmarks</h1> 
+   <h2>Primary Bookmarks</h2>
+    <a target="_blank" href="https://www.google.com/">Open Google</a>
+    <br>
+    <a href="https://www.youtube.com/">Open Youtube</a>
+    <br>
+    <a target="_blank" href="https://www.blogger.com/blog/posts/3065557833983287203">Open Blog : ZJ Info Tech Store</a>
+    <br>
+    <a target="_blank" href="https://www.quora.com/profile/ZJ-Info-Tech-Store-1">Open Quora Profile : ZJ Info Tech Store</a>
+    <h2>Secondary Bookmarks</h2>
+    <a target="_blank" href="https://chat.openai.com/">Open ChatGPT</a>
+    <br>
+    <a target="_blank" href="https://www.zerogpt.com/">Open ZeroGPT</a>
+    <br>
+    <a target="_blank" href="https://spinbot.com/">Open Spinbot</a>
+    <br>
+    <a target="_blank" href="https://www.duplichecker.com/">Open Plagiarism Checker</a>
+
+    <p style ="background-color: brown;">This is ideally not a good idea to make a list by using paragraphs</p>  
+
+    <h1>My Bookmarks</h1>
+    <h2>Primary Bookmarks</h2>
+    <p>
+        <a target="_blank" href="https://www.google.com/">Open Google</a>
+    </p>
+    <p><a href="https://www.youtube.com/">Open Youtube</a></p>
+    <p> <a target="_blank" href="https://www.blogger.com/blog/posts/3065557833983287203">Open Blog : ZJ Info Tech Store</a></p>
+    <p><a target="_blank" href="https://www.quora.com/profile/ZJ-Info-Tech-Store-1">Open Quora Profile : ZJ Info Tech Store</a></p>
+    <h2>Secondary Bookmarks</h2>
+    <p>
+        <a target="_blank" href="https://chat.openai.com/">Open ChatGPT</a>
+    </p>
+    <p><a target="_blank" href="https://www.zerogpt.com/">Open ZeroGPT</a></p>
+    <p><a target="_blank" href="https://spinbot.com/">Open Spinbot</a></p>
+    <p><a target="_blank" href="https://www.duplichecker.com/">Open Plagiarism Checker</a></p>
