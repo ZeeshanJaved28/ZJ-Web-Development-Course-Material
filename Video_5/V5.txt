@@ -1,0 +1,174 @@
+Image, Lists, and Tables in HTML
+
+Shortcut:
+=>click on shift right and open with code
+=>I clicked on windows, shift and s
+ this is a shortcut for snipping tool
+
+Image:
+
+now there is an img tag in html
+as soon as you put img it, src and alt
+both are required attributes
+ img --> image tag
+ infact if you don't write alt, it's ok, but it's recommended
+
+ Q: Where is the alt?
+
+I will tell you
+see the alt is not visible
+suppose for some reason server is not able to show you the image
+suppose i wrote image2
+now image2.png file here So what will be the error?
+What will happen? I'll show you what will happen
+So here the alt will be displayed
+And this kind of error image will be displayed
+Which will tell that the image you have put
+Put it properly, you have done something wrong
+The URL of the server you have given there is not this image
+Okay, these things are shown like this
+And there is an alt there
+So the user knows what understand the purpose of this image
+and if I come back here, you can see the alt text
+if I don't put the alt text, then what will happen
+if I don't put the alt text, then the alt text will not come
+so you don't want the user to see this image when you have an error
+you want the user to see this image
+the user should see this image
+I hope you understood this
+
+so the image is very straight forward
+it has two more attributes which are very important
+one is width and other one is height 
+width & height in pixels
+
+now if you want the height to be 230 and the width to be automatically adjusted
+then you just use the height attribute
+now remove the width here
+so the height will be 230 pixels and the more it can go in the width, the more it will go
+it will be automatically adjust
+
+you don't need to write px in this
+When we write width in css, we will see that we need to write px
+Here we just write width is equal to number in double quotes
+
+
+now what happens is, width and height can be adjusted through CSS
+and we will see in the CSS section
+that why we should always set this width and height
+we should always set one thing from width and height
+such that when our page is loading
+then our image inside the page
+should not come suddenly in the page
+I will tell you in the coming videos
+but now you understand that
+these attributes of width and height
+I have heard many people saying that
+they are deprecated and should not be used.
+
+But I say that they should be used for SEO purpose.
+Why should they be used? I will tell you
+in the coming videos where I will tell you about
+Core Web Vitals and SEO.
+
+For now, you understand that width gives width to the image
+and height gives height to the image. If one of the two is applied
+then the other one automatically gets set.
+
+Table:
+table tag is very useful in html
+
+tr --> Table row
+th --> Table heading
+td --> Table Data
+
+now row span and col span are attributes, now you see here that row span means how many rows will span your td
+
+for example, let us say I write here, I want sam and programmer, earlier they were taking one cell,
+sam was taking one cell and programmer was taking one cell, I want to write sam in two cells I don't want to write programmer, I just want to write sam
+I want to write here that call span is equal to 2
+call span is equal to 2 means that sam will take place of two columns
+what does it mean?
+sam will take place of two columns
+means sam will be seen like this
+I will show you
+like this
+so it took place of this whole column
+
+Horizontal merged cell --> colspan
+Vertically merged cell --> rowspan
+
+Used with td --> table data tag 
+
+in html, in html table
+we can also add captions
+and to add captions we can use
+caption tag like this tag I will show you
+If we use the caption
+Student details or employee details
+
+Now you can change the font size
+By default, it looks like this
+
+Along with that You can also give header and footer But for now, by default, 
+it looks like this, the caption comes up, you will see the employee details like this.
+Along with that, you can also give header and footer.
+You can give T-head and T-foot here.
+
+Now I will tell you about another tag,
+which is called BR tag, which adds line break
+
+now what is the benefit of doing this, we have just grouped it
+so that we can target it ahead of CSS
+so you will use this very less but you can do grouping like this
+Your whole table, head content will come here, foot content will come here
+And body content comes in between head and foot but you can write it here
+But ideally head, body and then foot comes
+I hope you understood this
+
+List:
+List is very important in HTML
+Because we will use list a lot
+There are three types of list in HTML
+1) Ordered list
+2) Unordered list
+3) Definition list
+The most used is unordered and ordered list
+
+Unordered list:
+<ul></ul>
+bullet point form
+
+you can customize its bullet points
+by using "type" attribute
+square
+circle
+disc (default bullet style)
+
+Ordered list:
+<ol></ol>
+numbered point form
+->You can do this 1, 2, 3 in ABC
+->You can do it in capital ABC, you can do it in roman numbers
+->You can do it with the help of CSS
+->There are many other ways
+type=I Uppercase Roman Numerals
+type=i lowercase Roman Numerals
+type=1 Arabic Numerals (This is the default if the type attribute is not specified.)
+type=A Uppercase Alphabetical Letters
+type=a lowercase Alphabetical Letters
+
+Definition list:
+Definition list is very less used
+dl --> definition list
+dt --> definition term
+dd --> definition of the definition
+
+you can also change it with css, it is very less used
+
+interviewer asks what is definition list
+so this kind of code is previewed like this
+I am not showing you by writing it for the sake of time
+but try it out
+
+If you want to do coding on mobile, I recommend replit, an app called replit comes
