@@ -1,0 +1,122 @@
+In today's video, we will learn about Core Web Vitals and why they are important.
+
+In this video, we will also learn that there is a hidden tool in Chrome called Lighthouse.
+
+I am going to tell you today is very important from the aspect of SEO.
+
+Q What is SEO?
+SEO stands for search engine optimization
+
+Along with that, there are core web vitals
+which google considers to rank two pages
+first of all content is important
+if your content is good then maybe your website can rank without core web vitals
+but if you are competing with a page which has similar quality content
+then your core web vitals will be seen
+and if your core web vitals are good then you will be given preference.
+
+1st Metric --> Cumulative Layout Shift (CLS):
+
+so in core web vitals first comes your cls
+you see this video here which I have run from web.dev website
+you will see that someone comes to your website and he is trying to cancel the order here and by mistake the time he canceled
+this thing above became visible and he shifted the layout and the order was completed but the user wanted the order to be completed
+and he wanted to click on no
+in this case the user experience is very bad
+and as you have seen in this video, it should not be like this
+that's why our CLS should be minimum
+
+Q What is the definition of CLS?
+Cumulative Layout Shift means
+how much is shifting while the page is loading
+suppose you have loaded the page and first of all
+you get to see this
+it was above and after that when this key term part was loaded
+then everything was shifted down
+the layout should not be shifted
+if you put width and height in images then the layout will not be shifted
+
+2nd Metric --> Largest Contextual Paint (LCP):
+
+LCP stands for Largest Contextual Paint
+this means that if the user is viewing a page
+then the biggest element on it
+
+for example, the biggest part in this is this image
+how long is it loading means the whole page will be loaded but the biggest element is loaded in how much time.
+The whole page will be loaded but the biggest element
+which is the most important is loaded in how much time.
+According to web.dev and google, a good LCP score should be 2.5 seconds.
+That is, the biggest element of the page should be loaded in 2.5 seconds.
+
+3rd Metric --> First Input Delay (FID):
+
+FID stands for first input delay.
+
+irst input delay means that if any user clicks on any input element
+Like a button or any type of input on a page
+So how long does that input process
+
+For example, if you click on a button, how long does that button click browser process
+And according to google and web.dev, your input should start processing in less than 100 milliseconds
+So these were the three core web vitals which are very important
+For your information, these core web vitals are updated but these 3 are very important
+
+Now I will show you what is a lighthouse report and why it is generated and how to get the value of these 3 core web vitals
+
+How to generate LightHouse Report?
+So I will tell you here, if you will inspect by right clicking and inspect it and you may have it on the right side so you can click here and bring it down
+by clicking here you can bring it here again
+and by clicking here you can bring it down
+I prefer it below because I am used to
+looking at it from the starting
+now you can see the option of lighthouse
+Lighthouse basically generates a report for you
+and tells you what can be improved
+in your html page.
+
+Now I want to tell you about meta tags and meta description
+
+Meta Description and Keywords:
+
+The first SEO element I want to tell you is title
+If your title is reflecting the content of your page, then it is a good SEO practice.
+
+meta:desc --> meta description
+<meta name="description" content="">
+
+So here you can see that I have put MetaDESC, now a meta keyword used to work a lot before, but now the meta keyword
+
+It has been deprecated, meta keyword is not used at all the code of meta keywords looks like this
+but it is believed that meta keywords do not rank in SEO
+because people abuse it more
+suppose you have written a page about pets
+and you have written what is SEO in meta keyword
+so it is not that your page will be ranked
+I will correct these double quotes here
+so if I put meta keyword here
+then it is not necessary that the search engine will consider it
+some search engines do not believe in meta keywords they say that we do not want to see put meta keywords, it is not necessary that the search engine will consider it. Some search engines do not believe in meta keywords.
+They say that we do not want to see your meta keywords.
+Meta keywords used to work a lot before, but not now.
+Now the content of your page is being parsed.
+And now the time of AI is coming, so your content will be understood.
+According to the value of your content, it will be ranked.
+
+<meta name="keywords" content="meta keywords,html tags,meta tags,Google ranking factors">
+
+Like what is first contextual paint?
+How long will the user see the paint on the browser?
+So if you want to see this thing
+You will have to go to web.dev
+Web.dev is a very good website
+Which talks about all these things
+And you can see here
+They keep talking about it
+You can learn about all these things here
+If you want to learn PWA, you can learn PWA.
+About all these things
+There is a lot of good content here.
+But we are in this course
+HTML, CSS, JavaScript and websites
+Will focus on making.
