@@ -1,0 +1,165 @@
+In this video, we will know what are forms and what is the input tag in the form.
+Using a form is a very important element of some websites because through the form, you submit data from client to server.
+These are the forms that you see on contact pages, Google forms or inquiry forms.
+The date and time to go to the flight or railway ticket, all these details we put, they also submit through html forms. In the last video, very few people liked it, I will request you
+to like this video with high energy so that we can maintain high energy throughout the course.
+So let's go to the computer screen, we will see about the forms, we will see about the input tags and we will see some best practices.
+
+Live Preview Setting in External Mode: 
+here i want to tell you a very important setting
+of the show preview
+now many people have also pointed out to me in the comment that
+I have to click so many times, can I do something?
+Yes you can, click on gear below, click on settings
+And after clicking on settings, what you do simply
+Write live preview here, live preview
+And we can actually set it such that whenever we click
+So what happens is that it will open on the external browser
+so now I will close everything, as soon as I click here, it will open on the external browser
+and I come to my browser and the playlist of the Sigma web development course is being accessed
+by clicking here on the star and here on the bookmark
+but now I want to tell you that as soon as we click here, you see it opened
+so if you want this, then do this, but sometimes what happens is that you want to prefer side by side view.
+And when would you like to do that?
+When you are actually working on a design using HTML, CSS.
+So whenever you are working on design,
+definitely you guys would like to see live previews here.
+Which is why this extension was made.
+And it was made different from the live server
+so that you can see the preview on the side.
+
+Forms:
+Now what we will do here, we will know about the forms
+What is a form? You know the name of the form, it means a railway form
+We fill it and our reservation is done
+
+HTML is a form tag, as soon as you write form, you will hit enter,
+in this way, the first question will ask you, what is the action of your form,
+ <form action=""></form>
+get or post, let me tell you a very quick difference between get request and post request,
+that is, we will see this thing later when we will read the backend,
+get request is a very simple request, and post request is when we send,
+in most of the cases, when we have to give a lot of data,
+like whenever our form will be posted
+so in most of the cases we will use the post request
+and get request is a very simple request
+that we have to tell the server something
+and that's it or we have to hit the server with a request
+that's it
+
+so form action is equal to post I wrote, now I can show some input tags in it.
+
+Input Tag: 
+
+I will tell you what are input tags, that what elements will come in your form,
+like you can put a date, you can put in the form, you can say name, you can say phone number,
+you can say what is your age, it can be just a number you want to put such things in the form, so I want to tell you here
+that the input tag that you put inside the form
+
+there is a label tag
+which is used to label that input
+
+the simplest input tag is type is equal to text
+
+Enter your username. This is our input tag,
+Along with the input tag,we use the label tag,
+
+Label Tag:
+
+Now whose label is this? So I will write its id for is equal to,
+
+Now what is this id? I will tell you later,
+For now, you just understand that this is a unique identifier of an element,
+To identify this element uniquely, like your Aadhar number can't be of anyone else,
+in the same way, this ID username has been given to it,
+now it can't be given to anyone else. This is the ID.
+
+now what happens here is that sometimes we wrap it in div
+what is div?
+div is our block element
+
+Q What are inline and block elements
+I put it in div, it will come in a new space.
+
+Yes, there is also a br tag, which causes line break.
+But I don't prefer br tag and you will get to know why.
+Q Why we don't want to bloat our html with br tag.
+
+Shortcut:
+ Alt + cursor up and down 
+
+ input:text
+ <input type="text" id="username" name="username" placeholder="Enter your username">
+ input:radio
+ <input type="radio" name="gender" id="male" value="Male">
+ <input type="radio" name="gender" id="female" value="Female">
+ input:checkbox
+ <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+ Textarea Tag
+ <!-- <textarea name="comment" cols="50" rows="4">Enter your comment here...
+            </textarea> -->
+<textarea name="comment" id="comment" cols="50" rows="4"></textarea>
+ Select Tag
+
+For now, I just put br tag, but I don't recommend br tag.
+I am telling you again that I do not recommend br tag at all.
+Because br tag has problems.
+By the way, you should know br tag, there is a line break tag,
+a line break comes from it
+what is the problem in br tag
+but i will tell you br tag is something that i don't recommend
+it's not like that you don't have to use it but i don't recommend using it all the time
+i mean the easiest thing is that people think that you can add br tag and add new spaces
+
+When we will parse this form data, then I will tell you in the part of JavaScript, how to take this data and send it to the server
+So there are many things about the form that are remaining, I am going to tell you, so stay tuned for that
+
+About the form, the rest of the attributes, like action, I told you
+You can submit a form on any page with action and where it will handle the form
+So you can give that data here
+Then there is a method, get request or post request
+I will tell you the difference in these two in the coming videos
+But I have told you in a very rough way
+That get request is a very rough way
+GetRequest is a very simple request, PostRequest is used when you have to send big data to the server
+Because there is a limit to GetRequest, you can send a lot of data in PostRequest
+We never send passwords in GetRequest, we send it with the help of PostRequest
+
+Now here I have told the method, what happens in the name? name is equal to username means we mark it with the name
+if we mark it with the name, then the server will know which key value is corresponding to it
+so the key value that will go to the server will go according to the name
+its name and value will go, okay?
+so we will see this too when we do server side processing
+
+New HTML5 Attributes
+
+Q What is the meaning of placeholder?
+placeholder means what will be written inside it
+like here see enter your username, placeholder
+if I click on this, then this enter your username is not written inside placeholder if I click on it, it will not say enter your username
+I will write anything, see it came
+but enter your username is telling me here that I have to put username in it
+
+Q What does autofocus do?
+autofocus automatically focuses the cursor, so I will show you the magic of autofocus
+so if you have written autofocus in the input tag
+ok, so I have written autofocus in the username, now I will reload it
+so now see if I type on it, it will automatically focus on it
+so by autofocus, it happens that whenever you type, it will be typed here
+<input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+
+HTML5 Validation Attributes
+
+Q What is the meaning of required?
+you have to require it
+you have to put the value of it or else your form will not be submitted
+so we will use this a lot
+
+
+Pattern [regular expresssion]
+
+You can give a pattern, in which you can give regular expression pattern
+Now don't get confused, don't say what are you talking about
+we don't know regular expression, so I am sitting here to teach you all
+But you understand that we will accept only one particular pattern
+If we have put pattern is equal to this, then you can't put anything else than this pattern
