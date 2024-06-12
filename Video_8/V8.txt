@@ -1,0 +1,83 @@
+Learning the concept of inline and block elements in HTML is very important.
+
+Q What are Inline Elements?
+Inline elements do not start on a new line and only take up as much width as necessary.
+
+Inline elements are those which take only this much width as required.
+
+Q What are Block-level Elements?
+Block-level elements are those that start on a new line nd take up the entire width of their container by default. They essentially claim all the horizontal space for themselves, pushing any content that comes after them to a new line.
+And block elements are those which take the full width of the screen.
+This is also called display property which can be set through CSS.
+
+Q What are inline elements and why I would like to use them.
+Inline elements are those elements that take only as much width as necessary.
+Block elements do not take as much width as necessary.
+No, they say we need full width.
+Some people sit spread out.
+
+paragragh is a Block Element
+anchor is an Inline Element
+
+Now you see the difference, I will click here and as soon as I click here, you see
+that the background color that he got, he got the full width.
+But he got only as much as this element. Why did this happen? you can see that the background color is the same as the width but this one has only the same amount of elements
+why is this?
+this is because this paragraph is a block element
+and our anchor tag is inline element
+inline elements only take the amount of space they need
+block elements take the entire width
+and the next content comes below that
+when we take the entire width, the next content will come below that
+along with that, if i talk about div
+that is a block element
+and span is
+like div but it is an inline element
+i am span and i am inline
+and if i put an anchor tag
+and write yes he is inline
+
+
+Now, will the anchor tag always be inline?
+Will the paragraph tag always be blocked?
+will this thing always be there?
+the answer is no, you can change it
+you can set the display property of any particular element with CSS.
+
+Comprehensive list for Inline and Block Elements
+now which elements are inline and which are block
+how will you know that
+how will you know div is block and span is inline
+so this comes with practice
+but I have made a comprehensive list for you
+of inline and block elements
+here is the list of block elements
+in which I have written the most commonly used elements first.
+Like div is the most used, then paragraph.
+And if you come to the end, you will find such elements
+which may not be very used.
+Maybe you don't even know about them,
+but you will know later.
+And it is not possible for me to tell all the elements here,
+so you guys do some self-learning too.
+Definitely there are a lot of such elements
+which will come to you in very little use
+But the most commonly used ones will be shown to you
+Then I have made a list of inline elements below
+So you refer this comprehensive list.
+Here I have made a file named comprehensive list.txt
+So you refer this file
+Along with that, the code you have should not have any unnecessary space
+As I was telling you that this space is not parsed.
+In fact, if you right-click and do the format document,
+then your document will be formatted.
+Write good code, write such a code that
+when your grandchildren open your Zankila laptop in the future
+and they get this code, they will say that
+Dadaji used to write good code.
+Don't say that Dadaji used to put such a space,
+then Dadaji used to do this, this, this. So you will want to be how to use it, then you can use it.
+
+Q How you can use CSS to set inline flex,
+inline block, and display properties. and what is the difference in them.
+So we will see all these things in the coming videos.
