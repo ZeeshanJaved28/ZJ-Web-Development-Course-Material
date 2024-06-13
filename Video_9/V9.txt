@@ -1,0 +1,76 @@
+In this video, I will tell you what are ID and Classes?
+The concept of ID and Classes is one of the most confused concepts.
+In fact, when I was learning HTML, I was very confused in my early days.
+ID means Unique Identifier.
+That is, if you give an ID to an element, you will not give that ID to the other element.
+But class means that if you want to give a property to multiple elements,
+then you will give it multiple classes.
+
+Q What is an ID?
+<div id="myUniqueID">This is a div with an ID</div>
+An ID is an attribute, a unique identifier assigned to only one HTML element within a page.It is often used for unique styling and Javascript manipulations
+
+Q What is class?
+<div class="myClass">This is a div wwith a class</div>
+The class attribute lets you give the same name to multiple HTML elements. That way, you can easily change their look or behavior all at once. Classes are not unique and can be assigned to multiple elements. They are generally used for applying the same styles or behaviors to a group of elements.
+
+ID means Unique Identifier.
+That is, if you give an ID to an element, you will not give that ID to the other element.
+But class means that if you want to give a property to multiple elements,
+then you will give it multiple classes.
+For example, you can give a class named Red to a div and a form.
+Similarly, you can give a class named BGRed to an article tag and a header tag.
+
+the class can be multiple classes in one element and 
+can be multiple classes in one element
+
+ike if I give it a red class, I can give it a bg yellow class
+ok bg yellow
+I can give only one class and if we give a class to a multiple element then we give it bg-yellow class I can give one class
+and if we give multiple to any element then we can give space
+like if i want to put multiple classes in this element
+then what i will do is
+i will write red here and then space and bg-yellow
+
+I will show you how to target the class in CSS
+Dot it, dot red means red class
+And hash first div means, hash means id, dot means class
+
+ID and classes are attributes of element
+This is ID attribute and this is class attribute
+So what are ID classes? They are elements
+Not, They are the elements of the attributes.
+
+Q What is another use of ID
+when you go to any page on Wikipedia
+so what you can do is
+you can take the link of that particular place, I will show you how it is
+I go to some other page, I scroll down
+and here I will inspect its ID
+its ID is this, so I will copy its ID
+and if I put here hashtag I'll copy the ID I'll copy the ID
+And if I put hashtag and this ID
+If I hit enter, it will bring me here
+If I put it in incognito
+It will scroll and show me the particular ID
+Instead of showing me this
+It scrolled and showed me
+So ID works in linking, okay. Remember this too, very few people will tell you
+that you can also generate links, if you write hashtag in front of any link
+and write ID, then when you open that link, it will focus the same ID
+as it is giving me in this case. You can see that as soon as I am hitting enter,
+so maybe I have done the wrong ID here, but you got the point, you got the point.
+Here 29.29 and I will hit enter, so you see I have done wrong id here. But you got the point. 29.29.I will enter it.I have come down.If I open the incognito tab or reload it.I will scroll it up.And after that I will open a new tab.
+And I will do like this.See it is scrolling me to the same page.On the same page this id is.I hope you have understood id and class.
+
+like he likes red or
+in which class he is. One element
+can be given in multiple classes. One element
+can be of red color and its background can be yellow
+and the other element can be of red color
+and its background can be yellow. So red class can be
+given in multiple elements. Red class
+can be given in fake element and
+in one element you can give red class and fake element and you can also add red class on one element
+and you can also add yellow class on one element
+I hope you understood.
