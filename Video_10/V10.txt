@@ -1,0 +1,151 @@
+In today's video, we will learn how audio, video and media elements are used in HTML.
+We saw in our very first video that we can embed videos in HTML.
+Today I will tell you how the video is auto-played,
+how to keep a muted video and how you can enable and disable the video controls.
+Along with that, we will also see very closely about audio,
+how media can be shown in an overall page
+
+Topic Overview: Video, Audio, Media:
+How to play a video, how to put a video in an html file
+How to put audio, how to put media
+
+The Video Tag and Attributes
+SRC Attribute and Video Sizing
+Making Video Responsive
+
+Video Tags:
+Now here are some attributes of the video tag.
+It is very simple to use the video tag.
+
+The first attribute is SRC.
+So you know that put the video here.
+The name of the video file is SRC.
+This video file can also come from an external URL.
+
+If I have uploaded a video on Amazon S3 or somewhere else,
+then I can also put the URL of that video here.
+It is not necessary that the file is in your computer.
+It can also be on your server.
+It can also come from a third party.
+Now what does the control do?
+Adds video controls like play, pause and volume.
+Which we saw here in the video of Bhupendra Jogi.
+You are getting to see the controls here.
+Now what is this thing? The browser automatically sees what control ads will be in your video,
+
+AutoPlay Attribute
+Removing AutoPlay
+Loop Attribute
+Muted Attribute
+
+The next attribute is muted, muted mutes the video.
+So if I write here muted, sometimes we want the video to be muted.
+In fact, when I add videos here on codewithhari.com
+and I demonstrate something like downloading VS code or something
+then I use the muted attribute.
+Because I don't want that when I record a video,
+if there is any background noise, you can hear it
+for example, I want to show you that this is the element
+so I will scroll and make a video
+I will highlight it like this, so I don't need audio in it
+so I mute it
+so you can use muted attribute in your websites
+
+Poster Attribute
+
+then poster, poster is very important
+so I have an image here
+download.jpg
+if I write here poster is equal to and I, download.jpg If I write here, poster is equal to
+the video will play, so in a way it's a thumbnail
+you have seen the thumbnail of a YouTube video
+it's exactly the same, this poster attribute
+
+Introduction to Audio
+SRC Attribute
+AutoPlay Attribute
+Removing AutoPlay
+Loop Attribute
+Muted Attribute
+
+Preload Attribute:
+now preload, the most confusing attribute
+that's why I have explained it on codewithaddy.com
+that the preload attribute can have these values
+the first value can be none, this is the default value
+it indicates that the browser should not preload the audio at all
+preload means if you want the browser to fetch the data from the beginning then you will use the preload attribute
+otherwise you will not use the preload attribute, preload is equal to none, default value, preload is equal to metadata means
+that the browser will preload the information about the audio file, means it will preload the audio file
+And by auto, browser will preload the audio file
+So preload is equal to auto, so it will download and automatically load
+So that whenever user plays it, it will save the audio
+So this is the work of preload attribute
+And this is asked a lot in interviews, So you should know what is preload attribute.
+
+SVG in HTML
+
+Next topic is SVG
+Related to media
+
+What is SVG?
+SVG is a format through which you can create images
+With high graphics
+So if you copy you can make high graphics vector images so if you copy you can make circle
+so svg is used exactly like
+how our img tag is used
+so if i put svg here
+so this svg will come here
+video, audio, svg are inline elements
+that's why we are seeing them in one line
+
+xml something like this
+you have to add this, it is called namespace declaration
+so you have to add this It's called namespace declaration So you have to add this SVG
+
+iFrames:
+
+Next topic is iframes
+Iframes is a very simple thing
+You can embed another website in your website
+Like if I want to embed this webpage
+I can use iframes like this
+I will copy this url
+I will paste it here
+And you can see that this website is completely embedded here
+in this small iFrame, okay?
+You definitely want to embed it in a big iFrame
+but if you want it to be embedded, then you can embed it like this
+I will do one thing, I will increase its height a little
+so width is equal to width is written
+width is equal to let's say 122
+height is equal to 444, okay?
+Assume, so see it came like this, okay, now definitely it was coming in this width,
+so it came in this line, but if I increase the width a little,
+let's say I increase the width, 322, okay,
+so see here, my website is completely embedded,
+are you seeing, so you can embed a website,
+another use case of iframe is YouTube video,
+if you want to share youtube video
+and click on embed
+it will give you iframe code
+and you can start it from here
+if you want to start at a particular time
+you can do that
+the point at which you will start and share
+that time will come here
+let me show you
+let's say I want to start from here
+let's say video starts from here so I will click on share
+after that I will click on embed
+I will start at 12.19
+and I will copy it
+there is a copy button
+and I will put it in my code
+so I will comment this iframe
+and I will put it in the iframe below
+I will wrap the word so that you can see the code properly
+so now what I will do is after pasting this I will show word wrap so that you can see the code properly. So now what I will do is after pasting this,
+I will show you the document.
+See this video is embedded here.
+So I hope you understood this thing.
