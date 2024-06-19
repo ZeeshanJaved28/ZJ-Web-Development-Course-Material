@@ -1,0 +1,80 @@
+Semantic Tags in HTML
+In today's video, we will see about Semantic Tags.
+Because they are very important for SEO.
+
+Semantic HTML
+<header>
+<nav>
+<aside> <main>
+<aside> <article>
+<aside> <figure>
+<aside> <p>
+<aside> <section>
+<footer>
+
+And to understand the structure of the overall website,
+search engines are very happy to see this structure.
+That is, overall SEO of your website is going to be very good if you use these tags.
+
+Benefits:
+Using HTML's semantic tags can greatly benefit both your website's SEO and the maintainability of your code. They offer a way to structure your HTML in a meaningful manner, making your website more acccessible and easier to understand.
+
+Q What are these tags? Why are these tags?
+
+Q How to use them?
+
+Q What are the benefits?
+
+Non Sementic HTML
+<div>
+<span>
+<div>  <div>
+<div>  <div>
+<div>  <div>
+<div>  <div>
+<div>  <div>
+<div>
+
+
+Semantic Tags are for browsers and weblers who want to understand your website properly. They tell them what is the content of your website and what is the purpose of which place and which tag If you don't use semantic tags in HTML, then your work will be done It's not that if you don't use semantic tags, then your website won't look good. You can do good designing. But we want to explain to Google and Bing search engines about our website. And if we explain them about our website, then they will be able to understand our website. And they will rank our website on Google, Bing, and on the respective search engines. And we want the crawlers can understand our website and we want that whoever wants to understand our website they can understand it well that's why there are some special tags like header, nav, main, article, figure
+all these special tags are made in html which help you to structure your website now if there is something in the header then I know that it is a header that is, it is at the top if there is something in the header, then I know that it is a header, that is, it is at the top. If there is something in the footer, then I will understand that the website has started ending from here, this footer has started here. This footer could have been div, but no, if I am using semantic HTML, then I will use the footer tag. Along with that, where I was making my navigation bar in the span tag, this time I will not make my navigation bar in the span tag, I will make my navigation bar in the span tag, this time I will not make my navigation bar in span tag, I will make my navigation bar in nav tag. So these kinds of differences explain our search engines very well about what our website is about.
+
+It is very good for our SEO I haven't used the word SEO yet But SEO is a very important part of search engine optimization Using semantic tags. So what happens, basically I make your website the way you make it, you just use some special tags.
+
+header tag:
+Used to represent the top section of a web page, often containing headings,logos and navigation.
+
+nav tag:
+Signifies a navigation menu on a web page.
+
+article tag:
+Indicates a self-contained piece of content, such as a blogpost or news articles. 
+
+section tag:
+Represents a thematic grouping of content on a web page.
+
+aside tag:
+Typically used for sidebars or content that is tangentially related to the main content.
+
+footer tag:
+Represents the footer of a web page, usually containing copyright information and contact details.
+
+figure tag and figcaption:
+Used for embedding images, diagrams, or charts, along with a caption.
+
+main tag:
+Signifies a main content area of a web page.
+
+time tag:
+Used to represent time-related information, like dates and times.
+
+They enhance SEO, improve accessibility, and make your code easier to read and maintain
+
+you want to read the main content. HTML, Semantic Tags.
+HTML5 Introduce, Arrange, Semantic Tags.
+The first versions of our HTML, They didn't have Semantic Tags. Semantic Tags were introduced from HTML5. And the most important reason to introduce Semantic Tags in HTML5 is to arrange things. So that the browser or whoever is parsing the content whoever is looking at the code of our content, whether it is a browser, crawler, google, bing, search engines or anyone who wants to generate a preview, like you put a URL on Twitter and want to generate a preview, if there are such things, then you will want that your content can be understood properly, so if you want your content to be understood properly, then you will use semantic tags.
+
+Here this image is explaining very well that if you write HTML without semantic tags, then you will write like this for semantic tags. This image you are seeing, this is a header, this is a nav, this is a side. How to throw one thing in aside, we will do all this with CSS. Don't be confused, this is not used for styling. Because many people get confused that Is it used to assign things? No, it is not like that. You have to style things with CSS. But here Your content can be understood well. Can be described. Which is the main content, which is the header or footer. That's why semantic tags are made.
+
+So semantic tags do not do any magic. why semantic tags are made Semantic tags don't do any magic
+Semantic tags are made only for accessibility And to understand your page.
