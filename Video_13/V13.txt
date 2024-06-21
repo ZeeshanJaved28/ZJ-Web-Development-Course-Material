@@ -1,0 +1,83 @@
+Entities, Code tag and more on HTML
+In today's video, we will conclude HTML and talk about some miscellaneous things which will help you a lot in your web development journey. After that, we will start CSS from the coming videos.
+
+HTML Entities and Special Symbols
+
+suppose you want to write in html, 3 is greater than 4
+
+suppose you want to write this, if you try to write this in html let me show you the preview of this, so this 3 is greater than 4 is written here now suppose I write here, this is the code for paragraph and I write something like this this now I have written this here, ok, I want it to appear but you see here, it will not appear, why not? because how will it know that I want to write a paragraph code or I want to use this p tag as a syntax so to avoid this thing, there are html entities now what are html entities, let me tell you if you write ampand lt semicolon lt for less than, so you can write it as lt semicolon now if you will write ampersand lt semicolon here and replace it with ampersand lt semicolon and the greater than symbol you will replace it with ampersand gt semicolon I will show you this thing if you will replace it with ampersand gt semicolon So what will happen is that it will appear here as it is written As you can see, I will zoom in and show you So what happens is that HTML entities are used To write those things that may collide with the syntax of HTML.
+
+&lt; -> for less than <
+&gt; -> for greater than >
+
+Q What does it mean to collide?
+
+If we write the code of paragraph tag here How will HTML know that this is the syntax of HTML what does colliding mean? if we write paragraph tag code here then how HTML will know that this is paragraph tag code or you want to write this thing as it is for this there is a pre tag if you put anything in pre tag and you write here p this is a para if you write it like this then here it will come as it is as you can see it will come as it is and along with that if you write like this then it will come as it is as you can see it will come as it is and if you write new lines here this is after few new lines and some more if you write like this then it will come as it is keeping all the spaces intact keeping all the new lines intact but here it is not that tag will show up for tags we have to use entities only so this happens in pre-tag html, so we have seen entities, we have seen pre-tag if you want to put a copyright symbol then you can write ampersand copy semicolon and as you will write ampersand copy semicolon then you will get to see the copyright symbol as you can see this, so you can do this kind of things with the help of html entities so you try out all these examples.
+
+&copy ->  copyright symbol
+
+Quotation Tags and Obsolete HTML Tags
+
+Q How to use HTML Entities?
+Entities can be implemented easily within HTML code, Here are some examples
+
+Using Reserved Characters
+&lt; &gt;
+
+&lt; -> for less than <
+&gt; -> for greater than >
+
+Displaying Special Symbols
+&copy;
+
+&copy ->  copyright symbol
+
+Creating Non-Breaking Spaces
+
+&nbsp;
+
+Ampersand nbsp is used for space and is very important
+
+Q What is quotation tag?
+
+Quotation tag helps you to write quotation in this way, I will tell you the example of quotation tag here, so quotation tag works like this, and as you write, this quotation text here, so what will happen is that search engines will know that you are actually writing a quotation, okay? And you can also style it with CSS, then here if you want to cite anything, you can put a quotation, okay, and you can also style it with CSS, then here if you want to cite anything, you can put its URL, similarly you can also use Q tag, site is equal to, put the URL here, okay, so if you want to cite any research article or there can be other reasons, if you want to cite Wikipedia, then this tag is used, okay, and you can obviously style it with the help of of CSS so these are our quotation tags and HTML entities.
+
+Basic Syntax:
+
+</blockquote> Tag
+
+<blockquote cite="source-url">
+        Quotation Text here.
+    </blockquote>
+
+<q> Tag 
+
+<q cite="source-url">
+        Quotation Text here.
+    </q>
+
+then there are some HTML tags which are obsolete like font tag is obsolete because we handle font with the help of CSS we don't use font tag, font had many attributes like color, size and like this you can use font tag but it's not recommended that you use font tag then center tag, it was helpful in centering things but now I will recommend you that we will center with CSS, flexbox grid etc. which is modern CSS, we will learn that so all these tags are those about which you should know but you should also know that you don't have to use them, okay, I hope that helps
+ 
+font tag is an obselete tag 
+center tag is an obselete tag
+underline tag is an obselete tag
+
+Code Tag and Prism.js Library
+
+then code tag, the most important tag for coders like you are seeing this website here, codevitary.com you are seeing here, I have used the code tag here and if you are very excited about this thing then I will tell you that I am using a library named prismcss many people ask me and how to do all this I will tell you, prismjs, yes prism.js what happens with this is that your code is highlighted like this, you can put code in your blog etc. So I am using this library, I will tell you how to do everything, I am also using react in this, so we are going to read all those things later, so don't worry at all, but if you want to write code like this, then you have to use the code tag, if you go to its source code by right clicking, then you will see that any code is written, it is written in pre and code tag, that any code is written in the code tag. See I have put pre and then code tag. So if you will get any kind of code on my site, then it will be in the code tag. So here you can copy the code and then you can run it. So you can also write your own multi-line code in pre.
+
+Q Why is pre put so that the new lines are intact?
+
+Like suppose I want to write a code here. And suppose I want to write a code here and suppose I want to write a python code here, or suppose I want to write html code, I will press ctrl n and I will make it html and I will enter by marking exclamation mark and I will copy and paste and I will write in h1 that this is h is HTML boilerplate code, okay. So if I preview this, then here this is HTML boilerplate code is actually rendered. If I want to write code as it is, then what I have to do is, I have to replace this less than sign, I will right click change all occurrences, and what I will do here, ampersand lt semicolon i told you lt semicolon and with that this greater than symbol change it to all occurrences by right clicking ampersand gt semicolon now i will paste this code there i can't do as it is paste because this thing is also very important now see it will come here so here see this code as it is came so anyone who wants to copy can do it you note one thing that because of pre tag these spaces are also coming, if you want these spaces to not come then you select them, press shift and tab so what happens with shift and tab, one indent is reduced okay, so you can do this and after that press backspace here and I will remove extra space from here and you see your code has come as you want but okay, and you can style it with CSS
+
+Prism will use CSS I will tell you how to use these libraries,
+a lot of things are going to happen in the coming videos,
+
+Character Sets
+character sets means which characters are you using in your page
+
+Canvas
+what is canvas, basically the use of canvas is mainly done through javascript but canvas is an element in html that we make graphical shapes
+
+
+in coming videos we will do css, html is concluded
