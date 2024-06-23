@@ -1,0 +1,39 @@
+Introduction to CSS 
+
+CSS stands for Cascading Style Sheets. It is a stylesheet language  that is used to describe the visual presentation of a web page written in HTML (Hypertext Markup Language). HTML creates the structure of the page, while CSS adds styling to that structure.
+
+CSS stands for Cascading Style Sheets. And with the help of Cascading Style Sheets, we supplement HTML with some styles. HTML was never intended to create styled pages. That is, the work of HTML was always to create a basic website structure. And after that, CSS takes the responsibility to style the page. CSS has selectors that help in selecting any element.
+
+Q What is a selector?
+Q How is CSS written?
+Q Why will you use CSS?
+
+HTML was never made to style web pages HTML was always made to create a skeleton There were many tags in HTML which were deprecated Like font tag. Because HTML was responsible for creating a skeletal website. That's about it. After that, the work was to handle all the CSS.
+
+That if the HTML is the body of the car, That is, the body of the car, Then CSS is the paint, decoration, designs, Seeds, interior, all these things.
+
+Q What is JavaScript?
+Engine and internal logic.
+
+Now I will tell you some more examples, like your human body, the human body has a skeleton, you can consider the skeleton as HTML, skin, hair, you can consider all this as CSS, and our brain, our nerves, our neurons, all that constitutes our JavaScript. So I hope this thing is clear
+
+so in total html was never intended to style websites this was taken by css, css said html is enough for you now i am here and i will help you in styling so css took the responsibility of styling the pages
+
+Shortcut:
+ Ctrl + Backsapce -> remove one word or one line at a time
+
+CSS Syntax:
+basically you can add css by using style tag there are two more ways which i will tell you in the coming video.
+
+the div, the div color it red suppose I say this what did I say color the div red so inside this div, this div is a selector and this is our declaration. So selector and declaration.
+
+What is a selector? It is a div, that is, the color of all the divs of this page, which is our key, this is our value, this is our property, this is the value of that property, make the color red, okay. So this is our declaration and this is our selector.
+
+because this selector and these declarations are not applicable on these elements, any element which is not div, if I put a paragraph here and put lorem 435 here, oops, I think 435 is too much, 43 is enough. I have put a very big lorem here, because it will make our page very big.
+This declaration was not applied in this, it was not applied in this either. I just said div, that's why all these conditions have been applied in div.
+
+Now I can also select multiple elements by putting a comma here. I can say, do this in both div and span. So the color will turn red in both div and span both have red color and background color will be yellow div and span are my selectors, so I have applied these declarations in multiple selectors this is property background color is a property whose value is yellow color is a property whose value is red
+
+
+Replit
+Now I want to tell you about Replit. Many people say that we have a phone, we don't have a laptop. Many people have problems. So Replit is an amazing platform which you can try out. You just have to sign up here and you will be able to write HTML, CSS and JavaScript. And it works very well. I have used it for my production grade projects. And I have also made many videos on this channel and shown you on replit. So, in fact, we did 100 days of code on replit. So, you can use this if you don't have a laptop. You can code on your phone. It will be a very good experience for you.
