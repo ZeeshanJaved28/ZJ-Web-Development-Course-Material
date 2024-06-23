@@ -1,0 +1,44 @@
+how to add CSS to an HTML page. There are 3 ways to add CSS to HTML. The first way is inline CSS which is used as a style attribute and added to HTML pages. The second way is internal CSS. Internal CSS means to put a style tag and put the CSS of that HTML in the style tag of the HTML page. And after that, the most used one is external CSS that is make a .css file and put all your styles in that .css file
+
+1) Inline CSS
+This is used in an HTML page using style attributes.
+
+2) Internal CSS
+It means to add a style tag and place the HTML page's style within it.
+
+3) External CSS
+It means to create a .css file and place all your styles inside that .css file.
+
+Q What is the difference between the three?
+Q When to use and when to avoid?
+
+Q But how is this different from inline CSS?
+Inline CSS, I have to add style to every element. You understand?
+
+Here if I have 100 h1 on my page, then I can do this automatically.
+5:20
+But here I have to do style is equal to, style is equal to, style is equal to, style is equal to, again and again. So I don't want to do it again and again. Okay, let's say I did it again and again. I have also put style is equal to in every element. Now let's say I have to change it. For some reason, my boss told me that in our production website, the background color should be maroon, not red. So what will I do, will I maroon all the elements one by one in sub or instead of red? No, I want to bulk edit. And if I am using internal CSS, and not using inline CSS, then I can bulk edit.
+
+What I have to do is, instead of red,
+5:58
+I have to maroon one place,
+5:59
+and all the h1 of my page will be marooned.
+6:02
+But if I have written individually in every element, style is equaled. But if I have written style is equal to style is equal to style is equal to in every element individually, then I will have to find all those elements first, after that I will have to do it individually in all of them. So that's why inline CSS is not used as much. But you should know what is inline CSS,
+why it is there, how you can use it.
+
+now the idea of external css is that if you are writing internal css then your style tag will grow, suppose I am writing css here and there, then your html file will keep on growing so why not the write the CSS here why not we write that CSS in a file this is the idea of external CSS that whatever you are writing here don't write here write in a file so we will use a link tag colon CSS will be written so this shortcut will come here like this so I am saying that I have written my CSS in style.css. What have I done? I have written my CSS in style.css.
+
+so what does link tag do, link says that as a style sheet link style.css so what will happen, this css will be added on my page it's as simple as that, i hope you all have understood
+
+now i will tell you all that when you have to use which one
+
+see, inline css you all should not use at all try not to use it, css try not to use it i am saying try not to use inline css in ideal scenarios but if inline css is automatically generated i will tell you about it later, now you don't get confused now as a beginner you should understand that you should use inline css in fact you should avoid it you will use when
+Your webpage is small and you want to write CSS Very lightly.
+
+Like I will tell you a very good use case To use internal CSS. When I used to write websites in bootstrap Then in my website All the styling was done by bootstrap. But sometimes I had to do tweaks. Then I used internal CSS
+
+External CSS you will use But sometimes i had to tweak it. Then i used internal CSS. External CSS you'll use when you're making a big production grade website. And in most of the cases, if you're working on a serious project. You're making a production grade website. And if you're making a production grade website. Then you'll want to use best practices. And using external style sheet.
+
+Is considered a good practice. you will want to use best practices and using external style sheet is considered a good practice, why? because you can detach a style sheet from an html you can also attach it you can tell your colleagues to work on style sheet and i will work on html you can write styles and i will work on html so you can work very well. Such things become very easy if you use external style sheet. And in most of the cases, you go in any kind of production grade project, big websites that have been written, whether it is Netflix, YouTube, or it is Quora, or it is Facebook, Instagram, WhatsApp, Web, whatever it is, in most of the cases in all these websites, you will get external style sheets.
