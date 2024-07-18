@@ -1,0 +1,67 @@
+CSS Selectors MasterClass
+
+Guys, we talked about selectors in CSS and we said that selectors are used to select an element on which style is going to be applied.
+
+Q What kind of elements can we apply style on and how can we select those elements?
+
+Q What are CSS Selectors?
+CSS Selectors allow us to choose specific elements and apply styles to them
+
+For example, element with an id, element with a class, we can target the element by its name.
+
+And we can also decide that if there is a particular type of element in a particular type of element, then only the styling is applied.
+
+I will explain the rules of applying this styling in this video and explain the selectors to you.
+
+I am going to use internal css here I will not make it in stylesheet that means we use Internal CSS instead of External CSS.
+
+(Element Selector ) Selection of Div
+Now you will ask why do you want to make the background of this div red Because i want to know how much space this div is taking That's why I want to make it red So I will simply give the background red So I will first put a style tag here I will say that the div Make the background color red Now this is our property and value I will tell you more about property and value but for now you understand this is property and value so what I did here was element selector so I will write here element selector and I will comment it here in CSS comments are written like this
+here forward slash star and star forward, whatever we write in between, Those are the comments in CSS. So I have put a CSS comment That this is an element selector, you will see here.
+So the background of this is red. This was our element selector. A very basic selector. Now the element selector that I have made here,
+
+Q What are its drawbacks?
+The moment I add another div here, So what will happen? 
+
+The background of this background will also turn red and it is possible that you don't want to make this div's background red so if you don't want to make this div's background red then what will you do? definitely you will use some other type of selector and you will want to use a specific selector so I can say that do one thing, where class is red.
+
+Class Selector
+
+only make that div red, only that div should be red, so i have made class is equal to red and because i have made class is equal to red you can see here if i write .red and after .red if i make background color red, let's say i comment this, i don't want all div to be red, so i show don't want all div to be red. So I'll show you that only this div will be red. So here I used class selector. So this is our class selector. I'll write class selector. Next one is id selector.
+
+ID Sellector
+You might have guessed it as soon as you heard ID selector let us say I want the hashtag red ID or let's do one thing let's make an ID with hashtag green and if I write background color green then wherever I will give ID green it will be green you can see here I am another div it doesn't have any color, background color but as soon as I give it ID green, I will show you I will write here one minute, I will give it ID green and you can see that in green name I have given background color green its background color will be green so this is our ID selector it was very simple, right? yes, it is simple we make things simple here, okay now I will tell you what is child selector.
+
+Child Selector
+Q What is child selector?
+if i want paragraph in div to be blue so i say the color of paragraph in div should be blue and background color should be background color should be let's say background color should be brown let's say I want this if I put a paragraph in any div I am a para inside div so what will happen? this selector will be applied child selector because this is a child of div and I have said that if any paragraph of div is child then what will happen? then its background will be brown and color will be blue. As simple as that. Now i will show you one thing. If i wrap this whole thing in div understand this carefully. Actually i will span this not div. I will put it in main or any other element Let's say I use article tag here So now this paragraph is not in div, now it is in article So this property will not be applied, I will show you Now this property is not applied Because this selector means that if it is directly in div Direct child, then this selector will be applied or not Means if div has a direct child Then
+This selector will be applied Here it's not a direct child It's an article and then p But if i want If paragraph is a descendant of any div Then this property will be applied Then i have another way i will simply.
+
+Descendant Sellector
+use descendant selector and what is descendant selector we write it like this i will write div, space and p i am saying that div should have p no matter what it is I'll write case and then p I'm saying p should be in div whether it's in article, main, footer it should be in div it should be a descendant of div so you can see that it's applied but when i talk about child selector it should be direct child i hope you are getting the sense.
+
+Universal Sellector
+Now there is universal selector Means i want to give margin to all elements 0 and padding 0 I will write p0 Means all elements have margin 0 and padding 0 See everything is stuck here Earlier margin and padding 0 see all are stuck here before margin and padding was there by default but now margin and padding is gone like you saw i hope you understood now see there are many types of selectors but these are the most used selectors now i will tell you about more selectors in the coming videos but these are the ones with which we will do web development so i don't want to confuse you more And you guys Didn't learn the main selectors So I want you to focus on this This is the most important Through this, 95 or 99% Of the websites are made, so let's focus on this For now, I hope You guys understood this.
+
+Pseudo Sellector
+There is one more selector which is also important And that is pseudo selectors
+Now what is this pseudo selector? I have a link, I will write Pseudo, Pseudo, yes I know it is called pseudo, don't write in the comment that it is not Pseudo, it is pseudo
+
+it is not pneumonia, it is pneumonia I know P is silent here, so why did you put silent
+tell me in the comment section, when it was silent, let it be like this I know that P is silent So why did you put it?
+
+But now i will share my knowledge with you And that is pseudo selectors Now assume i have a link Now i will write https://www.google.com and i'll write go to google and it's very good, you'll go to google and you'll see what's new in it let's say it's color is white no not white, let's say it's color is yellow so i want a visited what should be its color? yellow so i make its color yellow so will it be yellow? yes so anchor tags, if i want to see yellow color after visit so i can use pseudo selector so here you can see yellow color then you can use pseudo selector so here you can see the color changing, after this if you link a colon, means that link which is not visited, and suppose you want the color to be green so any link i will put, what will be the color suppose i will do it like this go to facebook, and yes let's capitalize google's g, so will it be I will go to facebook ok and yes we will capitalise google so will it be green no it will not be green I have already visited google so i have to write facebook so i will write facebook what will happen if i do facebook 2 yes i have visited facebook i have visited facebook if you remember in initial few lectures I haven't visited it. I have visited it. So that's why it's showing like this.
+
+Now i'll tell you about 2 more links related.
+One is a active. If you type any pseudo selector, it shows you the image. If i want the background color to be red. So when i click on a link, it shows red. Active means when you are clicking. So here it is showing on google.com. And when I click, its background will turn red.
+I know that ideally you won't want to use this. But that was just an example. To show you how it works, it is easy for me to make the background red.
+
+Because you will know it directly. Now apart from anchor tag,, what do we have other than anchor tag? Some pseudo selectors, the answer is yes, definitely. One is hover, if I want that on anchor tag, anyone can hover. And I want its background color to be red or yellow. I make its background color yellow. So if I hover, you can see here that its background color is be yellow so if i hover then you can see that the background color is yellow as i am hovering, i have written a hover and background color is yellow so these were some pseudo selectors now i will tell you one more pseudo selector and that is, if i want to have a div whose class is selector and i will write I am selector I'll put 1 here, so that you don't get confused ONE
+
+Now I'll tell you about first child pseudo selector Which might be a little tricky for you
+And this category is pseudo selector So this pseudo selector If I write P first child background color aqua It means that wherever P is the first child of the parent, the background color will be aqua Like in this case, you can see that I have put a main tag here And it is written here P I am first and P I am second So here you can see that wherever the first child of the main is P, which is here This P is the first child of the main is P, which is here, this P is the first child of the parent. So this class will be applied in this. So see here, its background has been acquired, and this has not. But I will tell you again that such things are very rarely used when you do web development.
+
+So you guys do more research about such pseudo classes. What I will do in the description,
+I will put links in the description about this type of things.
+
+More learn about Pseudo Selector to find ownself fro google.

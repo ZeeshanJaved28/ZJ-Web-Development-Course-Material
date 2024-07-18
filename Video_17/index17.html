@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+    /* Element Selector */
+    div {
+        background-color: red;
+    }
+
+    /* Class Selector */
+    .red {
+        background-color: red;
+    }
+
+    /* Id Selector */
+    #green {
+        background-color: green;
+    }
+
+    /* Child Selectors */
+    div>p {
+        background-color: brown;
+        color: blue;
+    }
+
+    /* Descendant Selector */
+    div p {
+        background-color: brown;
+        color: blue;
+    }
+
+    /* Universal Selector */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Pseudo Selector */
+    a:visited {
+        color: yellow;
+    }
+
+    a:link {
+        color: green;
+    }
+
+    a:active {
+        background-color: red;
+    }
+
+    a:hover {
+        background-color: burlywood;
+    }
+
+    /* First Child Pseudo Selector */
+    p:first-child {
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <!-- Element Selector -->
+    <!-- <div>
+        I'm a div
+    </div> -->
+
+    <!-- Class Selector -->
+    <!-- <div class="red">
+        I'm a div
+    </div> -->
+
+    <!-- Child Selectors -->
+    <!-- <div class="red">
+        I'm a div
+        <p>I'm a para in a div</p>
+    </div> -->
+
+    <!-- Descendant Sellector  -->
+    <div class="red">
+        I'm a div
+        <article>
+            <p>I'm a para in a div</p>
+        </article>
+    </div>
+
+    <!-- Id Selector -->
+    <div id="green">
+        I'm another div
+    </div>
+
+    <!-- Pseudo Selector -->
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.faceboook.com">Go to Facebook</a>
+
+    <!-- First child Pseudo Selector -->
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+
+</html>
