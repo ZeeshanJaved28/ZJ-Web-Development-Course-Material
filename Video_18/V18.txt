@@ -1,0 +1,75 @@
+CSS Box Model - Margin, Padding & Borders 
+
+Margin
+Borders
+Padding
+Code with Harry => Content
+Padding
+Borders
+Margin
+
+Q: How margin, border, padding are set in CSS.
+Q: What is the concept of box model in CSS.
+
+Look, everything in CSS is a box Whatever HTML elements we have made, they are all a box Whether we make a container, whether we make a div, whether we make a span They are all a box in our CSS
+
+What I will do is using a universal selector it happens that our browser plays smartly it says that this developer doesn't have a brain so i will use my brain
+
+because we can give multiple classes to one element I told you before one element can be given multiple classes
+
+if any element has to give more than one class then we will give space
+
+Can we give more than one id to an element? (with spaces)
+
+now what does the box model say, the box model says that the content of your CSS will be here, outside it will be padding outside it will be border and outside it will be margin and the total height or width of any element will be added to it means this much space will be covered by the element, total height and width, I didn't say height and width remember, total height means how much space it will cover so this thing you should know, in CSS box model
+
+I'll put margin of 5px And as soon as I put margin of 5px It will be outside the element So the background of the element is not retained Q: What does it mean? 
+
+If I put pink color on you suppose i put pink color on you, so you will be pink but if i put pink color on you, then it won't be pink so this was a very strange example but i will tell you that padding is outside the content so if i give padding, then the background color comes in the padding area because padding is inside the content and margin is outside the content outside the element content is inside the element this is the content of element, padding is here, margin is here so the background our color will be in padding area it will not be in margin area you have to keep this in mind, so here i have given margin so you see margin of 5,
+
+now i will tell you how to add border, if i write here border, and i will tell you about the border later, but for now, understand that if I write like this, border 2 pixels solid blue,
+then the 2-pixel border is here. And here you see that I have given a 2-pixel border here.
+You can see that the border is here. So you can see this border here, and you can see that this is my content here, and this is border so what happens here is that there is a DPI factor in our display because of which the actual border will be seen separately here but this is pretty much how you can see margin, border and padding in real time of your element so I hope you understood this thing
+
+
+now I tell you here how to calculate the width of the element now suppose I have given the width of this element or I give the height of this element 200 pixels, so I gave the height of this element 200 pixels and its height is 200 pixels, now I will inspect and show you something
+and I will take you to the computed values so see its height is 200 pixels and you see as soon as I put an it on computed values So its height is 200 pixels And you can see The content is showing Padding is showing Border is showing Margin is showing
+
+Now you can see The actual height of this element Is 200 pixels Then 10 will be added to it and 10 will be added from below It will become 220, then borders will be added Then margin will be added So as soon 10 will be added from below, it will become 220 then after this the borders will be added then after this the margin will be added, okay so as soon as I will add all these things to it so all this space will come out here but how much is the height of a particular element or how much is the width so total width and total height is taken out from this formula
+that what we do is we will add both left and right padding to the width both left and right border and both left and right margin this is total width, that is, how much space will be covered by margin and element I hope you are getting this, and if I talk about element only
+how much space is covered by border, then you can add this whole thing but now I want to tell you one thing, that if I put a CSS property here which I can directly add from here, I can add it in styles I will show you this too if I make the background red then its background will be red temporarily until I reload okay, but I will apply it here now okay, what I will do here
+
+I will write box sizing here and I will write border box here as soon as I write box sizing here
+border box you guys see here that its actual width sorry height is 176, 176.8 is because because 176.8 is because 176.8 plus 20 is 196.8 and after that the border is added and the total is 200, we don't include margin here because margin is outside margin is not included when we set a height and give box sizing property, try to understand when i say its height is 200 or width is 200 so with width 200 if i didn't put this box sizing border box, listen to this carefully
+
+if i didn't put box sizing border box then what will happen, then the content of that height or width will be 200, i will explain you with the height of the content or if I talk about the width then it will be 200, I will explain you from the height example 200 will be the height of the content then if you talk about the total space then padding will be added then border will be added on top and bottom but if I say box sizing border box so basically I am saying that the 200 height I have told this is including border and padding but not margin I am telling 200 including border and padding where I have done box sizing border box it means that the height of my element the height I have written here this height is my border and padding
+
+I have written both of them together means by combining both of them content plus border plus padding should be 200 When I say box sizing border box, I am saying this So tell me in the comment, if we write box sizing border box 
+
+What am I saying? I am saying to csh Hey csh, I am giving you this height I am giving this height by combining padding and border Content plus border Plus padding, that's 200 I am giving the height and the border Content plus border plus padding That is 200 So in a way, box sizing border box changes the height
+
+Q: What is the definition of height?
+It is that padding will not be included in this This will be the height of this element You can see here, this is 176, I will remove this I can also it from here also temporarily if I uncheck box sizing border box, then see it's height is 200 and then I added this, then I added this
+okay, so after adding both of them, the total height will be 200 plus 20, 220 plus all the borders that are calculated, that will be the sum, okay but here I want to tell you one thing
+that if I said box sizing border box then what happens as soon as you write box sizing border box here its height will be reduced from 200 and it will be adjusted in this way that padding and border will be 200.  
+
+I hope that makes a lot of sense, I hope I have explained you so this was a very important concept which I wanted to tell you all. And the concept which I am going to tell you now, you will enjoy it because in that I will tell you about margin collapse. And this concept you should know. So I will take you again to the computer screen. This was our code. How much margin did I give here? 5 pixels margin.
+
+Let's say I give the same thing in border 2.
+
+Let's increase margin. 25px margin. And let's say I give same to same thing. I'll just keep the color red. I'll also black the border. Rest of the values are same Now you tell me honestly That margin of this box is 10 10 10 And margin of this box is 10 10 10 So here this space should have been double of this space Or not? Think again That margin of this box If i of this element is 25, why not 50 the upper element should also have a margin and the lower element should also have a margin here comes the concept of margin collapse
+
+Q: What is this concept of margin collapse
+the concept of margin collapse says that if the margin of two elements is overlapping then the maximum margin will be applied only once like if I have given a margin of 25 here like if i give 25 margin in this and 25 margin in this what is the max of 25 and 25? both are equal so 25 margin will be applied only once if i make one of them 35 then 25 will be applied so this difference will be 35 so this is called margin collapse
+
+What is margin collapse?
+
+What is CSS box model
+
+How does the box model work And I have tried to explain you very well How is the box model of CSS work?
+
+What is the concept of margin collapse? Which troubles a lot of CSS developers.
+
+When you have to put the box sizing border box What will happen if you put it or not
+
+Especially when we convert the Figma files in HTML, CSS, JavaScript Then you will get this work a lot Whether to put box sizing or not
