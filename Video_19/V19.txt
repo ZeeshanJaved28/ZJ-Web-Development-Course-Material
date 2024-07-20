@@ -1,0 +1,160 @@
+CSS Fonts, Text & Color Properties
+
+Q: How fonts and color CSS work. 
+
+Q: How you can use external fonts in your website. 
+
+Q: How font sizes can be changed, what is the concept of fallback font.
+
+Q: What is font?
+
+If we want to change the font of any element then we use font family so i can easily write a style tag here, we use font family. So I can easily put a style tag here that paragraph, do its font family.
+
+What to do? Now see here a lot of options are automatically giving me VS Code. Suppose I want to see here Cogui and along with it Tahoma and so many fonts are available here. These are comma separated values which will try to put the first font here if this font is not available in your system then it will try to put this font and so on so these are called fallback fonts that is, the main font is C O U I and Tahoma, Geneva, Wardana, San Serif these are fallback fonts
+
+now related to fonts we have many more properties like if I want in paragraph that font style I want to make it italic so I can make bold italic font style I made font style italic here so I can do like this in font style italic so I can do like this in font style we have italic and one is normal and one is oblique we have to use font weight for bold so if I make it oblique and I can't even underline it I have to use text decoration for underline so here these values are there now here usually it is used for italic so if you want to do italic then you will use font style
+
+see a lot of properties related to font have come and I want to tell you font weight here 
+all these values are bold, bolder, lighter and you can also put values like this so see it has become a little thick, that is, it has become bold
+
+so whenever you want to make it bold, you can use it and make it bold, so you can make it oblique, you can make it italic with font style, you can make it normal, and if you want to underline here, then you can use text decoration is a property by which you can underline so i want to tell you this and you can also overline so the way you see overline, it comes up but all these properties i am telling you honestly they are not that much useful, as much as italic or font.
+
+I will put the link of this code pen and this code pen link will tell you which font families look like so see here serif looks like this, senserif looks like this, monospace looks like this and cursive looks like this and you can see here that this code pen is showing a lot of things from here that how your families look like
+
+In this way, you use Google Fonts, so I will show you how to use Google Fonts.
+https://fonts.google.com/
+then what I will simply do is I will click here, ok, suppose I don't want medium 500 I want my font to look like this or I want it to look normal, so I will do is, I will click here Ok, suppose I don't want medium 500, I want my font to look like this Or I want it to look normal So I will click on plus And it will give me font here Now there are two ways to include font Either you do it through link or through import If you are doing it through import, then you have to put it in style tag.
+
+Import statement, here you can see I have done import URL like this
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+</style>
+font-family: 'Lemon', serif;
+
+Now if I want to use the link, then I will copy this link Then I will remove the import one from here and now I will put it in my head tag I will do the right click format document so that unnecessary spaces go away.
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+like I want this popins, I included this so I will bring this link and imports in one bar in one request So it's always recommended that you I will remove the link tags from here because I am putting import now You have to put only one of these So see here, from the same import statement, Ballu bhai is also coming And from the same import statement, Poppins font is also coming
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Lemon&display=swap');
+</style>
+font-family: 'Instrument Serif', serif;
+font-family: 'Lemon', serif;
+
+But I don't think you will need 50 fonts in a web page.
+
+Font Properties:
+
+I want to tell you about some other properties of fonts another property is font size with which you can change the font size if I talk about font size you can change font size if i talk about font size I can use large, medium, x, small, double x, large but i will recommend you pixel units.
+
+Then we will talk about other units if i do 20 pixels, you can see font size will increase now i will show you one thing if i don't put any font size will be little big now i will show you one thing if i don't put any font size means i didn't put any font size so by default one size will be h1 and one size will be paragraph and this styling will be default browser and to see this i will move my face now see here h1 you can see here i will select this, go to compute it and here see font size 32 pixels so I will do one thing, I will reset it just in case, the value is not spoiled through zoom font size if I write here, see 32 pixels is h1 and the paragraph, its default font size is 16 pixels you can see here, 16 pixels is the default font size so if I want my font size to be a little bigger 20 pixels, then I to be bigger 20 pixels so i will make it 20 pixels and now you can see here 20 pixels font size this is a video on fonts now you can select here and increase font size by arrow keys i am using up arrow key to increase font size and i can use down arrow key to make my font smaller so here you can see I can make my font smaller I have pressed up arrow key and down arrow key so you can adjust the css here.
+
+font-size: 49px;
+font-weight: 600;
+color: red;
+
+Line Height:
+Now after this there is a concept of line height and let's say I make line height let's say 4 I made line height 4 of the paragraph and for that I have to put some content in the paragraph Let's say I write another paragraph and here I write Lorem 45 and why I wrote Lorem 45, you will tell me in the comment section that why I wrote 45 or why I write 23
+
+So you see what will happen with line height here, that space will come here ok and here the space is created because it has given line height 4 now if I will reduce it as I reduced it, as if I reduced it to 1.4 or 1.8 so you understood that this spacing is line height basically it controls that if you want to increase the space of your lines increase the line height if I want to know what will be the default value of line height then I will remove the line height from here and I will go to increases, increase the line height if i want to know what will be the default value of line height, then i will remove it from here and i will search for line height in computed line height now here i am not able to see line height in this element so in this element, i guess no line height compute has happened so i will do one thing, i will search on google default line height, so the default line height is about 110 to 120% So if you want to change the line height So you can increase it by 1.2 or decrease it by 1.2 And line height will help you in increasing the spacing After this, there is another property, letter spacing
+
+line-height: 4;
+line-height: 1.4;
+line-height: 1.8;
+
+Letter Spacing:
+
+And I am telling you that it is not used much and if I increase the letter spacing, then see what is happening here it increases the spacing of letters so if you want to increase the letter spacing, then you can use it I personally don't use it much I make my own websites but these are all things that you should know through this video I want you to know about all those things that you may want to do. Let's say you want to capitalize the first letter. So you should know how to do it. Some things you may not know how to do it. It will be a big problem. So I will show you that if you want to capitalize.
+
+Text Decorations:
+
+Any first letter or any word like for example h1 or let me put h2 and i will write about fonts now i will write h2 i hope you can see it, let me zoom it if i write h2 let's say i write text transform and let's say I write here text transform and capitalize so if I have made the f of about fonts to a, then you see here the a of about fonts will be capitalized to the first letter now if I write here in text transform with a colon.
+
+text-transform: capitalize;
+text-transform: lowercase;
+text-transform: uppercase;
+
+see here I told you about text decoration if you want to underline, then underline text decoration it will be underlined
+
+text-decoration: underline;
+
+But I will tell you about text decoration color text decoration color so here you can see text decoration color aqua so here it is underlined with aqua color so you can change text decoration color and this is very helpful when you make navigation bars and in navigation bars it happens that when you hover on them, their color changes or the line appears in some way. So you can do all these things through CSS. So I hope you are understanding these things.
+
+text-decoration-color: blue;
+
+Then I will tell you about two properties very quickly. Text decoration style, like if I add here, if I add text decoration style to this element, and I add it here, so that you have code for your reference. Text decoration style i will add it here so that you can see the code text decoration style and if i want dotted style it will be dotted if you can't see it, i hope you can see it now if i want it dotted, my underlining will be dotted there are many other values like it is dotted, double, inherit inherit means inheriting from your parents if i do solid then it will be like this, if i do wavy then it will be like this so if you want dash or dotted then you can do it dash is like this, dotted is like this, wavy is like this but i will tell you that with my personal experience i have done so much web development in my life maybe sometime your wavy dotted lines will be useful
+
+text-decoration-style: dotted;
+
+there is also thickness I will tell you the thickness and there are many more things but if you want to do thickness then you will write text deco th so it will suggest thickness if you don't want to type this text decoration color or if you don't want to type any property then you write t, d, and co it will come, I will show you like if I don't want to type this and I want to be suggested quickly so I will write t, d and c if i don't want to type it then i will write t d e and t h i will show you i want text decoration thickness this is important text decoration d e and t h and it is showing why it is suggesting because you have taken t e from th and it is showing why it is suggesting because you have taken te from here and de from here and th from here you will enter and it will come straight.
+
+how much thickness you want you can adjust the value of thickness ok, let's say I do this 45 pixels, I hope I did not do too much, I guess I did too much so I will this 45 pixels, I hope I didn't do too much I guess I have done too much, so I will not do it dotted, I will keep it solid I will keep it solid and you will see here that I have made it a little too thick I will have to reduce its value a little and see I will reduce its value so it is a little less, I think 7 pixels is more than enough 7 pixels is way more than enough, so let's do 7 pixels and see it's thick.
+
+So sometimes you have to make it thick. What do you have to do? If you want to make your text decoration thicker, then you can do something like this. So you guys use text decoration thickness to make it thicker.
+
+text-decoration-style: solid;
+text-decoration-thickness:7px;
+
+would like to tell you about the text-indent property. The text-indent property is like, let's say I give 45 pixels to the text-indent, so see an 45px text indented, so you can see an indent so you can add an indent.
+
+text-indent: 45px;
+
+To make vlogs text overflow is used a lot text overflow property means what you want if your text is overflowing from your box then what should happen, like here I comment out some properties like I don't want dotted I make it black I don't want to do aqua, I make text decoration color blue because black is by default, now I want to set the width of my text overflow I make the width to 45 pixels and as soon as I did 45 pixels so it became something like this now if I do ellipsis or clip in text overflow.
+
+So what will happen, what is the difference between ellipsis and clip I will tell you if I increase the width of it, it will become something like this and let's do the same for paragraph I think we can understand this thing better in paragraph so here I will give a class and in class I will do lorem and I will put a style here by dot lorem dot lorem ok and I will do the same thing here for you one is text overflow one is its width I will give one is first of all I will give border 2 pixels solid red and after this I will give width 45px and let's see how it looks, so it looks like this now what I will say to this paragraph that if there is text overflow in it, then do ellipsis now here one more important thing is that you have to hide the overflow which means that if it is overflowing from the box what do you want your element you want scroll, you want hidden so now see I have hidden the overflow, can hide it by using ellipsis and if i change the value of it to clip then it will hide it.
+
+border: 2px solid red;
+width: 45px;
+/* text-overflow: ellipsis; */
+text-overflow: clip;
+overflow: hidden;
+
+so there are many more properties like this one more property is word break so i will make it 145 and i will write word break and if I do break all in word break then you see here if I don't do break all here then see dollar went down here if I do break all then what will happen it will break the word here it did DOL and OR here so if you want your words to be break then you can use this property.
+
+border: 2px solid red;
+width: 145px;
+word-break: break-all;
+
+then after this there is a text line property let's say I want to center it so I will put text align center here text align center and now see it is centered if I reload it, it will go for sure so I will put it in h2 and I will say text align center ok so here it is automatically suggesting me and I am taking it as my property which is very important for me if I am coding So you see here about font center is entered I hope you understood this thing So these were all the properties of text
+
+text-align: center;
+
+Now here the properties of text are very important Because if you want to make good websites then you should know everything about text only then you will be able to control your text So these were some properties of text I will give you a link in the description where you will get additional to learn about all these things and all this I have read in this video, after that things will be very intuitive for you. So what I will do is I will move towards colors
+
+Colors:
+
+sometimes what happens see colors are millions of colors, now I will tell you three ways which are very commonly used to show color:
+
+1. Color keywords
+2. Hex Color Code
+3. RGB => color: rgb(red, green, blue)
+4. RGBA => color:rgba(red, green, blue, alpha)
+
+RGBA, and RGBA has same RGBA has same RGB but one thing is different, that is alpha and what is alpha value, it varies from 0 to 1 if I make it 0.5, let me show you and I do this, so I can do this from 0 to 1, you can see the value is changing and by default it is 1 if I do 1 then there is no need to write but if I do this much for alpha so what will happen, what is alpha basically
+its opacity, I will reduce the opacity if I reduce it completely, then this color will look like this, see it is light
+
+5. HSL => [Hue Saturation Lightness] color: hsl(hue, saturation, lightness)
+6. HSLA => [Hue Saturation Lightness Alpha] color: hsl(hue, saturation, lightness, alpha)
+
+it is very light after this you have an HSL equivalent of a color, and if I have a HSL equivalent of a color and if I have to tell you what is the most used, see most of the time these color keywords are used after that the most used is hex color, because those people who make designs they mostly use hex color codes in their designs and when they use hex color codes, then developers like us have to use hex color codes to bring the exact color in our design through HTML and CSS.
+
+Okay, so here we have to use the value we have got. If we have been told that RGB color is fine, then we will put values.
+
+If your boss has told you that RGB values are to be used through red color, then we will do this. The exact same color will be made if any developer has used a particular color in android app if that developer has to use the same color in his website then bring the exact color code hex color code or RGB values sometimes HSL is also used I will tell you, it is used less, I personally do not use HSL in my website but HSL is used Now I want to tell you that H in HSL is Hue which represents the type of color S means intensity and purity and L determines lightness.
+
+if you want to add color in background we use same thing in background color and exactly the way i gave color you can give it in that way, for example if you want to give color in background you can give value of RGB, HSL, RGBA
+
+/* background-color: hotpink; */
+/* background-color: #04FFEC; */
+/* background-color: rgb(22, 188, 221); */
+/* background-color: rgba(88, 0, 252, 0.313); */
+/* background-color: hsl(235, 100%, 50%); */
+background-color: hsla(235, 100%, 50%, 0.26);
+
+you can give color key words, you can give hex code sky is the limit, its your choice here your choice you will say it's my choice whatever color i use, if you are making your website if you are making someone else's then he will say it's my choice you are a developer, make a website, use the color i am saying now border color and text decoration color the color which is there in the whole css border color, and there are many other colors the color of the border, where ever we read colors, we can use this kind of values so that was about colors in CSS now there are many things like how to read hsl, how to tweak values and make a particular color so those things will go to design lessons you should have a goal of how to make a website, so those things will go towards design lessons you should have a goal here, how to make a good website
+
+so I hope in this long video I have explained you font and colors because many people were saying that the videos are getting short, so I thought a long video should also be given to you, so I have tried to tell you fonts and colors in today's video
