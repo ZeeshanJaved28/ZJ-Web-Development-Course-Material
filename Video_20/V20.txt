@@ -1,0 +1,15 @@
+Exercise 2 - CSS Challenge
+
+Now listen to me carefully, see I am giving you an exercise of exercise in which you have to do that if you are going to get any paragraph
+
+Exercise Overview 
+
+Then if there is a first paragraph in any div then you have to make the background yellow and the color red and you have to make 5 divs like this and you have to make a CSS class in which you have to give this styling so I frame this question so here I have written the question write HTML and CSS code to style a paragraph inside a div such that first paragraph must have background color yellow and text color red so here you have seen that the first paragraph should have background color yellow and text color red and the other paragraphs must have background color background color blue and text color white ok so let me comment this out so that it does not interfere with our code and here I am going to write html code 
+
+HTML Code Walkthrough 
+
+so this is for you guys lorem 23 and along with that here I am another para and I have written like this and I will make two divs and I will write p here I am also another para and here I will make two divs like this and here you can see that we have to write some CSS rules like this such that the first paragraph of your div should have a different styling
+
+CSS Challenge Explanation 
+
+and the styling of these paragraphs should be different you don't have to put class in the paragraph don't say that I will put class in this paragraph no, you don't have to do any mess in the HTML do not touch the HTML I will write here do not touch the html let me write here do not change this html this html should not be changed this is our condition i hope you understood the question so if i preview this html you can see it is very simple html and this question is very basic
