@@ -1,0 +1,71 @@
+CSS Sizing Units - px, rem, em, vh, vw, % & more
+
+px:
+16 pixel default font size
+universal unit
+196th of an inch
+2k Monitor Resolution: 2048 width and 1080 height
+
+vw: 
+viewport width
+
+if you put margin auto on this, it will be centered only when it is a block level element
+if it is an inline element, it will not be centered
+
+suppose it is a span
+so first of all you can't put width on it
+<span class="box">This is a box</span>
+
+Now I want to make a container And I want to give the same width to this container Which I gave above So here if you see if I want to give the same width to it Then I will do one thing, I will apply the same thing And maybe I want to give the margin top of 23 pixels so whenever you want to separate horizontal and vertical margin you can use margin-shortened property here 23 pixels is the margin of top-bottom and auto means auto from left to right so you see 23 pixels is applied on top-bottom now because there is nothing in the container I will write 56 and you will tell me in the comment why because there is nothing in the container I will write 56 and you will tell me in the comment why I wrote 56 what was the reason to write 56 I will do it in the format document and here you see that I made two boxes and exactly their width is the same
+
+vh:
+viewport height
+
+rem and em both are important
+
+Now here what i will do i will make the font size 1m what will be the computed font size, you have to listen to me carefully because understanding m and rem is very important in computed i will search font size, now see here 18px paragraph size is 18px because it will inherit from container, some properties inherit in CSS and font-size is one of the properties, so this property will inherit and you can see here font-size is 18, it has been computed, so far so good you understood everything.
+
+Now i will tell you that if i will write 1m what will be the difference, there is no difference, it is 18 pixels now if i will make it 1 what will be the difference 18px only, now if i write 1.2M or 1.5M, then the font size will be 1.5 times of the original which means the value that was going to be inherited 1.5 times of that, so you can see here 1.5 times of 18 is 27 let's write 2 so that you can see the calculation 36, so I will make it 2 so you can see 36 I hope you understood this, what will be the font size of the container the font size of the container will be the same as we have given 18 pixels, so what does M mean the amount of font size it will get by inheriting that much, like if I do 1.5 M, it means, or 2 M, it means the amount of paragraph it was going to get by inheriting it, it's 2 times means whatever it was going to get, it's 2 times, ok now if I remove 18 pixels from here, then what will happen so it will be 2 times of 16, because it was going to get 16 by default, so now the font size will be 32, so now if you see the value in computed, you will get 32 as you can see here, ok I hope it is clear, M is everything.
+
+font-size: 2em; 
+/*  2 times increases font size = if 18 then 36 with or without html root otherwise default 32 without html root */
+
+I said that the font size of html is 12 pixels so what will happen? everything will be 12 pixels see this is the box font size it is inherited from html and it is 12 pixels now assume the font size of this the font size of the root element which is html, html is the root element by the way let me tell you I want the font size of root element to be 2 times my font size so how i will do this? i will write rem rem means the amount of root element 2 times of that so if i will make it 2rem so what will happen? it will be 12 or 24 you can see here i got 24 pixels, you can see here it got 24 pixels.
+
+font-size: 2rem; /* if html root font size will be 12px then 12*2=24 */
+
+REM means give the font size of the root as much as it can 
+EM means give the font size of the root as much as it can
+
+Are these the units? No, there are many other units, but what happens is that this is the unit that is used the most, and if I tell you personally, then I use these units to make my websites.
+Yes, there are two more units about which I will tell you. Vmin and Vmax.
+
+In Computer width is higher than height
+In Mobile Phones height is higher than width
+Vmin:
+computer: height
+mobile: width
+
+width: 100vmin;
+/* 100vmin=100vh */
+OR width: 100vh;
+Note:
+width: 80vw;
+/* 80vmax=80vw */
+width: 80vmax;
+
+=>css mdn docs reference for units Search in Gooogle
+Link: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+Link: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units
+Comprehensive Lists.
+
+Percentage units:
+It means if you have made width 50% in a particular box it means parent, width 50% means parent's 50% of the width so if I give paragraph width 50%
+
+let me show you here if I say width 50% it means parent's width 50% so see it took 50% it is on half so width 50% means parent's 50% now percent property is not applicable everywhere So you have to take care of this Now a very common mistake people do is Where the height is not set, people put 100% or 80% height in that container But the height of the parent is not set, so they have a problem So always use VH and VW units You can use the percentage if you know what you are doing Means you know that the width of the parent is set And you want to give half of it, 25% width
+
+For example, in this case, I am giving this paragraph Width 50%, I will put a border in it I will put border 2px solid red here And you see it looks like this, it has taken 50% Of its parent, which was this and you can see that it has taken 50% of the parent's width now if I put a span in it and I say that the span in the container in that border 2px solid blue and width 50% then it will be 50% of the parent's width
+
+if I put put span in paragraph
+
+let me show you if i put span and write lorem 23 so you can see here in fact i didn't want to put span, i wanted to put div i wanted to put div in this too why i am putting div in this, because span is inline element so it will be a little difficult so if I say that there is a div inside p so I have styled it like this, you can see and the problem in this is that I had to write it like this I will write it like this, why will I write it like this I will write it like this so that the immediate child is on it now see here I have written border 2px solid blue actually the thing is we can't put div in paragraph so let me do one thing, I will make it div and inside it also make it div instead of para I will make it div and let's make it div and now you can see what I am trying to say so this is 50% of its parent and this is also 50% of its parent as you can see what I am trying to say so this is 50% of its parent and this is also 50% of its parent as you can see, what is its parent of blue box, red box and what is the parent of red box, this black border box I hope things are clear, you know everything about percentage

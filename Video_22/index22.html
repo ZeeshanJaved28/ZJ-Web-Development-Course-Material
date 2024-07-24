@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % & more</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 12px;
+      }
+      .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width:233px; */
+        /* width: 2048px; */
+        /* width: 1364px; My Laptop Resoution */
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aquamarine;
+      }
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 80vw;
+        /* height: 80vh; */
+        min-height: 80vh;
+        margin: 23px auto;
+        /* font-size: 18px;  Default 16px*/
+        background-color: aquamarine;
+      }
+      .container > div {
+        border: 2px solid red;
+        /* font-size: 2em;  */
+        /* 2 times increases font size = if 18 then 36 with or without html root otherwise default 32 without html root */
+        font-size: 2rem; /* if html root font size will be 12px then 12*2=24 */
+        width: 50%;
+        /* parent 50% */
+        /* Red box parent is a Main Container box */
+      }
+      .container > div > div {
+        border: 2px solid blue;
+        width: 50%;
+        /* child 50% */
+        /* Blue box parent is a Red box */
+      }
+      .mycontainer {
+        /* background-color: red; */
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin: 23px auto;
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        /* width: 100vmin; */
+        /* 100vmin=100vh */
+        width: 80vw;
+        /* 80vmax=80vw */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        quisquam fugit alias distinctio cum deserunt, corporis porro unde et
+        voluptatem adipisci soluta iste, facere neque perferendis nostrum
+        facilis esse consectetur delectus molestias odio eveniet excepturi quia!
+        Dicta repellat veniam voluptatibus cupiditate omnis, itaque perspiciatis
+        quod nemo aliquid ad nihil soluta illo labore sit facilis dolores
+        nesciunt.
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+          neque, culpa dignissimos eius quibusdam iste porro magnam voluptates
+          maxime delectus perspiciatis placeat dicta?
+        </div>
+        <!-- <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem aspernatur explicabo, harum numquam mollitia dolorum vitae possimus quae voluptatem incidunt consequuntur ipsum?</span> -->
+      </div>
+      <!-- Expand this to see that this container will adjust its height lorem999  -->
+    </div>
+    <div class="mycontainer">I'm another container</div>
+  </body>
+</html>
