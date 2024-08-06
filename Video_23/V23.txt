@@ -1,0 +1,36 @@
+CSS Display Property:
+
+If you remember, we saw in HTML that there are some inline elements and some block elements.
+
+There we talked that we can change this property.
+
+I will tell you how to change the display property with the help of CSS.
+
+And what is the display property in CSS?
+
+There are some default values of the elements, how to change them?
+
+And what kind of changes we will see in their appearance 
+
+Q: What is inline
+
+Q: What is inline block
+
+Q: What is flex
+
+Display property ia important property in the CSS.
+Some Few elements are Inline and Some Few elements are Block.
+Summary of Inline and Block Elements.
+
+Now I will tell you
+Display None and Display Block.
+
+What is display with flex and what is display with grid but i want to show you a great example of flexbox suppose i want this to be my box in flexbox you can make anything into a flexbox and i will say 70-80% of the time you will be using flexbox to center things or to center things or to pull one side so here you can see my box and here also a box is written suppose I want to center this box so I will say display flex justify content center you can see it is centered here
+
+Display flex
+Display grid
+Display inline-grid
+
+I have curated the link of MDN for you
+Link:
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
