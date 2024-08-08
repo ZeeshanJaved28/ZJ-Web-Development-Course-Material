@@ -1,0 +1,44 @@
+CSS Shadows and Outlines
+
+Margin
+Border 
+Padding
+Zeeshan "Actual Content"
+Padding
+Border
+Margin
+
+CSS Outline Style
+->Solid
+->Dashed
+->Dotted
+->Double
+->3D Groove
+->3D Inset
+->3D Outset
+->Ridge
+->None
+->Hidden
+
+Q How to add Shadows in CSS?
+
+We already studied CSS Box Model
+
+box-shadow: h-offset v-offset blur spread color inset;
+where v is vertical and h is horizontal
+h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+blur: The larger the value, the blurrier the shadow.
+spread: Expands or shrinks the shadow size.
+color: Defines the shadow color.
+inset: Makes the shadow inner. 
+
+text-shadow: h-offset v-offset blur color;
+
+outline: width style color;
+
+width: Sets the outline width.
+style: Determines the style of the outline such as solid,dotted, or dashed.
+color: Sets the outline color.
+
+*Differences between Outlines and Borders Image*
+
