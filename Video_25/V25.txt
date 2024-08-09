@@ -1,0 +1,26 @@
+Styling Lists using CSS
+
+HTML Lists
+Our day-to-day lives often involve the use of lists.
+For example, when we go shopping, the bill we receive includes a list of all the items we've purchased. In a similar manner, web developers use lists to neatly display data on websites.
+
+Ordered list
+Unordered list
+HTML Definition list
+
+If you are making a website, then in the navigation bar, for example
+You will have to put list items in an unordered list
+I will tell you in this topic that on list item And along with that, what kind of CSS properties their CSS properties on their list
+
+list item is important for us.
+
+Display Value Property
+display: list-item;
+
+comprises of a marker and list item in list.
+
+The most important property is list style
+if you write none in the list style then marker will be hidden.
+many options in list-style.
+
+you see here whatever I type, whatever I add or remove here whatever is written in element.style will be added here as inline CSS
