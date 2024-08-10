@@ -1,0 +1,25 @@
+CSS Overflow Property
+
+We study CSS Box Model
+Margin
+Border
+Padding
+Actual Content
+Padding
+Border
+Margin
+
+The CSS Box model defines how elements are rendered and how their dimensions are calculated. It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.
+
+There you saw that if the width of any element is less and the content inside it is more, then the items inside it overflow.
+
+We can manage this kind of overflow by using the CSS overflow property.
+
+We can bring a scroll bar inside CSS, horizontally and vertically.
+
+What is this overflow property see you have a box in that box you have put such an item which is bigger than that box what will it do? it will overflow it is obvious now in this case how do you want overflow to be handled it is up to you
+
+overflow: hidden; and overflow: clip are also same.
+
+The only difference is that the clip also disables the programmatic scrolling
+That is, if you have put an overflow clip, then you cannot scroll programmatically
