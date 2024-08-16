@@ -1,0 +1,23 @@
+Exercise 3 - Solution
+
+Exercise 3 - Design this Card [Video 29]
+
+<!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html  -->
+
+div 
+border radius
+image URL
+padding
+border radius
+
+2nd div
+Nature Lake
+span inline
+
+Heading 1
+
+paragragh
+
+3rd div
+button
+text line centre
