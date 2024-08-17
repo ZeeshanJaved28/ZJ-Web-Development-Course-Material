@@ -1,0 +1,23 @@
+Exercise 4 - Multi Color Website
+
+So what you have to do in this exercise
+
+I tell you that you have to design a navbar
+
+And after designing a navbar
+
+You have to make a style sheet in which I will change a variable and according to those variables the color of your color will change that is, you have to make a multicolored navbar and you can do this simply by using CSS variables
+
+I have told you about CSS variables in video no. 30 [Reference]
+
+So you have to make this multi-colour navbar using the concepts that I have told you in video no. 30
+
+I also want to tell you that we will gradually transition to make a full website
+
+There are some important concepts after covering them
+
+Like we have flexbox, grid, transitions and animations, we will make full on websites.
+
+So many people are waiting for full on websites to be made.
+
+So their wait is going to be over very soon.
