@@ -1,0 +1,36 @@
+CSS Float & Clear
+
+We will understand about float and clear. Since the Flexbox has come, the use of these properties has become very less. But if a client shows you a website where float and clear is given, then your understanding should be so much that you can understand what float and clear is.
+
+Q: How float and clear works?
+
+now you have seen one thing whenever we use float property so if image is overflowing from the container so it overflows it doesn't accommodate in its container so we can use this of a property, so in our parent container we can put display and in display we can put flow root and as soon and we can put flow route in display and as soon as we write display flow route here, you see that this issue will be solved here now this overflow will not happen, so this is one way by putting display flow route we can fit the elements within the container.
+
+The image will float here. And this will come like this. So this was used a lot before when we used to make newspaper type content, most of the time in blogs, this thing was needed that there will be an image on one side, content on the other side and the image is floating on the left sometimes floating on the right and the article is being written, but the modern layouts are not designed like this.
+
+Now you see here, I will tell you what of clear? When do we use clear? So what.
+
+Did we do here? We said that the image will flow on the right side. We said these are cards, we put borders on the cards and see which element is exactly where and how much space it is taking. We also saw this.
+
+Now if I want that this specific div, this one, which has more text
+
+I want that it should not allow any element to flow on the right side
+
+Listen to me carefully, I am repeating it should not allow any element to float on the right side listen to me carefully, I am repeating it should not allow any element to float on the right side so it will say that no element should float on my right and for that we use the clear property so we will write here clear, I will put exactly second child of card or I will put another class in it but what I will do here, I will say dot card and we will use nth child and write 2
+
+If second child is here then acquire background color and clear right means I don't want any element in my right this is the meaning of clear right so what is this div saying this div is saying I don't want any element in my right please remove any float from my right and give me my place so here you see it will look like this as soon as I did clear right here so this div here this div is ours, I have done nth child 2 and let me see which child it has taken so I should have done nth child 3 because this is the first child of image, cards and let me see which child it has taken ok so I should have done n child 3 because this is the first child of the image, this is the second child and this is the third child so I should have done n child 3 so see what it said that I don't want any element floating on my right side it said clear right so it was given its place below but this one will float on its right side so whenever you want your element to fall down you can clear, clear right, clear left, clear both because I don't want any element on both sides if you don't want any element on left and right of this div then you can say clear both it will neither come in left nor right now if I left float it from right then you see what will happen I will left it if I left float it from right then you see what will happen
+
+I will left it, if I left float it then it will float in left but now this div will allow because it was saying that don't allow element on my right side what was on this div, clear right was there and clear right means no element is allowed on my right side to float 
+but it is allowed on left so it is allowed on left but if I clear both very clear, it means that I can't see here or here, understand, this is what the element is saying what is it saying, everyone write to me in the comment section below, what is this div saying this div is saying don't go to see, understood, neither you can see on the left nor on the right write this in the comment, okay, so what is this div saying, this div is saying don't float in my right it is announcing to everyone that don't float in my right so that's why it is showing in left, it can be seen in left but it is not saying in left if it wants to say no in both places then it will clear both so by doing clear left and clear right, element says don't go here, neither here nor there it says neither go to left nor right, everyone will write this in the comment.
+
+I don't know, there should be two way interaction, I will feel bad if you don't write and if you write then it becomes my day, write it, okay what is he saying, you have to write this, it becomes my day, please write in the comment now we have seen float, what is left right, we have seen clear, left right and both
+
+So I have made both clear here, so nothing will be visible on the left and nothing on the right So these are some basics in general Now here I have told you how to finish the overflow, there are other ways to finish it.
+
+For example, even if I remove it, there are ways to finish it. So what are the ways that you set the margin or you do overflow auto in it, so there are many ways, it is a simple thing and why I made this topic, I will also tell you that I do not want to use it
+
+Now you will say what happened to you, now some of you will hold your head So this is that I avoid using float and clear at all. Yes, I am saying clear at all. I am not even saying do it sometimes. I am saying it very clearly neither use float nor use clear.
+
+You should know these properties so that no one asks you. You should know because it is a very simple thing and if you see or maintain an old website someone has used float or some other property so at least you should be able to maintain the website so that's why float and clear are very important for you to understand but make modern layouts from CSS Grid, Flexbox there are many other ways don't fall in this circus don't fall at all in, don't fall in this, float left, float right, it gets a little confusing, and this is not the right way to create layouts, in my opinion, this is my personal opinion, don't make layouts from this, don't do styling from this, don't do things here and there,
+
+Flexbox is very easy, very easy, we will see in two properties, in the Flexbox topic, how we can set it, and the websites I will make, I will use very less, even if I do it, see I can do it, I am free to use it, you are also free to use it, it works, but the thing is that if you want to make good websites, modern layouts, don't use it, as simple as that.
