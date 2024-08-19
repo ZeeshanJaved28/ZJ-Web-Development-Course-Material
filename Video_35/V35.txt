@@ -1,0 +1,37 @@
+More on CSS Selectors
+
+In today's topic we will look at selectors more closely and I will tell you some things about selectors which we will use in actual when we build websites.
+
+now I will tell you some more things about selectors which are important.
+
+we talked about element selector, we talked about class selector ID selector was very simple we talked about the element selector, class selector, ID selector, child selector, descendant thing related to universal selector. Now I will tell you about an attribute selector I told you in the course but let's say I put here in div.
+
+Let's say I put data color is equal to primary ok, I put primary here now I want that where data color is primary there should be margin top is applied so i can use attribute selector like this and i can say that data color is equal to if it is primary so what you do so you do let us say margin top 45 pixels and where data color is primary there margin top is applied you can see here so if i see this so ever data color is primary there will be a margin top so if i see this so if i see this, data color was primary so margin top is here you can see here margin top is here and here border is also here, so i have put margin and border if i do padding it will be from inside let me tell you this also, so you can see the border so see here in this element margin top is added because it has data color primary you can do this for any attribute it is not necessary to do it for data attributes you can do it for even classes, for id whatever attribute is there in the HTML element you can do it for that now you can group it, like if i want in all paragraphs, in all a's in all box classes and in all data color primary you can do this, so in primary so I can do grouping like this so this is grouping of selector and it's effect will be like this, it will be applied in all because I have selected all A's, all P's so this is grouping of selectors
+
+Then some properties are experimental which I would like you to stay away from the experimental properties.
+
+I want to tell you about before and after if I write here boxes and here before so you see after doing this,
+
+I can put content here and I can say in content Harry is good so what is the point of putting content by doing this boxes before now you see when I will inspect it here
+
+I will put myself here and you see when I inspect it here, I will move myself here and you see when I wrote boxes here, then see here it has inserted a before element that is, it put an element before the main content of the boxes inside the boxes and it has made its content, Harry is good so in this way, the element can be dynamically inserted through CSS what can be done, dynamically insert the element and this is done with the help of before and after this is a very important point is it used? yes, it is used a lot
+
+I am saying it is used a lot so what will before do? insert the content before main content put the content you want in the content what will after do? I will show you after also if I had done this thing after can both be used at once? yes, both can be done I will show you after also can we use both before and after yes we can and i will write after sigma course is also good and i will show you here harry is good, sigma course is also good i can style it by the way i can change its color to red or blue i can do all that, okay so I can do styling, I made it blue, the after of it, sigma courses also good, made it red and here you will see that before will be inserted here, after will be inserted here, main content will be inserted in between sometimes you have to put content dynamically, then before and after are used.
+
+pseudo elements, they are called pseudo elements, not selectors pseudo elements and you can write css in it.
+
+Now I will tell you about selection, so if I say something like this, dot boxes selection, that if someone has selected user, so let's say I want our color to be aqua, and I am not in conjunction with any element,
+
+I will write it like this, so it will work for the selection of all pages, now it will work, I will show you, so I will select, see the color has become aqua, of selected text, I can also add background if I want, I can say, make the background black, okay, what should I do with the background color, make it black and make the color aqua, and now you will select, you will see it will be selected like this so this our selector will select selected elements, style will be applied on it so you can do this thing too.
+
+Now i will tell you about first letter so if i want that my dot box and in that first letter first letter, the color of that what should it be suppose its color is i me scroll up a little, let's say it's color is purple, or it should be Peru, Peru, ok, by putting semicolon,
+
+I will show you, the color of our first letter is purple here, ok, now you can do all those things like transform, uppercase, ok, like I told you before, but this way you can select the first letter and obviously you can increase font size, if I increase font size to 45 pixels which is ridiculously large font size so it will look like this.
+
+Now I will tell you about an input element so if I write here, suppose I have a form
+
+I will write here input type is equal to text and suppose I write here placeholder is equal to type your name here ok, let's say I wrote this now I can target the input and say that I want to target the placeholder and I want to make the placeholder color blue ok, so I can make the placeholder color blue
+
+I can change the size of the placeholder
+
+I can do a lot of things inside its placeholder, okay, so if I want to increase its font size, I say I want 56 pixels, which is a ridiculously large font size, so see it will overflow and it will look like this, okay, sometimes you need this kind of effect circle, so you can do it, so let's fix the input placeholder, what is this behavior of mine, that I am making it blue color, let's show it well, let's start web development, so that it looks like there are some websites being made, not just demo, I know that, I know that you are waiting for beautiful websites, they are coming very soon, so I hope this thing is clear to you, so these were some such selectors, pseudo selectors and pseudo elements that I wanted to tell you and in my opinion, this is enough, if anything else is needed then I will tell you whenever we make projects, I will tell you in that, I just hope everyone is enjoying.
