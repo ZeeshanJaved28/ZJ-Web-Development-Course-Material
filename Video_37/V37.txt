@@ -1,0 +1,42 @@
+CSS Exercise 5 - Design this Layout
+
+I will give you an exercise in which you have to design a layout.
+
+You will have a lot of options to design that layout.
+
+But I want you to design this layout using all the things we have seen in this course.
+
+So guys, today's exercise is going to be very simple.
+
+First of all, I will tell you that you will not have any problem at all.
+
+To solve this, everyone must solve it.
+
+Thin Nav Bar
+Section left and right
+
+When you use figma design to make any website so all these things are written there that this thing is so many pixels, this thing is so many pixels, this much RAM, this much m, it will look like this in the phone but there is no restriction here
+
+Background backcover of sections
+
+You have to give different background color for each box.
+
+Services Box
+Add text here in the services 
+
+Nav bar
+so the navigation bar you are seeing should be sticky, that is, when you scroll, then it should have a round scroll okay, so you understand how to stick it on top
+
+Icon
+
+Along with that, you have to put an icon here and I will take a circle for it you have to put an icon which will always be stuck here I will not not tell the name, which position you have to use, it is your headache, not mine.
+
+I had to tell you my headache, I have finished my headache, now you have to see which position will be used by which it will hang down, that like you make it sticky, it should be here it should be hanging here, your website will run separately and it will be sticking here now you know about which position i am talking about and here you have seen, there will be a logo here you can use any logo, it should be circular
+
+Footer
+
+Nav bar you have to keep it sticky
+and icon should be hanging on the lower right
+footer will come.
+
+Height and width I am telling you again to keep it according to when you scroll the page that is, the whole content should not come in the whole page you have to scroll, that is, a scroll bar should come the height of your content should be so much that by scrolling, this comes then after that this comes here, then footer
