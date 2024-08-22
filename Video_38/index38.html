@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox - Ultimate MasterClass</title>
+    <style>
+      .container {
+        border: 2px solid rgb(255, 132, 0);
+        display: flex;
+        height: 80vh;
+        /* justify-content: center; */
+        align-items: center; /* Use When one line */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+        /* align-content: center; */
+        /* align-content: flex-end; */
+        /* align-content: flex-start; */
+        /* Use When multiple lines, when will we have multiple lines? when our items will wrap means they will come in the second line after overflowing */
+        /* There is no jutify-items in flexbox */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: nowrap;  */ /* Default wrap */
+        /* flex-flow: row wrap-reverse; */
+        /* flex-direction = row and flex-wrap = row-reverse. I meant to write flex-flow:row wrap;*/
+        /* gap: 30px;
+        row-gap: 40px;
+        column-gap: 10px; */
+        gap: 40px 10px; /* <'row-gap'> <'column-gap'> */
+      }
+      .item {
+        /* flex-grow: 1; */
+        width: 92px;
+        height: 92px;
+        border: 2px solid black;
+        /* margin: 4px; */
+        background-color: burlywood;
+      }
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+      .order-3 {
+        order: 3;
+      }
+      /* Default order  is zero */
+      .item-1 {
+        /* flex-grow: 2; */
+        /* Default flex-grow  is zero */
+        flex-shrink: 2;
+        align-self: flex-end;
+      }
+      .item-2 {
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item order-1">4</div>
+        <div class="item item-2">5</div>
+        <div class="item"></div>
+        <!-- <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+        <!-- <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+      </div>
+    </main>
+  </body>
+</html>

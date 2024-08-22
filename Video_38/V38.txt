@@ -1,0 +1,151 @@
+CSS Flexbox - Ultimate MasterClass
+
+After watching this flexbox topic, you will not have any confusion about flexbox.
+This is not a claim, but a guarantee. In this flexbox topic, I am going to tell you everything related to flexbox.
+
+I will tell you with examples, with practical scenarios, and I will cover the most used things as soon as possible. So that you can easily make layouts through flexbox on your website. Although this video is a part of my Sigma Web Development course, but if you watch this topic independently, then you will easily make layouts. This topic is a part of my Sigma web development course but if you watch this video independently then you will get the flexbox. Flexbox is the most confusing topic in which advanced developers are also confused. So I will make this topic so that if you watch it from start to end then you will get the flexbox very well.
+
+Flexbox:
+
+I will tell you flexbooks first, that you will also say that is it so easy to make flexbox? Then I will do a detailed breakdown of all the properties of flexbox.
+
+And before that, I will tell you a little history of flexbox.
+
+See what used to happen before, people used to use floats, positioning, And it used to be a big problem for positioning and to center a div was a big problem for web developers then web developers said that in CSS3 we should introduce such a thing by which it becomes very easy to align content and how will it be very easy? put simple things that I want content in the center.
+
+I want content in the side I want content in the end there was no need to define so much in CSS means there was no way to set a basic layout in CSS and to add that solution, flexbox was made so see what is flexbox first of all I will tell you that you will also say that is this flexbox so easy? yes, you will say this, it will come out of your mouth.
+
+These items are lay down which is a very simple behavior, now suppose I want to make it straight means in this direction I want it to be lay means my layout is something like this that the boxes come in this direction from left to right so this was a big problem in CSS that how to do now with the help of flexbox, flexbox says that on the container not on the items, on the container ok, on the container, what do we have to do display flex has to be given, so this will become a flexbox display flex means that now you can use the properties of flexbox, so here I wrote display flex and now you can use the property of flexbox, by default flexbox automatically makes your items left to right, its logic is that flexbox says that you are using flexbox, maybe you have to do something different from the default behavior, so the items on the left and right side have come, okay, I will increase their width a little more, where I have done 12 pixels, I will increase the width and height of it to 32, so that it looks a little bigger, so our container will be like this and the items inside it will be like this, okay, I can put as many items as I want here, and I can replicate it by using Alt Shift and Down Arrow key
+
+Now see so many items are here.
+
+If I increase the size of it a little more, let's say I make it 60 to 62, then our box will be a little bigger And it will look like this, let's make our box bigger Maybe I would like to make it 92-92 so that it starts coming in the lower line too.
+
+Now see, it won't come in the lower line by default, but most of the properties that we use of the flexbox, we put a display flex in it and justify or align these items. Okay, for now I will reduce the items a little so that it takes up so much space.
+
+Now you see, by default, all these items have become left to right. If I want all these items to be it takes up space Now you see by default all these items are left to right, if I want all these items to be center then what will I do and let's say the height of the container
+
+I will do it 80 v edge so this container is like this these are my items and I have also just put display flex on it, I have not done much work in this, okay.
+
+Justify Content & Align Items:
+
+I just put display flex, I want this item to be horizontal center, so I don't have to do in this, okay? I just put display flex, I want this item to be horizontally centered. So I don't have to do anything, I will write here justify content center, and as soon as I write justify content center, it will be centered.
+
+After this I will write align item center, align item center, so it will be vertically centered. And let me tell you one thing guys, that most of the time this much flexbox is used.
+
+I will say that 70% of the time, you'll find yourself doing this. You'll see yourself doing this, that you have put display flex, you have put justify content center, you have put align content center.
+
+And yes, the center is mostly put. All the projects I make, I have so much experience, I have mostly gone to the center with the help of flexbox.
+
+But for some reason, you want it to come at the top, then you can change the value of align items align items have some properties which I will talk about and these properties are applied on the container not on the individual items if you go inside the container and change the justify content not by centering it, suppose you do flex end, then it will go towards the end of flex if you start flex, then it will go towards the start of flex if you do flex start, it will go to the start of flex if you do right it will go to right if you do space around it will go to left if you do space between it will go to left space around and space between this is the difference here also space comes in starting if you do space around, it will go to left it will give equal space if we do space between then we will get spaces like this that it will not give space here, means space will be in between both space evenly means make space equally and then i told you at start that all these properties are there so by using these properties you can make all items horizontal and then you can change align items, you can use this to move it horizontally then you can change align items you can write same things in this like flex start, flex end flex start will come up flex end will come down. I have already told you about center then in baseline you can find all the baselines like this.
+
+For example, if you want to find center then you can find all the centers and makes a baseline, it is very rarely used, most of the time flex start flex end and center is used, so in this way you can use all the properties and the center is used the most, so this was just a flex box that now your work will go on, now if you leave the video from here, then your work will be done, but don't leave it because I will tell you such things that you will enjoy.
+
+But I still say that so much flexbox should come to everyone, it is better to come to flexbox than not to come, it is very good, in your 70% projects, the things that are going to be used will be used, and if some more will be used, then it will be used very rarely. Come on, we understood this very well.
+
+Flex Direction:
+
+There are some concepts of flexbox that I will tell you. First concept That the items in the flexbox are not always Left to right, they are In flex direction. You have to understand this carefully.
+
+Q: What is flex direction?
+
+Flex direction is where the items are being laid.
+
+By default it is left to right.
+
+But this flex direction can be changed you can also do top to bottom, if I put a property in my container and I write flex direction and I write column here, so from top to bottom it will be laid, now I will put a number in it, ok why are you putting a number
+
+I will tell you why I am putting a number, you will know why I am putting a number so I put 1,2,3,4 number and leave the rest empty so my first item has number 1 and second has 2 3 4 and I have made flex direction column so it will take items in column instead of row as you can see from top to bottom if I change flex direction and I make column reverse column reverse then it will bring the opposite items now all my items are same sometimes if I have some things like I have some navigation tabs, home, about services if I have all these tabs then what I will do if I will do column reverse then it will be opposite if I want to get the contact us first and home at the end then I will do column reverse sorry will be upside down, if I want the contact us to come first and home to go at the end then I will reverse the column, sorry I will reverse the row because it is usually in row navigation but you understood here, by reversing the column it will come upside down, if I make it row then what will happen if I make it row then it will come like this 1,2,3,4 as you can see but if I reverse the row then it will start laying the items from here in this direction, okay so you have to understand this thing I hope you understood.
+
+Flex Axis:
+
+Let's understand more concepts, let's go in more depth and clear our understanding how do I tell you, suppose this is my flex box
+
+I made this flex box, I put some items in it now this flex box if I give display flex then only this flex box will be made so by default the items will go in which direction so if I give display flex to this flex box then this flex box will be made so by default the items will go in which direction my items will go in this direction from here to here so this is your flex direction row so if the flex direction is row then the scene will be like this so if the flex direction is row then the scene will be like this that items will be leaked in this direction this is your first item then after then your second item will come here then your third item will come and so on so in this way your items will be taken
+
+I will show you your items again, like this they will be taken in this direction from here to here, so this axis is called main axis what is called main axis and this is called cross axis if flex direction is row then in which direction items are laying is main axis and in which direction items are not laying is perpendicular cross axis as you can see here now the main axis and cross axis can change if i change flex direction changed if I change flex direction if I make flex direction column
+
+I say if flex direction is column then scene will look like this if flex direction is column then your main axis will be this and cross axis will be this now what happens is justify content and align items properties work according to main axis and cross axis when you say justify content center then what it says content and align items properties they work according to main axis and cross axis when you say justify content center so what it says is center it in main axis so justify content center will do it like this and what it will do is justify content center
+
+I will make it a little bigger I will make the box a little bigger so that I can explain you properly suppose these items are laid like this not in the center so what justify content center will do it will not look horizontal or vertical, it will look at the main axis and will say that this is the main axis, so let's center them in the main axis so it will center like this, so many people who are beginners get confused about this that I read justify content center that it centers horizontally, no this is wrong justify content center will first check flex direction then it will determine main axis if main axis is row then it will be this if column then it will be this and it will center in main axis i hope you understood this
+
+Justify content center will be in main axis if you call justify content as flex start then it will bring main start in main axis Now what is main start now i am not going to go into terminology so it will bring the main start in the main axis now what is this main start
+
+Now i am not going to go in the terminology but let's go so this is our main start what is this our main start and what is here our main end means where the main axis is ending and similarly what is this our cross start this is our cross start this is our cross start and this is cross end where cross axis starts and ends and here cross axis ends this is cross end so i will quickly put a label here so main start, main end, cross start, cross end where cross axis starts and ends that is cross start and where cross axis ends that is cross end and similarly main start and main end and similarly here main start what will happen, main start will be here main end will be here and cross start will be here and cross end will be here here the cross axis is ending you are getting it, it is equal right? everyone write in the comment section below, it is equal what will you write, it is equal ok, let's move ahead now there is one more concept of main size and cross size what happens is that the distance from the main axis to here is the main size and the distance from here to here is the cross size similarly, the distance from here to here is the cross size and the distance from here to here is the main size I hope everyone is understanding. Now let me tell you the concept of flex wrap.
+
+Flex Wrap:
+
+Suppose I have so many items that there is no place to fit and I will replicate it and make so many items that there is no place to fit and its flex direction, now it has started leaking from here, has it started overflowing or not? see you have started overflowing so what I will do is I will make its flex direction to row because in most of the cases we encounter flex direction to row I have commented this justify center, align item center I keep align item center, not justify center In this process, we encounter the flex direction row only. I have commented this. Justify center, align item center. I keep align item center, not justify center. So it will look like this. It will be vertically centered, not horizontally centered.
+
+Now you will see that there are many boxes. But it is overflowing here and it is very difficult. So I want it to wrap down. And why I want to wrap it down
+
+Because you think the content in my phone all the photos are showing like this so i want to see it down i don't want it to overflow and hide so what i will do here that i will use flex wrap property where does this property apply all the properties i have told you so far apply on container and flex wrap will be wrap so i will wrap flex wrap
+
+What is wrap? wrap means it will wrap new content will come down and so on if i put two more i replicated it like this and it will come down more and it will keep on moving like this so I told you about justify content and align items.
+
+Align Content:
+
+There is also align content now what is align content when we have more than one line then it looks like this now if I want these multiple lines to come in the center so i will not use align items i will use align content so i will say align content center and these two lines will come in the center so i will show you here on container align items center sorry align content center align content center when we have only one line means if we have only one line and we don't have items in the other line then we use align items and if we have more than one line then we use align content, so if I do align content center then it will come in the center from multiple lines
+
+I can also do flex start, flex end and it will come in the center and will come at the start or end depending upon whether I have used center, flex start or flex end so you can see here that align content comes like this by flex start do we have, now listen to this carefully do we have, the way we have align items and content do we have justify items also no, we don't have justify items because it's not required in flexbox there is no justify items in flexbox there are no justify items in flexbox and it's not used at all there is justify content, align items and align content, when do we use align items? when we have only one line and when do we use align content? when we have multiple lines, when will we have multiple lines? when our items will wrap means they will come in the second line after overflowing we also have wrap reverse which makes it.
+
+Wrap Reverse:
+
+wrap in reverse, see this is 1,2,3,4, now if I wrap reverse, then it will be wrapped in this way first lay will be done then wrap will be like this that the first layer will be below and then the top will be wrapped so wrap is reversed from reverse this property is used very rarely but in most of the cases we use wrap no wrap no wrap is the default property, it will not wrap if you do no wrap ok, I hope this is clear to you.
+
+Flex Flow:
+
+Now we will talk about the flex flow property so what happens in the flex flow property so in flex flow property first of all you tell me where to wrap suppose i want to wrap column reverse or suppose i want to wrap row reverse so first of all i will tell you the direction of flex and after that i will tell you where to wrap flex, suppose i want to wrap row reverse so i have set these two things
+
+I have set flex direction here then I have set flex wrap, see here it is telling that this property is used to set two things at the same time one is flex direction and the other is flex wrap so we have this thing, now the properties I told you these properties were of container that is, of flex box you these properties are of container some properties are of items.
+
+Gap Property:
+
+gap: 30px;
+row-gap: 40px;
+column-gap: 10px;
+gap: 40px 10px; /* <'row-gap'> <'column-gap'> */
+
+Common Mistake:
+
+A very common mistake people do is that they put container properties in item they put item properties in container don't do this you have to remember which property is of the item
+
+Which property is of the container. I don't know how to keep it. You keep it as you want. You have to remember. So most of the properties are of the container. I want to tell you that the container property Is going to be used the most.
+
+Item Property: Order
+
+Now I will tell you Item's property. So the first property of the item Which I want to discuss is i have order so if i make 3 classes here and i say order 1 it means order 1 similarly i say order 2 and in order 2 order 2 will be made and by doing order 2 and order 3, what happens is that the flex item
+
+I will make its order 3 so the flex items that are taken by default are in the order in which you have put it that is, your 1 will come here, 2 will come here, 3 will come here but if I reduce the order of any item then it will come first so see I will make its order 1 which is written here 4, I will put a class in it order so i will reduce the order i will put class order 1 so the order property will come later the order which is more will come later the order which is less will come later if i give order to this item let us say i give it i will zoom it that you can see so the first item which is this item if I give 100 order then it will go to the end so the more order the more item will come so you can in a flex box an item's order in that item you can change the CSS property by using the order if I want this 2 to come after this box so I will set their order in this way such that the one with the least number of orders will come first and the one with the most number of orders will come later as simple as that, this property is very easy, so what happens with the order, you guys keep in mind the more the order, the later it will come, so by doing order 1, wherever I have set order 1 it will come in the beginning, where ever I added order 1 class, it will come in the beginning where I have added order 2 class, it will come in the end suppose I write 66 here in any random and here I write order 1, I will put order 1 class in this, so the less order will come, the earlier it will come and the more order will come later, default order is 0, now understand this that here
+
+I have put order 1 default order is 0 now understand this here i have put the order 1 default order is 0 so all of them had 0 order so they came here this 4 i have put order 1 and this 66 i have put order 1 so both have same order so the first one came first, the one coming later will come later, the more the order, the less the order, the default order is 0 and according to this, you set the order and lay your items, it will be the same if I do the flex direction column, then according to that, these items you have taken will be left to right so I told you according to that
+
+Flex Grow:
+
+Now I have changed my html here in such a way that I have only a few items I have kept these items in such a way that I have only one row left it has a purpose, I want to tell you about a property whose name is flex grow, let's say I make all the items flex grow 1
+
+I say flex grow is 1, I am saying flex grow is 1 I will say flex grow is 1 I am saying flex grow is 1 By default flex grow is 0 By changing it to 1 we said The width of the flex box All items will take equal space Taking the whole width And of a particular item whose name is item 1 I will change its flex grow to 2 So now it will take the space of 2 I will change it to flex grow 2
+
+So it will take the space of i will make it flex grow 2 so it will take place of 2 items as you can see here so the place it is taking is less than the items sorry it is taking double place let me show you by inspecting and let's say i want to make some good layouts so you see that the more i increase the value it will take more space relative to other items so here what will happen is that all items will come in the same row and this particular item will grow as necessary.
+
+Flex Shrink:
+
+Now I will tell you the flex shrink property so see if I write flex shrink here
+
+I write flex shrink here and I write flex shrink 2 and I remove flex grow and i remove this too so you see flex shrink is the ability of a flex item to shrink if necessary, now when it will be necessary see i have put flex shrink on this item so if i make the layout small and remove the wrap i will remove the wrap from the container and you can see as I make it smaller what will happen is which item is getting smaller
+
+I will remove the wrap, it is flex wrap I removed the flex wrap you can see that item is getting smaller this is its ability to get smaller how much can it get smaller? it can get smaller upto 2, it can be half the more I do it, the smaller it can be it can be half as much as i do it, it can be half so flex shrink to 2 means it will shrink with double speed these properties are very less used but you should know about them.
+
+Align Self:
+
+Last but not the least align self and what align self will do it will align this particular element
+
+I call it flex start or flex end I say flex end and to do its work I have to remove the align content which I have put so because I have only a single line so I will remove the align content
+
+I will keep align items and you will see that align item was center but because I have in this element aligned self to flex end it came in flex end similarly if I want to align this particular element to flex start then I will say align self and I will do flex start and it went up so if you want to override a particular item's configuration such that its position changes, it aligns itself only aligns itself then you can use align-self property.
+
+Conclusion:
+
+So this was flexbox in nutshell this much will be used and this was comprehensive flexbox.
+
+I have covered 99% properties and it's not even used much to be honest so I hope you understood this what I will do is i will export this diagram as a pdf i will export it as an image i have exported the diagram here you can see it like this you will understand it better.
