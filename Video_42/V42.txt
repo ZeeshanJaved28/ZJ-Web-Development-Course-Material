@@ -1,0 +1,63 @@
+CSS Transforms MasterClass
+
+There are two types of transforms on CSS. One is 2D transform and the other is 3D transform. 2D transform means we want to change any object in two-dimensional space. Like we can increase its scale, we can translate it, we can rotate it. 3D transform on the other hand works on three dimensions. That is, we have an additional axis, z-axis. Because of which we can manipulate an object in 3 dimensions.
+
+Now what does transform property do Transform property applies some transforms In the element, the first transform
+
+Transform Rotate():
+
+I want to show you is rotate, suppose I want to rotate the box So I will put a transform property here I will say is rotate I want to rotate the box I will put a transform property In rotate you can see Rotate is 3D, Rotate is X, Rotate is Y, Rotate is Z I will show you rotate I want to rotate it from 40 degree I will do one more thing I will write a box in it so that you can see the box and if you want to center things in it you know what to do display flex, justify content center, online item center so now you can see the box in the center and I have rotated it
+
+I can rotate it from 45 degree or 40 degree but there is another unit here which is famous which is turn
+
+I say 0.25 turn Means 360 degree is one turn So I want to rotate it 0.25 turn So it has rotated 90 degree And you can see that it has turned 90 degree If I rotate it 0.5 turn So you know it will rotate 180 degree And one turn means It rotates it once and keeps it back Means 360 degree rotation if I turn it 5 times, then you know it will rotate at 180 degree and 1 turn means it will rotate 360 degree then we can rotate it around an axis like I can say transform and I can say rotate let's say I want to rotate it, rotate x, so it will rotate around x axis and let's say I write 40 degree
+
+I can write 40 degree and I will write it like this and you can see that it will rotate in x
+
+I didn't put semicolon now when I say it rotated in x it means that this is my x axis and this is my y axis and z axis is inside this screen This is my x axis And this is my y axis
+
+And z axis is inside this screen Now you can think that this is my box Which is like this If this is my box And this is my x axis Then it will rotate like this So if I give it 90 degree rotation about x axis then it will become paper thin and you won't be able to see it. and if I rotate y here then it will rotate about y axis and if I want I can rotate it just 90 degree and you can see it will rotate about y axis and if you rotate about z axis then it will also rotate you can also rotate z and it will rotate about z axis then it will also rotate you can also rotate z and it will rotate about z axis it is rotating about z axis in such a way that your z axis is going inside the screen so it will rotate on this plane because the axis is going inside the screen
+
+I hope you understood this so this is our rotate property.
+
+Transform Scale():
+
+After this we have scale property in scale you can make it bigger or smaller like if i remove it and i write transform and i write scale so we have many options in scale and one option i have is 1.5 or i can scale it 1.6 times so see it has increased 1.6 times and if i want it to be bigger in x then i can scale it in x and if i want it to be bigger in y then i can scale it in X only, then I can do scale X if I want to increase it in Y only, then I can do scale Y and similarly, your other scale properties work you just have to write scale and you can do it in scale 3D also when you do scale 3D, then a 3D transformation is applied.
+
+Transform Skew():
+
+And now I will tell you about skew and if I do skew, let's say 5 degrees so I will show you by putting semicolon and as soon as I skew it from 5 degrees so I will show you by semicolon and when I skew from 5 degrees so it will be skew like someone pulled it from here and here and put a force like this and another force like this so it will be skew you can also skew in y axis you can write 34 degree but in z axis there is no skew so you have to remember that you can't skew in z axis so skew is not applicable for z axis so I will remove skew in Z axis, so you have to remember that you can't skew in Z axis. So skew is not applicable for Z axis.
+
+So I will remove skew from here and I will show you that you can also translate.
+
+Transform Translate():
+
+Translate is the most commonly used property. I am telling you from my experience. Suppose I say 34 pixels, then it will be translated from 34 pixels. If I say 34%, then its width will be translated if i say 34% then it will be translated if i say 100% then it will be translated and i can translate it in x and i can translate it in y now see here if i translate it in y then it will come down.
+
+Using Multiple Properties:
+
+Now sometimes what happens is we have to apply more than one transform properties and when we have to apply more than one transform properties then what we will do then we can apply it with spaces suppose I want to do skew skew x let us say 40 degree and
+
+I want to do translate x and I will say translate x and I will say it is 45 percent so all three transform properties have been applied at once see translate is done, skewed in X and Y whatever I will apply here, it will be done I hope you understood how to apply multiple transform properties.
+
+Q: When is the Transform property used?
+
+Now when is transform used? mainly when we are making a nav bar and I want the nav bar to be hidden so I can translate it to minus 100 pixels so it will come out from here, see it's out of Y so we can translate it to minus 100 pixels so it will come out from here it came out from y, so we can do something like this if I do star here, I say star and I say m0 and I say p0 and margin padding 0 and I did this so it went up so we can do something like this, I did minus 100% in translate y and if I did minus 100% in translate y if I do minus 45% in translate x, so it will go in negative direction where is my minus button, here it is, I pressed it, now it went in x axis so you can do something like this, now there is one more property.
+
+Transform Origin:
+
+Transform origin, what is this, now I will tell you what is this suppose I rotate it 0.5 times, from where and about it will rotate
+
+I will make it 0.25 so that it will turn from 45 degrees. Sorry, it will have to be 0.125 for 45 degrees. So see it is turning from 45 degrees. And if I show you that the rotation point of this is its center. So basically you see my box is here. The default property of transform origin is 50-50, that is, it is the center.
+
+Now suppose I make it 0-0. I say that this is my 0 and this is also my 0. So this rotation will be about this point. transform origin is 50-50 means it is center now let's say I make it 0-0 I say this is my 0 and this is also my 0 so this rotation will be about this point let me show you let me change it to degrees let's say I make it 55 degrees so as soon as I increase this number you see rotation is about this point about 0-0 which is origin now as soon as this value increases which is 0% let's say I make it 10% our origin is moving forward 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, means if I don't put a transform in it if I don't put a transform in it then from here 10% and from here if I write 50% then at halfway point the rotation point will come wherever its coordinates will come it will rotate about that point
+
+I hope you understood this too it is used when you have to rotate about a particular point but it is an advanced concept it is used less, I will tell you this too.
+
+CodeWithHarry Special:
+
+After this a code with Harry special I want to show you But it's an advanced concept I'll tell you that too.
+
+I want to show you a special thing. I hope you understood. I've made an exhaustive list of demos. Let's preview it. I've tried to cover all the transforms. So see, Scale x scales like this, scale y scales like this scale will do like this in both x and y translate x will do like this translate y will do like this translate will do like this, both x and y have values and you have to see which value is there so you can see from here transition I have not told you yet, I will tell you so you guys wait for the transition matrix transformation I will tell you that So you guys wait a little bit for the transition 
+
+Matrix transformation, this happened, rotate this happened Skew this happened, skew x this happened, skew y this happened Matrix 3D this happened, translate 3D this happened Rotate will be like this, which axis did it rotate about? About the y axis, see this way Rotated about the x axis, when we rotated it Rotated at 90 degrees, it disappeared. The paper was thin. Translate Z It will look like it is going down. It is also translated in X and Y. So that you can see that it is entering the screen. But you can see what is going on here. Now our monitor It is a 2D screen. But these transform properties It makes it look like Our rotation is rotating in 3D So the CSS is made like this Such that you can understand the demo I have put together the demo in such a way that you can see in the comment And find out what is going on here So I hope this demo will be helpful for you Try these properties yourself, I hope you will enjoy
