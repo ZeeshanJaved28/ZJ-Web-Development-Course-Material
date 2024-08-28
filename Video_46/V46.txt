@@ -1,0 +1,81 @@
+CSS Animations
+
+We saw transitions in CSS, it was amazing. Our website was looking great by making smooth transitions. Animations are also very similar. The only difference in transition animation is that you can change more than one property with the help of animation. You can change more than one property in transition as well. But you can define in animation which property will go from where to where, in how much time, which keyframes will be there, what are keyframes.
+
+Creating Animations:
+
+In css to make animations you directly use keyframes so here you have written keyframes after this you can put the name of animation i can write any name of this, i can write the name of harry's animation so i will make it readable I can write the name of this Harry's animation ok to make it readable.
+
+I can write any name like a variable I have written Harry's animation I can say that it goes from here to here and which properties.
+
+I have to change I will say transform transform to translateX.
+
+I will say 10 pixels animation starts from here or I can leave from blank we have to translate it to 1000 pixels ok, so you see
+
+I will apply this animation on box how I will apply, animation on box first you will put name then duration, then timing function, then delay So as soon as I apply this animation on the box How will I apply?
+
+First you will put name, then duration, then timing function, then delay, then iteration count, then direction, then fill mode VS code is helping you a lot, telling you what will come where You can fill these, but for now, leave the VS code that I told you I will simply write here Harry's animation I wrote Harry's animation Now here you will see that this animation is not will see that this animation is not applied Now you will see that this animation is not applied.
+
+Animation Duration:
+
+Now I will do that there is a property called animation duration There are many properties related to animation Now you will say that we had transition so what is the need of animation Animation takes things to a different level You will see duration, timing function, name, delay, fill mode You will see many properties related to animation duration, timing function, name, delay, fill mode and many more properties you can see here and all these properties are useful here.
+
+I will set animation duration to 3 seconds I will say I want animation for 3 seconds so as soon as I reload it, it is translating 100 pixels and then it comes back can I repeat it? yes I can by using animation repeat property.
+
+But I want to tell you one thing that I also have not kept anything. I also refer such documentation. These properties will not be remembered even after 5 days. 99% of you people. See there is an exception of 1%. Some people remember.
+
+It is their habit to remember. But I am telling you reality that you people will not remember this thing.
+
+And you will have to come here and refer. You will have to refer from somewhere, you will have to see the documentation. And the best way to see the documentation is to do anything related to animation. Or hover and click on MDN reference. You will reach the page. And see all the properties one by one. Animation duration, how long it will run.
+
+Repeating Animation:
+
+Then you have animation, you have to repeat it or not and for that what you use animation iteration count how many times animation should run so here you see select a count to start animation is finished, it runs once then it will run again and finished it will run once then it will run again and then it will not run again so we also use the iteration count property we will say animation iteration count animation iteration count 3 so when i reload it 1 then 2 then 3 and it worked 3 times one thing i want to tell you if you make animation count infinite it will keep running.
+
+Animation Timing Function:
+
+Now i can change its timing function and i can say that animation timing function we have already done it in transition but i will tell you, one is ease in, one is ease out one is ease and one is ease in out so by ease out, animation will run like this
+
+I can change this function by clicking here can you see it below, I can change this function by clicking here and make my function let's say I want to make an aggressive function which will run fast and slow down at the end like you have played carom you know how it goes when you hit a goat so if I make it like this so you can see how it will look see this this is how it looks like someone pushed something on the floor like this and once you have this function you can copy this cubeier bezier and after copying this you can replace this cubic bezier in animation timing function oops, i will delete this first and then replace it i hope you got it how to use animation timing function see i made my animation timing function after this i already told you about animation iteration count.
+
+Animation Delay:
+
+Animation delay means how long animation starts now if i do animation delay say 1 second so when you reload the page it will start after 1 second, you see it started after 1 second and then it will repeat so how long should this animation delay run if I do 11 seconds, then it will start after 11 seconds so all these properties are related to animation now what is the need of transition what to use between animation and transition then I will say see it is working after 10-11 seconds animation and transition for simple property you use transition and if you want to make complex animations which are repeated and you have to put in different elements then you can make an animation with the name of Shani's animation and you can use it in multiple places so it is your own use case, there is nothing like one is fast and other is slow it doesn't matter if you are using animation or transition where you are using it for maintaining your code and what you are finding easy you can use that if you think you are using simple transition then use that if you think you are using all these properties Or any of these properties.
+
+Like delay, iteration count Then you use animation By the way, transition also makes animation Just transition property is different I hope this thing is clear to you After this, we have seen animation name.
+
+Animation Direction:
+
+We have seen iteration count Animation direction is very important Sometimes you can also do alternate reverse it, now what is this I will tell you, if I do this animation direction reverse, ok, let's say I reverse it.
+
+I will do it for a second, otherwise animation will start after 11 seconds which I don't want, now see if I reverse it it will start from reverse, see it is starting from reverse and if I do this let's say I do alternate reverse it will go like this and come like this and it has lot of use and it is obeying the timing function if I make it linear it will go straight this happens many times if you know physics you must have heard of simple harmonic motion.
+
+So if I want to make animations of simple harmonic motion Then I can do this And mathematics is directly related to this You can write exact function by doing simple harmonic motion Showing a block I don't want to go into all that now But I am just telling you that you can make very good simulations of physics By using only CSS You can make good physics simulations only by using css you can make good intros for your videos just think about it you can make it, you can write code. I hope you are getting it.
+
+Animation Play State:
+
+Next is animation play start I will comment it out and leave the rest next is animation play state this comes animation play state what is animation play state if I talk about its values paused and running ideally we use javascript to pause our animations now I paused it now you have to see one thing here when i make animation play state running and when i pause, wherever i pause it will stop there as soon as i remove it, it will start moving so you want it to stop there and start moving so you can pause the animation in transition it becomes difficult when you can do all the things with animation properties that's it.
+
+Shorthand:
+
+Now you know we are lazy and we are people who write lorem 45, we don't even write 49 we write it because it is around 4 or 5 so for people like us, animation is made for short hand, that in one property you can set everything ok now i have heard one thing I am strongly against learning and memorizing
+
+I am telling you to use VS Code I am telling you to use VS Code here you can put name, duration, timing function, delay or iteration count or direction or fill mode I will tell you about animation fill mode but you can fill all these things and do everything in one property so let's say I put here.
+
+Shani's animation duration i put 1 second put in timing function is in out and put in delay 2 seconds and i make it 3 seconds so that animation will run for 3 seconds i put in iteration count infinite put in direction, let's say reverse, I will put it in reverse, or I don't want to use direction and I don't want to use any property, I can leave it empty, so I will show you now by reloading, here Harry's animation is not defined, so if you have written the name of the animation wrong, it will tell you, so I didn't capitalize K, and now my animation will run, you and now my animation is running and all these things are applying now suppose i want i will do one thing i will comment the short end of animation first name then duration then timing function then delay, suppose i don't want to give delay will it work then? yes it will and then timing function and then delay I don't want to give delay, I want to remove it will it work then also? yes it will work if I miss a property then automatically it will pick all these properties
+
+I hope you are getting it one thing I didn't tell you is animation fill mode, let's talk about it here I will turn off the animation repeat here I will turn off the animation repeat i will turn off the iteration count so that my animation will run only once and i will change the background color to red and finally i will change the background color of the box from red to yellow so if i leave my animation fill mode empty, means I keep it as none by default it is none, so what will happen, it will start from here see my box is starting from here, it became red, then it came here it became yellow, then by default it was like that means there was no background in it, now what I will do if I forward it, forwards so what will happen and it will remain here it will retain the final property earlier it was animating and it was returning back to the original it was animating and it forgot that it was animating it retained the properties if i make it backwards then you will see then it will be very strange it came here and when i made it backwards it retains the initial style now i will make the animation delay 3 seconds so when i will make the animation delay 3 seconds so till the time animation delay is applied the keyframe properties will be retained and it will be the the same frame as before and it will be in the same frame as before.
+
+I hope you are getting it and to be honest this property is not used much but if I remove the animation property then you can see that after 3 seconds it is back to normal and it is back to normal now if I remove the animation and put it back so see it will turn red after 3 seconds but if i put it back then you can see that the properties of the first keyframe has been retained and the first keyframe is here in from which i have put it and after that it has started running and then it has started running and finally the situation was the same, so if I remove it it will immediately turn red it will turn red during animation delay and then it will start so this is the animation fill mode again, it is used very less but you should know what it is, so forwards and backwards you can use it, but you can use any of these properties and add animations, one more thing I want to tell you that the CSS animations you can use it but you can use any of these properties to make animations.
+
+Multiple Animations:
+
+One more thing i want to tell you that you can make multiple css animations let's say i make a animation of harry 2 and i say that this time i won't tell you from and to this time i will tell you what to do when animation is 0% and what to do when it is 1% let's say i want to tell you 0, 20%, 50%, 80% and 100%.
+
+I want to do this and I want this transform to be translate or let me do one thing I will put rotate and I will say 300 degree, no not 300 degree, 100 degree ok and then I want it to be 200 at 20% 300 degree no not 300 degree, 100 degree and then I want it to be 200 at 20% and then I want it to be 220 at 50% and how much at 80% let's say 500 and 500 is more, 300 and then 310, let's say I want to do something like this and here I will do rotate 310 degree ok, now I will tell you how to add multiple animations if you want to add multiple animations then you can use comma separated values here you can see that.
+
+I have used comma separated values and I have put my first values and I have put my first animation here then I put its duration, then I put timing function, then I put delay, then I put iteration count same I did with other animation my first animation which changes only background color is that and my second animation which changes transform from 0% all the way till 100% is that let's see how it looks, I will reload so see both animations will run after 3 seconds as soon as 3 seconds are completed, it is rotating and the color is also changing and it is working according to these timings and it is working according to these functions you can always use one animation to animate multiple properties but again if you want to apply multiple animations for some reason let's say you have already made animations.
+
+Conclusion: 
+
+Then you can use this property so this was about css animations now you can do a lot of creative work with multiple animations and your imagination can take you to the next level css animations p sibilities are endless
