@@ -1,0 +1,6 @@
+Guys, I gave you a layout with the help of CSS Grid.
+
+Now we will see its solution.
+
+Now you will ask why I did't do align items because this is a flex box and it has a column so it will not be 
+justified by align horizontal center will be in align because it has a flex direction column
