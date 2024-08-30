@@ -1,0 +1,30 @@
+Exercise 8 - Bounce Animation 
+
+We have learnt transition and animation very well.
+
+Now it's time to check your transition and animation skills.
+
+I will give you a question that you have to solve.
+
+This is going to be done with transition animation we will use transition animation, 
+that was very easy to predict so now comes the problem which you have to solve you have 
+this cube and here you have a background what you have to do is you have to make this cube 
+bounce here like a ball
+
+what you have to do is to make this ball like a real ball this is a physics simulation and some of you 
+will find it difficult but I will give you some hints because I know it can be a little difficult for 
+you now you can do this question either with transition or animation
+
+I don't have any problem with that.
+
+Your choice will be, you want to do it with transition or animation.
+
+But I would like to give a hint to you if you find it difficult.
+
+The first hint I want to give you is that you have to make a separate animation in X and separate animation in Y.
+
+At least I will solve it in this way.
+
+Make two separate animations.
+
+If you want to bounce any ball bounce then the trajectory in the y axis is like that its speed decreases so think about such animations that its speed decreases first make the y animation then make the x animation and how will the x animation be? it will be linear because your speed in x does not decrease and if you are not able to understand how to do it then you try it see in X axis you have to take it from here to here and in Y axis you have to take it from here to here such that when it is coming from here to here then its speed is decreasing and becoming zero and you have to repeat that animation backwards how to do that I told you in the animation video and both the animations have to be that animation backwards I have told you how to do that in the animation video and both the animations have to be pasted together that's it, one linear animation and one animation you have to decide and if you want to do it with transition then you can do it with transition
