@@ -1,0 +1,51 @@
+CSS Filters
+
+We will see what are filters in CSS CSS has a property called filter which allows you to invert brightness, contrast, and many more things by using this filter property.
+
+(1) Blur Filter:
+
+Blur filter works like this the more value you keep the more blur.
+
+You can put another filter here by giving space so the way we saw we put multiple animations we put multiple transforms by giving space even when we put multiple classes in html we put it by giving space here also we can put contrast.
+
+ filter: blur(10px); 
+ filter: brightness(200%) 
+
+(2) Contrast Filter:
+
+  contrast(6.5);
+  contrast(200%);
+
+(3) Grayscale Filter:
+
+   filter: grayscale(100%);
+
+(4) Sepia Filter:
+
+   filter: sepia(100%);
+
+(5) Hue Rotate Filter:
+Then there is another one, Hue Rotate, then there is Drop Shadow, which drops the shadow. Then what happens with Hue Rotate, the value of Hue changes and by doing Drop Shadow, a shadow drops, as you can see here. So you can do this thing.
+
+   filter:hue-rotate(90deg);
+
+(6) Invert Filter:
+
+   filter:invert(1)
+
+A very important filter is Invert Filter, which inverts an image so if I come on this image and say filter invert and here I will do 1 so this image will be inverted, all the colors will be inverted it will be converted to negative image, if you have seen old images, then we don't get to see such things and if I reduce this value like I do 0.1 or 0.61 so this will be inverted to a limit so you can invert it a little bit.
+
+   filter:invert(.31)
+
+(7) Opacity Filter:
+
+Opacity filter can be applied opacity filter reduces opacity so if I say opacity means how transparent this image is opacity, if it is 0 then image will be gone, if it is 1 then image will be gone if opacity is 1 then image will be visible so as I increase the value 0.1 and as I increase the value 0.2 then 0.3 then image will be more dense and if there is something below it then opacity will be visible so if you use grid and overlap one of the most important use cases of grid is that you can grid the display and bring all the things in one cell and stack them on top of each other
+
+I told you this in the grid video, so if you want to do something like that then you can use opacity so that the thing at the back is also visible, okay? there is no need to keep it here. Advanced, I would say this is a concept of CSS.
+
+  filter: opacity(0);
+  filter: opacity(0.1);
+  filter: opacity(0.3);
+  filter: opacity(1);
+
+It is easy to use, but its usage is a little advanced. I don't find myself using a lot of filters.
