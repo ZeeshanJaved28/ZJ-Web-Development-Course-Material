@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 8: Solution</title>
+    <style>
+      .container {
+        position: relative;
+        background-color: blue;
+        width: 80vw;
+        height: 80vh;
+      }
+      .box {
+        background-color: red;
+        width: 121px;
+        height: 121px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 70px;
+        animation: animateX 3s linear infinite,
+          animateY 1s ease-out infinite alternate;
+      }
+
+      @keyframes animateX {
+        from {
+          left: 0;
+          background-color: rgb(163, 63, 63);
+        }
+        to {
+          left: 100%;
+          background-color: red;
+        }
+      }
+      @keyframes animateY {
+        from {
+          bottom: 0;
+          background-color: rgb(163, 63, 63);
+        }
+        to {
+          bottom: 100%;
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
