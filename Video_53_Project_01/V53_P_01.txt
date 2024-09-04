@@ -1,0 +1,66 @@
+Netflix Clone Using HTML & CSS
+
+In today's work we are going to make a Netflix clone. we are going to make from scratch using HTML and CSS.
+
+Before starting the video I want to tell you that in this video We will cover the aspect of hosting And if you want to host a website In today's date on minimum cost and in reliability if you want to host a professional website then use hostinger because their service is very good plus the pricing, I don't think there is any hosting in today's date currently their black friday sale is also going on so I thought this is a good time to host our Netflix loan which we are going to make in this video so you guys here on claim deal as soon as you click on the claim deal here, you can buy a suitable plan which you can use to host your multiple websites, for example, let's say I want to host a single website or let's say I want to host a premium website, so I can host 100 websites for Rs.129 per month and I will get 100 GB storage, I will also get an email like if I want to make a portfolio website then I will get an email like harryatthere8ofcodewithharry.com so this is a very good thing, I will click on add to cart and as soon as I click on add to cart, I will come here on Paytm and sign in with Google first and as soon as I sign in on Google, I have signed in here and sign in with Google first and as soon as I sign in with Google I have already signed in and now I will make a payment whether it is from UPI or Paytm let's say I will do it from Paytm and I will click on submit secure payment I have chosen this 48 month plan I will continue with Paytm and it's as simple as scanning the QR and I will finish the payment here as you can see and our payment is complete and I will get the hosting.
+
+
+so as you can see I will click on start now and I will tell that I am creating for myself and I will say that I am building it myself now tell them what kind of website is this or if you want to skip this experience, you can do that too. I'm not a beginner, I know what I'm doing. And here you can also use their AI builder, which is a very good product. I have also made a video about it. I will select create a new website here. And I'll start from scratch. I will click on it, I will claim it in a free domain. And let's say I see here that is sigma web development express dot is available or not so I will get that, if it is available then or if I want to know if sigmawebdevelopment.com is available or not so I can also check that and this is also available sigmawebdevelopment.com is a good domain so I will continue and I can claim a free domain we have to fill some details and I have clicked on finish registration so that I can register my domain I will click on finish setup and my hosting is getting initialized now let's go to computer screen and make a netflix clone and when it is done we will come back and host this website on sigmawebdevelopmentexpress.com
+
+Background Image:
+<img alt="" aria-hidden="true" data-uia="nmhp-card-hero+background+image" src="https://assets.nflxext.com/ffe/siteui/vlv3/20bf1f4d-1c73-48fd-8689-310d6dd80efc/87ae1b52-0b09-4d22-8675-c5d65706d838/PK-en-20240812-POP_SIGNUP_TWO_WEEKS-perspective_WEB_9dd4a4fb-14d8-4724-ae06-a127d945aaea_small.jpg" srcset="https://assets.nflxext.com/ffe/siteui/vlv3/20bf1f4d-1c73-48fd-8689-310d6dd80efc/87ae1b52-0b09-4d22-8675-c5d65706d838/PK-en-20240812-POP_SIGNUP_TWO_WEEKS-perspective_WEB_9dd4a4fb-14d8-4724-ae06-a127d945aaea_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/20bf1f4d-1c73-48fd-8689-310d6dd80efc/87ae1b52-0b09-4d22-8675-c5d65706d838/PK-en-20240812-POP_SIGNUP_TWO_WEEKS-perspective_WEB_9dd4a4fb-14d8-4724-ae06-a127d945aaea_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/20bf1f4d-1c73-48fd-8689-310d6dd80efc/87ae1b52-0b09-4d22-8675-c5d65706d838/PK-en-20240812-POP_SIGNUP_TWO_WEEKS-perspective_WEB_9dd4a4fb-14d8-4724-ae06-a127d945aaea_large.jpg 1800w" class="default-ltr-cache-1jxs5rh e13sg9vu0">
+
+Image 01
+<img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq">
+
+Videos 01
+<source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+
+
+Image 02
+<img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq">
+
+Image 03
+<img alt="" src="https://occ-0-1881-58.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq">
+
+First of all I will make the layout and put a background image first work.
+
+Div01 Main ( Nav ( span01 ( svg logo image ) Div2  btn:english  btn:sign in )
+
+Div03 Box ()
+
+Div04 Hero ( span02 span03 span04 Div05 hero-buttons (input: Text and btn: Get Started) )
+
+Div06 Separation()
+
+)
+
+section: first( Div07( span05 span06 ) Div08 secImg( img01 and video01) )
+
+Div09 Separation()
+
+section: first second( Div10 secImg( img02 ) Div11( span07 span08 ) )
+
+Div12 Separation()
+
+section: first third( Div13( span09 span10 ) Div14 secImg( img01 and video02) )
+
+Div15 Separation()
+
+section: first second( Div16 secImg( img03 ) Div17( span11 span12 ) ) 
+
+Div18 Separation()
+
+section: faq( h2 Div19,20,21,22,23,24 Faqbox ( span13,14,15,16,17,18 svg plus icon) * 6 )
+
+Div25 Separation()
+
+footer ( Div26 questions() Div27 footer( Div28,29,30,31 footer-item( a1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 * 4) * 4 ) Div32 The End )
+ 
+Now obviously I have to choose a font, so there is an extension called whatfont, it tells approximately which font it is.
+
+I want to tell you that all the websites that we have made, if you want to host it, then how will you do it? So I will click on manage site here, and after clicking on manage site,
+
+I will come to my account, I have come to the dashboard as you can see, I will go to file manager, this is my sigmawebdevelopment.com domain on which I have not done anything yet so what I will do is I will go to file manager, see this is static website, we are deploying a static website so where I will upload the file in public html, so here you don't have to upload anything, there is a public html so you don't have to upload anything here there is a folder of public html which you have to use to upload this default.php which is a default file you can ignore it and upload your whole website here.
+
+Now I will host this on Hostinger Like I just showed you guys how to host it, I will update it, So now that we have made this website, you can update it in hosting. And you can host it.
