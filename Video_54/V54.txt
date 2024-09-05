@@ -1,0 +1,96 @@
+Introduction to JavaScript & Installing Node.js
+
+JavaScript is a client-side scripting language that makes your webpages interactive.
+
+Do you remember we made a Netflix clone in which we didn't add any interactivity?
+
+We only added design. It can be made interactive with JavaScript.
+
+JavaScript can be used to make backends with the help of Node.js.
+
+We will see JavaScript, we will install Node.js.
+
+Q: What is javascript?
+Suppose we have a website and in this website i click somewhere and i want when i click i see an alert box how we will do that? we will do that with the help of javascript.
+
+I have made this website for you, netflix.com in fact i will open it and, revisit it and talk about it So if I open it with code, then this folder will open in VS code And if I preview index.html, then you see it looks like this But there are some things missing here Like if I click on this button, then nothing is happening I would like to put my email address here Then this form will be submitted by clicking on start Such things are done with JavaScript
+
+By the way, we have done the clone, we have done the whole design, everything is completely The website is responsive, but we have not been able to add interactivity to it And where will the interactivity come from? Interactivity will come with the help of JavaScript So what kind of interactivity does JavaScript give you? JavaScript gives us all kinds of interactivity
+
+Like you guys want to click on the button and submit a form, that will also happen it gives you interactivity javascript gives us all type of interactivity like you want to click on a button and submit a form if you want to see a prompt if you want to click to open another page everything will be done javascript does all this
+
+To use javascript if i want to use javascript in my computer for learning purpose, I have two ways One is to use it on front end and the other is to use it on back end I told you about front end and back end in my very first video:
+
+In which I told you that there is a client which is us and this client asks Google Chrome to bring this website to me and this website reaches out to the server and after reaching out to the server, the server gives back the response which is given to the server and after reaching out to the server, the server gives back the response which is given back to the client. So this computing on the server can also be done through JavaScript and for that we will install Node.js but if we want whatever we are doing to happen here in our browser that means we don't need to go anywhere, then the JavaScript code will be written here for that.
+
+Let me explain what is the difference between these two if you didn't understand suppose I have a very simple website and I write here div.box by the way, there is no need to write div.box I can write only box but I have become habituated I write only div.box but I am telling you if you write only dot box then div will come and if I write here hey I am a box then I can style this box I will not show you that by doing that because we have done this from last 50-52 videos.
+
+Integrating JavaScript:
+
+so now I will tell you about javascript now suppose I have a button here and I write here submit and I want to add a script here so I just before closing body tag.
+
+I will add a script here and in this script I will write alert and I will write hello world ok, and I can write my javascript here when I will write alert hello world so what will happen, I will get to see this kind of alert, you are seeing here I should see hello world now see I will reload it, I saw hello world, ok so I will be able to see alert hello world whenever I reload it see I saw hello world, if I do ok, it will be dismissed so javascript works like this in the front end.
+
+But we can also use JavaScript in the back end. For example, we can use JavaScript to run some queries on the server side. Which we will do through MongoDB. So, we will see all those things. But I just want to tell you how front end JavaScript looks like. JavaScript is written in two ways primarily in the front end. First, you put put script tag here Like we saw in style, we had to put CSS We put style tag here Second way is to make a js, script.js And then put all the content of script in this And after this, I will put backspace like this Now you tell me one thing If I refresh it Will i see the alert book or not? I am waiting for your comments If you have written it, then it's good. I will reload and show you. I have removed the script tag. I have not linked my html to javascript.
+
+To run it successfully, i have totml with javascript To run it successfully I have to link it with javascript I will link it and show you how to link it So the way you link css to javascript You write script colon src and tell the address of javascript Which is script.js, now will it show or not? The answer is yes, now it will show Now see if I reload, i can see the hello world so javascript we will write it here during practice small javascripts we will write here but if we are planning a big script like suppose we have a netflix clone we are saying that our netflix clone i want to click on this button and it should be done if i don't write anything here it should show an error that this email address is not valid.
+
+If I have to do such things, that if this email address does not contain an at the rate sign, I will write invalid email address. So all these things are done with JavaScript. But JavaScript is not only this, we can run it on the backend make the whole javascript and you can do server side scripting means you can run queries on server you can connect with database you can pull data from there and send to client you can do all these things with javascript so the role of javascript is very good and i will also clear you that the modern javascript is very powerful because we have very good functions like map, filter, reduce in modern javascript things are made so easy which we have very good functions like map, filter, reduce in modern javascript things are made so easy that if you use them you can do scripting very easily and you will enjoy writing your code so many things can be achieved only with javascript for example we talked about clicking on plus our doesn't open, their opens by clicking on plus
+
+I will click on plus, their opens and it converted to cross so we can also do that if we click on plus so its height open and it will convert to cross so we can also do this that if we click on plus then its height will increase and we can already keep the content in it so we can do this kind of work.
+
+Console.log & some basics:
+
+So, I have told you about the alert after this two things are left, one is console log it also has a very important use case
+
+I will tell you about this, by the way along with console.log we also have console.error, console.warning, but console.log is the most used one. Hey, I am console.
+
+If I put any message like this or if I write code is running or triple dot, then it will get logged in the console.
+
+So if I reload this site and show you like this, this is my JavaScript introduction site, then one will see the hello word will be visible here because I have put an alert, then you will click on inspect and see the console
+
+If your console is coming up, it comes to the side by default in chrome It comes like this, you can change its side It comes here by default, if you want to change its position I prefer to keep it down, you can also take it out If you have two monitors, then you can undock it and take it out in a separate window and take it to another monitor, you can do this too out in a separate window and put it in another monitor
+
+I do this and if I have one monitor, I put it down so that I can see it then you can see the responsiveness from here that how your site is looking when it is responsive like I showed you in Netflix loan and how it looks on different devices but I have already told you that by writing console.log we can see code is running which means whatever we write in console we can see it if I put 2-3 more here code is also running, code is looking like a wow let's say I write like this, I am writing anything randomly ok, so you see I will reload it so it said ok, code is running, code is also running Code is running like a wow
+
+So you can see how much execution is there in your script All these things can be done with console.log which makes debugging very easy especially when you are starting out with javascript
+
+So this is console.log After this we have prompt Now what is prompt? I will tell you about variables later But you guys use var keyword and make variables
+
+Later I will tell you let, const Why to use let, I will tell you about it later, but you guys use the where keyword and make the variables, later I will tell you about let, const why to use let, I will tell you, but now you understand that I want to prompt and I want to write here enter your number ok, let's say I want to write this, so what will happen if I reload this, so you see the hello word came, then it is saying enter your number then I will write 34 and ok so in A, 34 will come, then if I write 34 and press ok then it will be 34 in a so if I say something like this then lock console.log and write and let me tell you one more thing that you don't get overwhelmed your number is and if I write here plus a then your number will be here don't get overwhelmed, I just want to show you that if you put any number here then it will come in console, I will reload it when you that if you put any number here, it will come in the console
+
+I will reload it, when I changed it, I did it here means I write a number, now I will do ok, so here your number is 5656 so in this way, JavaScript can be used, so this is our prompt after this, a confirm is done, which you can use, if I write here where is true and I write write here prompt are you sure you want to leave this page and burn your computer ok, I will blast it so if you guys this happens then I can do like this is true and I will write blasting your computer, so I can do this kind of work although I will tell you about the effects
+
+I am just giving you a demo that what all things can be done, you should know, computer is blasting and after this if it is not true, that is, it went to else, then what can I do,
+
+I can copy it and put it here, computer is not blasting, okay, so if I reload it, then first our alert came, hello world, which was written here, this run, after this I will see three console logs, it will run after that, so if I do ok, then I will see three console logs and it is asking me the alert, hello world, which was written here, this run happened, after this I will see 3 console logs, this will run after that, so if I do ok, I will see 3 console logs and it is asking me the number, suppose I write here 420 in the number, ok and I do ok, so you see as soon as I wrote 420, it is asking me, are you sure you want to leave this computer and and blast your computer, ok I used the prompt by mistake, I should have done it, confirm, I'm sorry about that. So I had to confirm it, I'll do it again quickly. And I'll reload, and you see I did it like this, and here I put 54 again, Are you sure you want to leave this page and blast your computer? I'll say yes, if I say ok, it won't blast, don't worry, if someone thinks the computer will blast, no bro.
+
+I was kidding, it was editing, the computer is not blasting So here it says your number is 54 and computer is blasting What would have happened if I had said no to the blasting part So if I had said cancel, it would have said your computer is not blasting So this time it didn't blast So this is how I wrote blasting you can use if-else statements like this so i just wanted to tell you that what all things javascript is capable of and we will do it and our goal will be that we will be able to use javascript on frontend to manipulate buttons, play with dom, with id, class, query selector i will tell you what all is there but the goal is to make interactive websites and my goal for this video is that you should watch this course once so that you can get ready for the job like I made a Netflix clone you can also make a website.
+
+
+NodeJS:
+
+Q: What is nodejs?
+Nodejs is basically javascript v8 engine which chrome uses javascript v8 engine to run your script
+
+
+Running JS in Node:
+
+After removing it, Randall put it in C++ program I am not sure if I am pronouncing it correctly But what Randall did was, he put it in C++ program JavaScript's runtime And after that, what happened is, a great thing happened That the use of JavaScript powers was now possible in our computer and in our server, now I can directly run Python program, if you have used Python by any chance or C++, C program any type of program if you have made and run in your computer so in that way you can run JavaScript program with the help of Node.
+
+I will simply write Node and write script.js. But I want to warn you that this script will not work as it is because there are some elements in it that are available only in the browser. Like prompt, confirm, these are only available in the browser.
+
+See it gave me an error, it is saying that I don't know what is alert because alert is only available in browser, so for this I will make a new script with the name new.js and from that I will put console logs, not alert, just console logs and my first console log will be hello world, so I will write here hello world so now if i will write hello world so now if i will write node new.js and hit enter, you can see all these things are printed means whatever work i was doing in my browser now i can do all those work in script.js in my computer, means i can practice javascript by running this js script through this node you can use nodejs to write programs like organizing your folder content making new folders, moving files from one folder to another you can make such softwares or connecting to internet and downloading a file all these softwares can be made with the help of nodejs you can write a javascript program and run it from nodejs and all these things are possible you can make it with javascript and run it with node so nodejs possibilities are endless.
+
+We will see how to make website backend with the help of nodejs so let me summarize this video first of all you can use javascript in backend and frontend if you use it in backend then you can use nodejs if you use it in frontend then you make a script tag or script.js file which you will include in your html now the javascript which is running in node.js and the javascript which is running in your browser there is a lot of difference because you get some extra elements in browser like prompt and confirm document.getElementById window object, document object about which we will talk, you get all of that you don't get it here but here you get some things which you don't get here like you can read out the content of the file or folder, or print it or alter it, so all of these things you can do in NodeJS in total, there is a very high similarity both are javascript, both syntax are exactly same
+
+NodeJS uses Javascript in backend, and the content in script.js, which you are going to include in your HTML, that Javascript is to be run in browser, so it is run in browser, and elements are available in it.
+
+
+Changing Styles using JS:
+
+You can change styles with Javascript, like I can write something like this, I can say document. and I can write something like document. title is equal to and I can write hey I am good I wrote hey I am good and if I show you the title of this document my document title, if I reload it and reload it
+
+I guess I closed the server, if I run index.js again and click ok and reload it and I guess I closed the server if I run this index.js again and click ok and cancel it and see so see here I am good so you can change the title by doing document.title you can change the styles you can say document.body.style.backgroundcolor so you will get the get this kind of CSS property in JavaScript, like you can put background image you can change background color, if I do something like this is equal to red, then its background color will be red
+
+I will run all of this quickly, all of these should run I will reload and run it quickly, and you see its background color is red, and it adds inline CSS, I will show you so it will add inline CSS in the body this code adds inline CSS you can use it to add in any element we will see this later but I was just telling you about the possibilities of JavaScript that what all JavaScript can do we have set up Node.js we have set up NPM by default if you write NPM here and you will hit enter by writing NPM then NPM will be installed you will get to see all this by default if you type npm then npm will be installed you can type npm-version and you will see npm version this is node package manager which helps in installing packages in node.js if someone else has written a package or code you can use that in your Node programs In your JavaScript programs And it's a very amazing thing Because we will use a lot of things as a package When we will make websites, we will install packages We will not write every code again and again We will solve our problem at hand.
