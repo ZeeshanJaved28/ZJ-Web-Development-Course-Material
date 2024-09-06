@@ -1,0 +1,87 @@
+JavaScript Variables, Data Types & Objects
+
+We are going to see JavaScript variables.
+
+Q: What is the job of variables in JavaScript? 
+Variables are like a container in which you can store any data. We will see the data types of JavaScript in this topic. And we will see how to use let, var, and const. After that, we will see the REPL of NodeJS. Which stands for Read, Evaluate, Print, Loop.
+
+We are going to make a great project in this course once we complete Javascript.
+
+I have told you from the starting that what is javascript and everything and following this I will tell you so much javascript in the sigma web development course that we met while making big projects in the coming videos and we met while doing such work which is actually done in the industry so here I have told that programming is the way to teach the computer that what to do computer is a dumb machine because you can't tell the computer to do this and that you have to give it exact instructions and you can do that with the help of programming so what is ECMAScript? It is a standard of JavaScript which helps you the creators of JavaScript to maintain JavaScript so new features are added in JavaScript so ECMAScript also because it is a standard of JavaScript new updates are also coming and according to those updates new updates are coming and according to those updates, new features are coming and the recent version of ECMAScript has many good features you can read about it on wikipedia which version is the latest when you are watching this video but again, most of the modern JavaScript features are implemented
+
+How to execute JavaScript, I have already told you that you can do it in your browser.
+
+JavaScript variables:
+
+So I will tell you about JavaScript variables and about data types So what is a variable? A variable is basically a container which stores the value That value can be a number, that value can be a string, that value can be a floating point number which is a decimal number and that value can be a JavaScript object.
+
+whatever I am going to write here, you will see it here in my console.
+
+string means: collection of characters.
+
+to find out the data type of any variable we can use a type of operator so if I write console.log and I write type of a then I will put a comma and print type of operator, so if I write console.log and type of a, then I will put comma and print type of b and then type of c, so types of a, b and c will come so a number, b number, c string, so this can be done very easily.
+
+this name, there are some rules to choose it. so name has rules in javascript.
+you can use letter, digit, underscore, dollar sign but your name should start with a dollar, underscore or letter, it can't start with a number.
+
+means if i do something like this where underscore a is equal to, suppose shubham, then it will work
+
+But if i write var 55a is equal to rohan, then it won't work why it won't work, because you can't start with number we don't use var in javascript i will tell you why we should use let in most of the cases but for now I will tell you that it is invalid because we started with numbers, so these are the rules and another rule is that the variable names of javascript are case sensitive, that means if you wrote this Zeeshan, I will zoom and show you, this Zeeshan is written and this zeeshan is written, both are different, because in this Z is capital and in this z is small, both are different because it has Z capital and z is small so the cases are important.
+
+Rules for choosing variales names
+1. letters, digits, underscores & $ sign allowed
+2. Must begin with a $, _ or a letter
+3. JavaScript reserved words cannot be used as a variable name
+4. Harry & harry are different variable (case sensitive)
+
+Understanding const in JavaScript:
+
+var vs let in Javascript
+1. var is globally scoped while let & const are block scoped
+2. var can be updated & re-declared within its scope
+3. let can be updated but not re-declared
+4. const can neither be updated nor be re-declared.
+5. var variables are initialized with undefined whereas let and const variables are not initialized.
+6. const must be initialized during declaration unlike let and var.
+
+If I write const a is equal to 6 or a1 is equal to 6 after this I can't change it again.
+
+So whenever you write modern javascript code then you use let I will replace all var with let and we will use let because I wrote let outside so it automatically became global variable ok, now whenever I will make a block like this, like I go inside if, or loops will fall, I go inside while loop, or if I make a block like this, if I make this block console.log a, I will remove these two console logs from here, if I make console.log a, you will get to see 6.
+
+Why will you get to see 6? Because it took this global one, and here because I made a equal to a plus 1 after 5 so a value is 6 if I comment this out then a will show me 5 as you can see here a is showing me 5 but if I have made a let a is equal to let's say I have made it 66, so now it will show me 66 but as soon as I will log console.log after this block and I will do a, then it will not show me 66 because let is block scope, it is inside this block so it will refer to a it will refer to 5, so my output will be 66 and then 5, you can see here, first 66 and then 5 because let is block scope, if I would have done the same thing with var, if I would have done the same thing with var then also I will show you what would have happened I do var here and var here, okay, so when I do var here and var here, then I will print a, then both places will be 66 because var is globally scoped, it does not have a block scope, when I am doing a here 66 and then I have made A as 5 so as soon as A comes here, it will be 66 globally and here when I print it, it will be 66 and here also it will be 66 that's why we want to always use LED so that we can keep the variables of our block level in the scope of this block and use them here and it is better if it does not interfere with our global variables.
+
+if it does not exist in the block 66 then it will look at the global scope which is 5 here, that's why you will get to see 5 and 5 output.
+
+Primitive Data Types:
+
+what are objects and primitive data type now in javascript there are two types of data types.
+
+primitive data type and object object is a user defined data type and you can make your favorite data type with the help of primitive data type so what are primitive data types there are some basic data types in javascript which are the basic building blocks of other data types.
+
+Here there is a null, number, string, symbol, undefined, boolean and big int. There are 7 primitive data types, in which the null is written as NULL which means nothing.
+
+And we have a number, number means any number like 6.66 you have written that number, 6 is also a number, 10 is also a number; string, whatever you write in double quote is a string
+
+I will tell you about symbol later if you skip the symbol just for once as a beginner developer that should be fine but I will tell you later what is symbol in this course, for now you can take it with a pinch of salt.
+
+But undefined means any variable you have declared it has no value in it, so it is undefined
+
+after this there is boolean, which has two values, true and false Boolean means any variable you have declared has no value in it so it is undefined then there is Boolean which has two values true and false then there is BigInt which helps in storing big integers so let's see all these data types one by one.
+
+actually i have used c above so here is a red line I will write c is equal to true it means I can't change it actually I have used c so it is red line why are you defining c again and again it is let so you can't redefine it as a constant I was getting this warning. Actually i have used c above so here is a red line I will write c is equal to true it means I can't change it actually I have used c so it is red line why are you defining c again and again it is let so you can't redefine it as a constant I was getting this warning. JavaScript linter in VS code which tells you where you are doing wrong now const p is equal to true and if i write let p is equal to true then it can be changed, this is boolean variable.
+
+The type of null:
+
+Type of null is object its type is null but type of null is javascript object shows, in the story behind this I will give you a stack overflow link, it is written in it or if you search why is null, type of null and this is a very big interview question also object and its stack overflow answer which is very old and popular so you can read it, in total it is written here that javascript was used for null and in specification type of null was written as object and many javascript experts consider it as a mistake but just say that because the spec is very old and it is written in the spec that type of null is an object and a lot of old code is relied on it, so we cannot change it we cannot null type of null we will do object only, so this is a question of the interview, so you can keep it in your mind that type of null is an object whenever you have to ask any javascript developer.
+
+Q: What is type of null, is null a primitive data type?
+
+he will say yes, then you will say what will come if what is type of null, is null primitive type he will say yes, then you can ask what will come if you write type of null so he can say null and it will be wrong because type of null is object so this thing is done.
+
+Objects:
+
+Q: What is object? 
+
+Object is in javascript combination of key value pairs, to make any object in javascript you combination of key value pairs to make any object in javascript, you can write let o is equal to and you can use curly brackets and write name harry, and you can put this name in double quote if there is space, because there is no space i am not putting double quote, now if i write double quote job role, because there is space in job role so i am writing in double quote ok, you have to keep this in mind if I want, I can write the name in double quote to make it consistent but it is the same thing whether I write the name whether I write the name by removing the double quote or I write the name with double quote the thing is that there is no space in it but I can't remove double quotes here because what will happen that here because there is space so I have to put it in double quotes so this is key this is value value can be anything, let's say I write job role and I write here 5600, I write job code 5600 and if I write console.log o then this object will be printed as you can see object means, if we want to write many things about someone or about an entity then we can store it like this that name is Harry, job code is this, you can write everything about Harry now here if I want to change or add something so I can do something like this, I will say o. and I will write salary is equal to and I will write here 100 crores and after this if i do console.log so you will see here that by doing console.log, 100 crores is added to it, so you can alter it.
+
+now if i increase my salary it will be 500 crores and now i will print console.log object so i wish i had a salary so here you can see 500 crores has been added, in fact it has been changed earlier salary was 100 crores now it is 500 crores so in this way you can change an object and you can add more keys now after this suppose I want to add one more thing which is boolean, suppose I want to add something else which is boolean suppose i want to add a key here isHandsome so it will be true and i can also do false and true so now if you see the object isHandsome is true so i can add boolean values i can also add more key value pairs that is my wish so you can see here you can add key value pairs, that will be my choice so you can see here this way you can add key value pairs comma separated and the value of this key value pair can be any primitive in turn it can be an object we will see later that it can be a function you can name it and add a function that can also be done but we will take it easy and you can see here a basic object looks like this digest this now and this object, you can see here a basic object looks like this digest it now and this object you can choose its name like a variable you can do ob, you can do obj it will be your wish just follow the rules of our variables you have to keep this in mind so this was about the objects of JavaScript.
