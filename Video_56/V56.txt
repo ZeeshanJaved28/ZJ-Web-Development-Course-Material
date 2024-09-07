@@ -1,0 +1,115 @@
+JavaScript Conditionals: if, else if, else ladder:
+
+Sometimes we do some things in JavaScript When the condition is met and for this We use JavaScript What is conditioners and why use them What else do we have to do in JavaScript Options are there to apply fast quickly 
+
+How you can work with conditionals and expressions.
+
+Code Runner install:
+
+I'll run my program from nodes because I want you guys to know how to expect nodes in this whenever we work with something browser specific then we will see there how we can do the work by keeping everything inside script.js.
+
+Go to extension and search code runner extension and install it.
+
+Important Code Runner settings
+
+one more setting for code runner if you run this extension in terminal
+option available in settings i.e., Run in terminal. Check mark this option.
+Now you run any cmd in js it will run in teminal.
+
+You also make the terminal into tab.
+
+If-Else conditional:
+
+What are conditional statements? We People have seen that in JavaScript we have numbers, we have strings, we have objects there are a lot of things.
+
+=> Semicolon is optional. They Let me tell you one more thing in JavaScript The semicolon is optional but It's always a good idea if you guys If you keep the semicolon on
+
+let age = 45 or 5
+
+if(age>18){
+    console.log("You can drive");
+}
+
+else{
+    console.log("You can't drive")
+}
+
+So this is how if-else statements work now the thing that I have written here is called condition.
+
+=> "let" has a block scope and whatever variable is created from it is called block scope variable. If you create anything from var then it is in your global creates a variable of scope So instead of using var we will use let and const.
+
+Operator:
+
+Now there are some operators in JavaScript:
+
+console.log(age+grace)
+console.log(age-grace)
+console.log(age*grace)
+console.log(age/grace)
+console.log(age**grace) // Exponential operator
+console.log(age%grace) // Modular operator
+
+Now this increment and decrement operator. What does this do? It updates a variable.(++ --)
+
+Assignment Operators:
+x=y    =
+x=x+y  +=
+x=x-y  -=
+x=x*y  *=
+x=x/y  /=
+x=x%y  %=
+x=x**y  *=
+
+Comparison Operators:
+== equal to
+!= not equal
+=== equal value and type
+!== not equal value and not equal type
+> grater than
+< less than
+>= greater than or equal to
+<= less than or equal to
+? ternary operator
+
+=> I want to tell you people about repl in Node JS which is Read Evaluate Print Loop and what is repl?
+
+You can use as this calculator so this is called wrapal this is called Read Evaluate Print Loop this is your JavaScript engine running here you can do anything.
+
+"3" string == 3 number
+true based on value
+false based on type
+
+Logical Operators:
+
+&& logical AND
+|| logical OR
+! logical NOT
+
+Apart from these ,  we also have type and bitwise operators. Bitwise operators perform bit by bit operations on numbers.
+
+7+8 = 15
+7 and 8 are operands
++ is operator
+15 is Result
+
+Comments in Javascript:
+Not execute anything because interpreter or engine ignore the comments in javascript.
+
+/* I'm a multiline comment */
+old version
+
+If-elseif-else ladder:
+
+(1) If statement
+=> simple if statements.
+=>else is not compulsory.
+
+(2) If-else statement
+=> pair with else
+
+(3) If-elseif-else statement:
+=> They have multiple if-elseif statements
+=> They called in python if-elif-else ladder but in javascript we said if-elseif-else ladder
+
+Javascript Ternary Operator:
+c = a>b ?(a-b):(b-a)
