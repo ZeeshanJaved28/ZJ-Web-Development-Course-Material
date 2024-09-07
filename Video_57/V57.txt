@@ -1,0 +1,93 @@
+JavaScript Loops
+
+Sometimes in JavaScript we have to do repetitions For example If I ask you to print numbers from 1 to 10 then you will do it by pressing console.log But if I ask you to print numbers from 1 to 1000 or from 1 to 1 billion then you might not be able to do it And this is what is used In JavaScript, loops Which are repeated, What is the syntax of for loop, What is while loop, do while, Along with this, what is for-in and for-off loop in this video.
+
+Loops Introduction:
+
+If I tell you to print numbers from 1 to 10 then you can do it using console.log 1,2,3,4 all the way till 10 but if I tell you to print from 1 to 1000 then you might not be able to print it.
+
+So JavaScript has a loop construct inside it loop What construct does is it helps you to do any one of your tasks repetitive task over and over again
+
+We have five types of loops inside JavaScript for loop which is a normal for loop one is for-in loop, for-of loop and after There is a while loop and there is a do while loops.
+
+for loop: (Basic loop)
+
+first part run => Initialization: i=0
+second part run => condition check: i<100 -- (0<100) enter in loop then execute 3rd part. Check 1<100 true, 100<100 False condition not enter in loop that means exit loop.
+third part run => a + i (i.e., 1 + 0) -- (i.e., 1+1)
+fourth part run = > i++ incremental (i is 1) -- (i is 2)
+
+Only one part run: Initialization part.
+Repetitive parts run: 2nd, 3rd and 4th parts.
+
+for in loop: (Object)
+
+=> for in loop gives you the keys of the objects.
+
+for (const key in object) {
+    if (Object.prototype.hasOwnProperty.call(object, key)) {
+        const element = object[key]; 
+    }
+}
+
+for (const key in obj) {
+  const element = obj[key];
+  console.log(key, element);
+}
+
+for (const key in obj) {
+  console.log(key);
+}
+
+for of loop: (Iterator = > Array/String)
+
+=> for loop of is an I-terable data structure like array or string.
+
+for (const iterator of object) {
+}
+for (const element of object) {
+}
+
+for (const c of "Shani") {
+  console.log(c);
+}
+
+while loop: (Not same as for loop)
+
+=> Important and classic and practical loop.
+
+while (condition) {
+}
+
+let i = 5;
+while(i<6){  // 5<6 true and 6<6 false
+    console.log(i) // print 5 and exit loop
+    i++ // 6
+}
+
+let i = 0;
+while(i<6){  
+    console.log(i) 
+    i++ // if i not add this condition, it will turn into infinite loop.
+}
+
+do while loop:
+
+=> less usable loop and people avoid it in a code based. Because for some compliancy But it has some use cases.
+
+do {
+} while (condition);
+
+=> Once time or Initial it will run then it will check condition.
+
+let i = 0; //1st
+do {
+    console.log(i) // print 0  //2nd 
+    i++ //4th 
+} while (i<6); // 0 < 6 //3rd
+
+let i = 10; 
+do {
+    console.log(i)
+    i++ 
+} while (i<6); 
