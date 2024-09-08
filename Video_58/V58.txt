@@ -1,0 +1,152 @@
+JavaScript Functions
+
+Sometimes our code gets repetitive and when the code gets repetitive, we have to package a particular code in a function. One more benefit of making functions in JavaScript is that you can pass arguments and get a particular work done.
+
+For example, printing some statements, summing numbers, taking the average of numbers, there are many more functions that can be made in JavaScript.
+
+function printStatements() {
+  console.log("Hello, this is a statement!");
+  console.log("Another statement here.");
+  console.log("Yet another statement here.");
+}
+// Call the function to execute the statements
+printStatements();
+
+
+function addNumbers(a, b) {
+  return a + b;
+}
+const result = addNumbers(3, 5);
+console.log("Sum:", result);
+
+
+function calculateAverage(a, b) {
+  return (a + b) / 2;
+}
+const result1 = calculateAverage(3, 5);
+console.log("Average:", result1);
+
+
+Q: What are functions, what is syntax javascript why should we use them?
+
+Introduction to Functions:
+
+So we are going to see what is function in javascript So in javascript, function is a block of code If we want to use it again and again, then we use it.
+
+console.log("Hey Shani you are nice!");
+console.log("Hey Shani you are good!");
+console.log("Hey Shani your tshirt are nice!");
+console.log("Hey Shani your work is good too!");
+// Shani -> Variable
+
+Creating a Function:
+
+function name(params) {
+}
+
+function niceStatements(name) {
+  console.log("Hey " + name + " you are nice!");
+  console.log("Hey " + name + " you are good!");
+  console.log("Hey " + name + " your tshirt are nice!");
+  console.log("Hey " + name + " your work is good too!");
+}
+niceStatements("Zeeshan");
+niceStatements("Javed");
+
+Function is used because we don't want to be repetitive we want to do the same thing again and again through a function. So whenever we want to reuse a function, we can do it plus we want to change in the function, we can bring that change also. So by making this kind of function, basically we are packaging block of code in a particular name which is nice. Nice means whatever name is given, it will print 4 lines here.
+
+Function which Sums 2 numbers:
+
+function sum(a, b) {
+  console.log(a + b);
+}
+sum(3,5)
+
+function sum(a, b) {
+  return a + b;
+  //Return keyword is to return a value.
+}
+result = sum(3, 5);
+console.log("The sum of these number is: ", result);
+
+function sum(a, b) {
+  return a + b;
+  //Return keyword is to return a value.
+}
+result1 = sum(3, 5);
+result2 = sum(6, 8);
+result3 = sum(9, 11);
+console.log("The sum of these number is: ", result1);
+console.log("The sum of these number is: ", result2);
+console.log("The sum of these number is: ", result3);
+
+Optional Parameters:
+
+function sum(a, b, c = 3) {
+  return a + b + c;
+  //Return keyword is to return a value.
+}
+result1 = sum(3, 5);
+result2 = sum(6, 8);
+result3 = sum(9, 11);
+console.log("The sum of these number is: ", result1);
+console.log("The sum of these number is: ", result2);
+console.log("The sum of these number is: ", result3);
+
+
+function sum(a, b, c = 3) {
+    // so 3 is default value of C called default parameter, one function has default value of argument. And when we do c is equal to 3. Then default value of c will be 3
+  return a + b + c;
+  //Return keyword is to return a value.
+}
+result1 = sum(3, 5);
+result2 = sum(6, 8);
+result3 = sum(9, 11, 2);
+console.log("The sum of these number is: ", result1);
+console.log("The sum of these number is: ", result2);
+console.log("The sum of these number is: ", result3);
+
+I have given default value of c as 3 a and b will be passed, it is compulsory you have to give it, you can't do that you have only done sum 3 because if you do something like this and run the program then you will see an error and you will see a NAN, NAN means not a number, why did it do NAN because you didn't pass b so the return value is not a number, if i show you console.log and i say a, b and c, lock all three, so the value of b is undefined, i will show you so see the value of b is undefined, when 3 passed and when b came, then undefined passed and undefined plus any number you do, javascript returns a NAN and NAN means not a number so you are getting to see not a number because you have not passed the argument correctly.
+
+function sum(a, b, c = 3) {
+    // so 3 is default value of C called default parameter, one function has default value of argument. And when we do c is equal to 3. Then default value of c will be 3
+  return a + b + c;
+  //Return keyword is to return a value.
+}
+result1 = sum(3); // Error NaN
+result2 = sum(6, 8);
+result3 = sum(9, 11, 2);
+console.log("The sum of these number is: ", result1);
+console.log("The sum of these number is: ", result2);
+console.log("The sum of these number is: ", result3);
+
+function sum(a, b, c = 3) {
+  // so 3 is default value of C called default parameter, one function has default value of argument. And when we do c is equal to 3. Then default value of c will be 3
+  console.log(a, b, c);
+  // b is undefined
+  return a + b + c;
+  //Return keyword is to return a value.
+}
+result1 = sum(3); // Error NaN // undefined b
+result2 = sum(6, 8);
+result3 = sum(9, 11, 2);
+console.log("The sum of these number is: ", result1);
+console.log("The sum of these number is: ", result2);
+console.log("The sum of these number is: ", result3);
+
+
+Arrow Functions:
+
+Now I will tell you about arrow function, and I will tell you that you can put function in a variable like this and you can use a function in a variable like this and you can use a syntax like this which is called an arrow function.
+
+const function1 = (x)=>{
+console.log("I'm an arrow function", x)
+}
+function1(10)
+function1(20)
+function1(30)
+
+
+So this function can be reused and this is called an arrow function, this is a convenient syntax and you can store a function in a variable. very func1 is a variable which is a function so you can make a variable like this so what is the benefit of doing this that you can pass the function in turn in another function so I said this a little complex if you are a beginner then you will find this a little complex but that's a fact.
+
+Here this is a function with parameter. These parameters are behaving as a local variable. Here you see the function is being invoked. And function invocation is a method by which you use the function. So basically the function calls we had put, that is called function invocation. You can also call it calling the function. You can say that I invoked the function. It is the same thing. Now here I told you about the return value and I told you about the syntax of the arrow function which is a fancy syntax and along with it with the help of this syntax you can capture the function in a variable. So if you want to cast the function in a variable then you can do it very easily with the help of arrow function. 
