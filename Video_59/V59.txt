@@ -1,0 +1,21 @@
+Exercise 9 - Faulty Calculator
+
+In today's topic, you have to make a faulty calculator. I'm going to give you an exercise in which I'll explain you a faulty calculator. 
+
+What kind of input and output your calculator gives you. And you have to make a faulty calculator exactly according to that. I'll tell you the exact question in a while.
+
+Create a faulty calculator using javascript 
+This faulty calculator does following: 
+=> It takes two numbers as an input from the user.
+=>  It performs wrong operations as follows:
+    (+) Addition --> (-) Subtraction
+    (*) Multiplication --> (-) Subtraction
+    (-) Subtraction --> (/) Division
+    (/) Division --> (**) Exponentiation
+=> It performs wrong operation 10% of the times.
+
+
+So you have to make this kind of faulty calculator which will make you do wrong and the mistakes it will do it will do it only 10% of the times so here 10% of the times is a catch it performs performs wrong operation 10% of the time now what is the meaning of this this calculator if any person uses assume that exam is going on now you have not allowed calculator in exam let us assume that now it is said that calculator is not to be used in exam but if anyone wants to use calculator then he is given calculator and he can use it now he doesn't know that it is a faulty calculator if we do this then he will see 1 plus 1 so he will see 1 minus 1 which is 0 he will say that this is correct calculator but we have to confuse so we have to perform calculation with 10% probability how will this happen? 10% of the time you have to perform the calculation with 10% probability.
+
+how will this happen? this will happen by generating a random number you generate a random number between 1 to 100 and by generating that random number what you have to do is you have to find out whether it is greater than 10 or less than 10 now generate a random number between 1 to 100. 
+
