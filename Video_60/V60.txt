@@ -1,0 +1,166 @@
+JavaScript Strings
+
+We learned how to create strings in JavaScript In double code, you guys put characters and the string is created in JavaScript but how can you get the third character of a string.
+
+How can you convert a string to upper case, how can you convert a string to lower case and how can you find a particular character in a string, we are going to understand all these things in this topic.
+
+Strings:
+
+How you guys can use strings and what strings actually mean so today I want to tell you guys a little closer about strings so what is a string?
+
+String is used to store and to manipulate text so string can be created text.
+
+let a = "Shani";
+console.log(a)
+
+Accessing Characters:
+
+let a = "Shani";
+console.log(a[0]);
+console.log(a[1]);
+console.log(a[2]);
+console.log(a[3]);
+console.log(a[4]);
+console.log(a[5]);
+
+
+now if I do a[5] here and try to run it, then undefined will come. JavaScript will throw an error at least That's why JavaScript is called a forgiving language It is quite forgiving JavaScript and it is made forgiving by design because whenever you are doing anything in your browser it happens with JavaScript in the initial JavaScript was made to run in the browser and because it was made to run in the browser so it was made to be a language that throws as few errors as possible so it tries not to throw errors
+
+If you did the same thing in C language if you didn't use semicalculus, you would have to see 50 errors and at the same time you would keep thinking that There are so many lines.
+
+No, in my code, the number of lines it is showing So you see here Harry and Undefined has been written here Because I printed a[5], I will not print it here because Undefined is showing a, there are only five characters in it, so it will go from zero to four, 
+
+// console.log(a[5]);
+
+If we start from row, it will go upto four five characters only, the index row starts from and not from one like normal counting, that's why Many jokes are made among programmers that programmers start counting from zero and even my friends sometimes say that friend you So You must not be counting from zero, brother, programming When I do it, I know I am doing programming, okay I If I troll them back, then what It happens that how big is this string?
+
+Length of an Array:
+
+a[0] --> a.length --> 1
+a[1] --> a.length --> 2
+a[2] --> a.length --> 3
+a[3] --> a.length --> 4
+a[4] --> a.length --> 5
+
+Template Literals:
+
+let real_name = "Shani";
+let friend = "Aaddi";
+console.log("His name is " + real_name + " and his friend name is " + friend);
+
+So sometimes when there are a lot of variables and we have to create a template of strings, then we can use the syntax of template literals and this is made to make the life of us developers easier.
+
+How does it work?
+
+The syntax of template literals, then the first thing that you have to do is write it like this like console.log and use backtick, Backtick is above your tab key below escape key above tab key below escape key on the keyboard.
+
+console.log(`His name is ${real_name} and his friend name is ${friend}`);
+
+What are template literals and why were they created Template literals are to make the life of developers like us easy, so With the help of template literals it is possible to use both single as well as double codes inside a string like you can see here with the help of back ticks you can use double codes also inside a and the advantage is that you can also insert variables here like this when we insert a variable like this inside a back ticked string, we use it We call it string interpolation and this is called string interpolation.
+
+Escape Sequence Characters:
+
+there are some special characters which you guys can use inside your strings.
+b = "Sha\"ni"
+output `Sha"ni`
+new line: \n
+Tab: \t
+Carriage return: \r
+=> Run JS anywhere in Browser.
+
+// Uppercase:
+let b = "Ajaz";
+console.log(b.toUpperCase());
+
+// Lowercase:
+console.log(b.toLowerCase());
+
+// Length
+console.log(b.length);
+
+I will not need the function only the length I will write like this
+
+Length is a property.
+b.length
+
+toUpperCase()
+toLowerCase()
+
+This is a function so to run the function we have to run these brackets and if I want a value that I get the property then I can do that by increasing length so this is a difference in syntax just you have to remember a little bit that if you want the length then you don't need a paren here but if you want to run two upper case and two lower case here then you people need paren.
+
+Slicing a String:
+
+let b = "Ajaz";
+
+A --> 0
+j --> 1
+a --> 2
+z --> 3
+
+console.log(b.slice(1, 2));
+// 1 included and 2 excluded
+output: j
+
+console.log(b.slice(1));
+// 1 excluded
+output: jaz
+
+console.log(b.slice(0,3));
+// 0 included and 3 excluded
+output: Aja
+
+Replace:
+
+let b = "Ajaz";
+
+console.log(b.replace("Aja", "1101"));
+output: 1101z
+
+Now I will show you one thing If there are two A currencies then What will happen if there are two A currencies then the first A The currency gets replaced. Okay, you have to remember this Only the first A currency gets replaced It happens, both the A currencies are not replaced So you have to remember this.
+
+let c = "AjazAja";
+console.log(c.replace("Aja", "1101"));
+output: 1101zAja
+
+Concatenation:
+
+let d = "Zeeshan";
+let e = "Javed";
+console.log(d.concat(e));
+Output: ZeeshanJaved
+console.log(d.concat(e, "Shani"));
+Output: ZeeshanJavedShani
+
+So in this way you can add as many strings as you want by adding links and they will all be added It will be something like this, to do this you can use plus also but according to me it is more convenient sometimes when you want to create a new string otherwise you can use plus as well you can add links as well, it also does links.
+
+=> We can even use the plus operator.
+
+Remove Whitespace:
+
+Now if you want to remove white spaces from a string.
+
+let f = "   SHANI   ";
+let g = f.trim();
+console.log(g);
+
+Strings are Immutable:
+
+Very important thing that the string which is is not that if I do b again then it will remain the same as my initial Ajaz was okay if I remove it even then my Ajaz will remain the same okay so you see it will remain the same and if I do Aj here then that a will also come okay so once you have created the string and the memory is allocated then after that you cannot change that string again you can create a new string by using such functions this new string is being created b2 upper case means a new string make it upper case of b dot lower means case To lower case means you can make a lower case string of b but you can't change the b. This is called immutability. You can't change the string. Strings are immutable in order to access the character at an index. 
+
+With this, your topic of strings ends. It's a very simple topic of strings. There are many more methods.
+
+// Exploring More Methods
+console.log(g.charAt(0));
+// Output: S
+console.log(g.indexOf("HA"));
+// Output: 1
+console.log(g.indexOf("ha"));
+// Output: -1
+console.log(g.startsWith("SH"));
+// Output: true
+console.log(g.startsWith("AN"));
+// Output: false
+console.log(g.endsWith("AN"));
+// Output: false
+console.log(g.endsWith("ANI"));
+// Output: true
