@@ -1,0 +1,13 @@
+Exercise#09: Faulty Calculator Solution
+
+eval => evaluate:
+
+I want to tell you guys about an eval, So what is eval basically in JavaScript It does that by 
+solving this kind of calculation.
+
+Which is the eval function, it calculates in a way it works like a calculator and a big thing is said about 
+that friend, should never be used in your production site but the fact that exists, you should know this and it
+is not that you should never use it.
+
+I have personally used a lot in my production website, serious in websites, you just need to know. Where not to use 
+it, it is not like that You guys don't have to use it, you just have to Be careful when you are using it.
