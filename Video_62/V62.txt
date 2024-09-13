@@ -1,0 +1,30 @@
+JavaScript Exercise 10 - Business Name Generator
+
+JavaScript is used a lot to make SaaS products. SaaS stands for Software as a Service. Today we will make a
+SaaS product which is a simple business name generator. 
+
+A very good example of SaaS product is Canva. 
+
+It used JavaScript to create a product which is a big hit in the world of design. Today I want you to 
+understand my question and try to make this business name generator By this you will know how to solve real 
+world problems with the help of javascript.
+
+So you have to generate a business name by combining three different words so how will that business name 
+be generated so here I will give you some adjectives like I will give you crazy, I will give you amazing, 
+I will give you some adjectives like crazy, amazing fire you have to use these three in the starting so this 
+is our list of adjectives and I want to tell you that you don't have to use arrays if you use arrays then I will 
+consider you that you are depending on arrays and you are not a good JavaScript developer because I am giving you
+a restriction here I am telling you that you have to do something like this that you will not use arrays you will 
+use functions and you will use strings so you have to use these adjectives in the first word.
+
+After this what you have to do in shop name you have to use something like this engine or you have to do in shop 
+name, use something like this engine or you want to do foods or after that you can do whose shop we open, garments 
+ok, something like this and after this you want to use another word ok use a bros, you want to use a limited and 
+you want to use a bros, you have to use a limited and you have to use a hub now you have to take one word from this,
+one word from this and one word from this randomly and generate a new name, a business name will be generated like 
+crazy foods limited, like crazy engine hub.
+
+A name like this will be generated, don't use arrays you will use disqualify exercise you have to make a string 
+and write it generate random numbers, all that is allowed you can use functions, don't use arrays. 
+
+I am giving you a challenge that you don't have to use arrays I hope you will solve this exercise.
