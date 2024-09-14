@@ -1,0 +1,60 @@
+JavaScript Exercise 10 - Solution
+
+We break down into intervals:
+like 0 1/3 2/3 1
+i.e 0 0.33 0.66 1
+
+first --> Adjectives:
+Crazy
+Amazing
+Fire
+
+second --> Shop Name:
+Engine
+Foods
+Garments
+
+third --> Another Word:
+Bros
+Limited
+Hub
+
+Please Don't Use Arrays.  
+Use Strings , Functions.
+
+let rand = Math.random();
+let first, second, third;
+
+// Lets generate the first word:
+if (rand < 0.33) {
+  // 0 0.33 0.66 1
+  first = "Crazy";
+} else if (rand < 0.66 && rand >= 0.33) {
+  first = "Amazing";
+} else {
+  first = "Fire";
+}
+
+// Lets generate the second word:
+rand = Math.random();
+if (rand < 0.33) {
+  // 0 0.33 0.66 1
+  second = "Engine";
+} else if (rand < 0.66 && rand >= 0.33) {
+  second = "Foods";
+} else {
+  second = "Garments";
+}
+
+// Lets generate the third word:
+rand = Math.random();
+if (rand < 0.33) {
+  // 0 0.33 0.66 1
+  third = "Bros";
+} else if (rand < 0.66 && rand >= 0.33) {
+  third = "Limited";
+} else {
+  third = "Hub";
+}
+
+console.log(`${first} ${second} ${third}`);
