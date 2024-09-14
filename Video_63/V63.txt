@@ -1,0 +1,247 @@
+JavaScript Arrays
+
+Whenever we want to keep an entity in a particular name, we use an array. 
+
+In JavaScript, an array is a collection of multiple data types. 
+
+You can add numbers, strings, or objects to it. 
+
+In an array, there can be different data type variables. 
+
+I will tell you where the array will be used and how you can use it. We are going to see the array and its functions very closely.
+
+Arrays are variables which can hold more than one value.
+
+so why is the array used? it is done so that you can store multiple values in one name like if I make an array named fruits I can put banana, apple, grapes suppose I want to make a collection of 7 hairy and false different data types can also be under the same name but I want to tell you that when we actually do web development then where will these arrays be used you will use these arrays when you are making a component in react and to make 50 of that component I will show you an example of any blog.
+
+let's say we have this blog, let's write blog tech crunch technology, let's say this is our blog, now you will see in this website, these cards are being repeated, this is a card, this is a card, this is a card, then this is a card, this is a card, this is a card, then this is similar, so it will come in an array, in which objects will be written, blog articles, this and this then in the title there will be an object should I become a technology specialist or journalist and then here will be written category then here will be written description so these things will be given to you in the form of an array of objects and your job will be to display it from the UI using react we will see all those things later.
+
+arr.length:
+We use .length note that I have not run this as a function only .length is written.
+
+Arrays are Mutable:
+So this is a very basic form of the array now if I want to change this array so what can I do the array is mutable, I can do it.
+
+String is immutable, you must have seen when we were operating on string, it was returning a new string. That means whenever I change something in a string, original string will be intact. But if I want an array then I can change it. This is called mutability of arrays. Strings are immutable, Arrays are mutable, arrays are mutable. As simple as that. So I have told you about console.log, you can find out the length like this.
+
+console.log(arr.length);
+
+so in this way you can find the length of the array and with that you can also change the value of the array as I told you, you can't do this in the string if you try to do something like this in the string you can't do that because string is immutable
+
+Arrays are mutable
+6:18
+if you try to do this in string then you will not be able to I will show you a little let a is equal to, let's say I say "Shani" you won't be able to do it let me show you let's say I say "Shani" and I say what to do with a[0]. I will try to do like this and I will write `a` after this so here "Shani" is written so you can see that here "Shani" is written the first element is not changed so you can see that you can't do this.
+
+So this way your array works now there are many methods of array and with those methods you can change the array by the way if I lock type of array here then it shows an object so type of array shows an object.
+
+(1) console.log(typeof arr);
+
+(2) console.log(arr.toString());
+
+(3) console.log(arr.join(" and "));
+
+(4) console.log(arr.pop());
+    console.log(arr);
+    last element will be delete
+
+(5) console.log(arr.push(8));
+    console.log(arr);    
+
+(5) console.log(arr.push("Shani"));
+    console.log(arr);
+    last element will be add
+
+(6) console.log(arr.shift());
+    console.log(arr);
+    first element will be delete
+
+(7) console.log(arr.unshift());
+    console.log(arr);
+    first element will be add
+
+There is delete element is there which delete the array element, in this way you can use delete operator for example, I will write here delete and I will write a[6] here, so what will happen that the last element will be deleted, so if I do a here, then you see the last element is empty means it has been deleted but if i still lengthen a. then you can see 7 and if i try to print a[6] then it is undefined. so in the array memory is allocated but there is no value.
+
+(8) console.log(delete arr[6]);
+    console.log(arr);
+    console.log(arr[6]);
+
+(9) let z1 = [1, 2, 3];
+    let z2 = [4, 5, 6];
+    let z3 = [7, 8, 9];
+
+    console.log(z1.concat(z2, z3));
+    joining arrays, returns a new array, doesnot change existing arrays.
+
+(10) let b = [987, 123, 456];
+     console.log(b.sort());
+    sort array alphabetically, b changes to [123, 456, 987], modifies the array.
+    sort takes an optional compare function. (Advanced Sort)
+
+splice helps you to extract elements from one position or to insert them.
+splice(start: number, deleteCount?: number): number[]
+The number of elements to remove.
+
+Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
+
+(11) let numbers = [1, 2, 3, 4, 5];
+     console.log(numbers.splice(1, 2));
+     console.log(numbers);
+     splice(start: number=1, deleteCount?: number=2 elements): number[2,3]
+     Output: (3) [1,4,5] --> Removing elements
+
+(11) let numbers = [1, 4, 5];
+     console.log(numbers.splice(1, 1, 7, 8, 9));
+     console.log(numbers);
+     splice(start: number=1, deleteCount?: number=1 elements): number[4]
+     Output: (5) [1, 7, 8, 9, 5] --> Inserting elements
+
+Slice out a piece from an array. It creates a new array.
+
+(12) let c = [1, 2, 3, 4];
+     Index:   0, 1, 2, 3
+     console.log(c.slice(2));
+     // Output: (2) [3,4] --> start with 2 index and go till the end.
+
+     let d = [1, 2, 3, 4];
+     Index:   0, 1, 2, 3
+     console.log(c.slice(1, 3));
+     // Output: (2) [2,3] --> start with 1 index and go till 3 index not including 3
+
+Revere the elements in the source array.
+
+(13) let e = [5, 4, 3, 2, 1];
+     console.log(e.reverse());
+    // Output: (5) [1, 2, 3, 4, 5] 
+
+Looping through Arrays:
+
+Loops are very important in the context of arrays.
+
+Arrays can be looped through using the classical JavaScript for loop or through some other methods.
+
+Classical for loop:
+
+for (let index = 0; index < a.length; index++) {
+  const element = a[index];
+  console.log(element);
+}
+
+forEach loop: calls a function, once for each array element.
+
+const a = [1,2,3] 
+a.forEach((value, index, arr) => {
+  //Function logic
+});
+
+forin loop:
+
+for (const key in object) {
+  if (Object.prototype.hasOwnProperty.call(object, key)) {
+    const element = object[key];
+  }
+}
+
+Here you are getting an if statement it means that sometimes there are some built-in objects in which there are some properties which there which are not their own properties but added properties are there so I don't want that, I just want those properties which are relevant. so if you want those properties which are not inherited then you can write here a1, b2, c3 to take these three this is how you write the syntax, which automatically gives you the VS code.
+
+let obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+for (const key in obj) {
+  if (Object.prototype.hasOwnProperty.call(obj, key)) {
+    const element = obj[key];
+    console.log(key, element);
+  }
+}
+
+forof loop:
+
+Directly for Arrays.
+
+for (const element of a) {
+  console.log(element);
+}
+// element or iterator or value
+
+So let's move ahead and see map, filter and reduce very important concept. now see what happens sometimes we have to make a new array and we can make that with the help of map, so i say use original array and make a new array and at least write a line of code and do this so you will say that I will put a for loop and make a new array and add things in it yes that thing will work but you have a one liner.
+
+et arr = [1, 13, 5, 7, 11];
+let newArr = [];
+for (let index = 0; index < arr.length; index++) {
+  const element = arr[index];
+  newArr.push(element ** 2);
+}
+console.log(newArr);
+
+
+Did we need to work so hard? was there any easy way to do this? yes there was
+
+Map() --> Creates a new array by performing some operation on each array element. 
+
+So what i will do here is let new arr and here i will say map the arr and take its element by the way in arrow function if we have to give only one argument then we don't even need to put that bracket.
+
+I think I didn't tell you in the topic of arrow function but you should know that instead of writing this you can remove the round braces.
+
+let newArr = arr.map((e) => {}); -->  let newArr = arr.map(e => {});
+
+let newArr = arr.map((e) => {
+  return e ** 2;
+});
+console.log(newArr);
+
+In most of the cases we need value in map but if you want index and array then you can take that also inside, so here you will get index and array, sometimes we need to use index and array in very less cases you can do it map you index, I will write here index and array so element, index and array you can call it array or a, ARR is our original you can call it anything, so you get this so I hope you understood how map works and what problem it solves.
+
+let newArr = arr.map((e, index, arr) => {
+  return e ** 2;
+});
+console.log(newArr);
+
+Filter() --> Filters an array with values that passes a test. Creates a new array.
+
+Filter is a very interesting function when we will make UI then you will know its importance.
+
+const greaterThanSevem = (e) => {
+  if (e > 7) {
+    return true;
+  }
+  return false;
+};
+console.log(arr.filter(greaterThanSevem));
+
+OR
+
+console.log(arr.filter( greaterThanSevem = (e) => {
+    if (e > 7) {
+      return true;
+    }
+    return false;
+  }));
+
+Reduce() --> Reduces an array to a single value.
+
+let arr2 = [1, 2, 3, 4, 5, 6];
+const red1 = (a, b) => {
+  return a * b ;
+};
+console.log(arr2.reduce(red1))
+// Output: 720 --> 1*2=2*3=6*4=24*5=120*6=720
+
+
+let arr3 = [1, 2, 3, 4, 5, 6];
+const red2 = (a, b) => {
+  return a + b ;
+};
+console.log(arr2.reduce(red2))
+// Output: 21 --> 1+2=3+3=6+4=10+5=15+6=21
+
+Array from --> used to create an array from any other object.
+
+Now there is a method called array.from and when we will apply this in html, so i am just telling you what will happen with array.from if you want to make an array of another object which can be an array, like if you want to make an array of html collection then you can make it by using array.from if you want to make an array of a string, then you will do array.from it will become an array, so i will show you i have do array.from it will become an array so I will show you by doing this...
+
+console.log(Array.from("Shani"));
+// Output: (5) ['S', 'h', 'a', 'n', 'i']
+
+So if you want to convert any object into an array so you can use array.from and your array will be made.
+
+
