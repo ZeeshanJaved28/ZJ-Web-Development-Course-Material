@@ -1,0 +1,46 @@
+Document Object Model in JavaScript
+
+We will see that in JavaScript, what is the benefit of representing things in a tree-like structure through a BOM and document object model (DOM).
+
+Now what is this DOM, DOM stands for Document Object Model.
+
+DOM represents the page content as HTML.
+
+document.title = "Shani is good";
+
+console.log(document.title);
+console.log(document.body);
+
+document.body.style.backgroundColor = "red";
+
+What is the document object model? Mapping is the entire document's inner object.
+
+The object in which you get all the content of the page.
+
+Now what is this BOM, BOM stands for Browser Object Model.
+
+BOM represents additional objects provided by the browser (host environmnet) for working with everything except the document.
+
+And what is the BOM?
+
+Now if you want to work with someone other than the document, then the then browser provides you some additional objects, that is called BOM, like location.href is provided to you, so that you can redirect in another URL, which is your window object.
+
+window is a global object.
+
+So window comes in object: you get dom, bom and javascript core.
+
+Why we are reading about all these things, let me tell you we are reading about all these things so that we can target elements with the help of JavaScript which we are going to see in the coming videos so how we will target elements.
+
+one thing I want to tell you that if you are on any website in browser then you right click and as soon as you click on inspect, then you see
+
+I right clicked on this element and inspected it so this element was selected, okay or if I want to select this particular element or select this whole div then you see it has written equals to equals to dollar zero now listen to this trick carefully it will be useful for lifetime
+
+I can use dollar zero to refer this object so if I write here dollar zero
+
+I write dollar zero so you can see this element is coming which I have selected so whatever is selected becomes dollar zero now if I write style.backgroundcolor and I write equals to green so I can make its background color green as you can see so what is this $0 whichever element you selected it was $0, whichever you clicked here it was $0 now if I want to make it $0
+
+I will right click and inspect and whichever element I click here it will become $0 see here this thumbnail section is $0 here this container is $0 so if I run $0 style and background color green then this one will be green so $0 is this in the browser.
+
+So browser gives you this kind of utility so that you can select a particular element and can add styles in it so this is our document object model.
+
+so what you have to do is you have to go through the DOM you may want to search through a particular node like if I want to find a div inside the body so there are functions for that if you want to select a given class or element in the body you can select multiple elements in all these things it provides you with the facility to select and to use any complex query to select different elements you can use CSS selectors in javascript if you want to use multiple nodes with a particular CSS selector so i hope you understood about DOM.
