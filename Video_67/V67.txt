@@ -1,0 +1,18 @@
+JavaScript DOM - Children, Parent & Sibling Nodes
+
+We saw Dom in Javascript very closely. In today's topic, we will see how to access Nodes, Parent and Children. And how to target an element and add it's style or any element inside it.
+
+I want to tell you one thing that what we are going to do now that is in JavaScript means when we make websites it is going to be used a lot Means when we will make websites. And this is very important Because many people are saying that we have read about variables We have read about the rules of making variables Let const var for loop by loop But what I am going to tell you now It is going to be used in actual So increase your focus a little bit I am going to tell you how to select the elements, how to add children in dom.
+
+text is a node 
+
+TextNode is also a child. It is a child
+
+text node is not an element --> No ElementChild
+
+So what are the elements which are html elements and what comes in the notes, text comes in it? text notes and comments.
+
+
+Element means HTML element.
+
+In most of the cases we target elements only.
