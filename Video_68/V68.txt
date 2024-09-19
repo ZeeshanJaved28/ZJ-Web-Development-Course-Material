@@ -1,0 +1,65 @@
+JavaScript - Selecting by Ids, Classes, and More
+
+In JavaScript, there are many methods to search DOM. Like getElementById, getElementByClassName, and then a document.querySelector which you can use to target any element. When to use them?.
+
+The thing we are going to talk about today is so important that you will use it the most in projects document.getElementById, document.getElementsByClassName, document.querySelector, document.querySelectorAll.
+
+See here now what I want to tell you is that you target individual elements, suppose you want to change their CSS class, then how will you do it?.
+
+Trick:
+document.getElementById ==> short form (document.gebi)
+
+It will automatically suggest, it will work for your variable names and also it will work for your built-in methods.
+
+Now see here, Dom navigation properties are helpful when the elements are close to each other if they are not close to each other we have some more methods now see what happens that parent, sibling next sibling, previous sibling when elements are close to each other and there are less elements, then you can use parent-child method which we used in the last video but sometimes you want to target a particular element with id, document.getElementById use it, sometimes you want to target with class name and here getElements is there, not get element remember this, get elements by class name because one class can be in different elements can be in multiple elements, that's why there is elements here but in ID there is element because there will be one ID in one element, that ID can't be in another element if you put it, it will be wrong but by rule id means identifier you will put it in one element.
+
+Now see it became green so it becomes green whenever you add it in inliness by javascript so what i did is i added inline css using javascript but one thing is that it won't make all the boxes green, it will work with the first selector that matches but you want all of them, so what you will do for for that you will use this document.queryselector all but this is not that simple as soon as you do document.queryselector all what will happen, i will show you by locking the console it will return an html collection when you say document.queryselector.box then it returns the first element which matches the dot box selector but when you say document.queryselector.all then it returns an HTML collection and that HTML collection will look like this in which all the elements will come, in which class is box in which class is box now if you want all these to be green so what you will do?.
+
+It will say in html collection you can't do style.backgroundcolor green it won't work. So if I do this then it will say that in HTML collection you can't use.style.backgroundcolor green. 
+
+document.querySelectorAll(".box").style.backgroundColor = "green";
+
+See the error it is saying that cannot set properties of undefined setting backgroundcolor. It is saying that the.style of the array is not valid. Sorry the.style of the HTML collection is not valid.
+
+If you do the.style of an array or a string, what is the meaning of this if you do the.style of an array or a string what does it mean? if you do a dot style of an element then you will understand.
+
+So you have to use for loop and access all the elements of this HTML collection, this node list. It returns a node list. So all the elements of this you have to do one by one and set their style. How will you do that?
+
+So for that we have a method called forEach.
+
+document.querySelectorAll(".box").forEach((e) => {
+    // console.log(e)
+    e.style.backgroundColor = "green"
+});
+
+Can I put traditional for loop for i is equal to 0, i is less than this node list dot length i plus plus?
+
+Yes you can do it, it's your wish, use any for loop.
+
+So this thing you should know so here if i am getting a node list from query selector all, so this node list i have to iterate and on every element i have to change style.background color green you should know this thing, okay so here you have seen that when we use query selector then we can do the same directly because it returns only one element but query selector returns all multiple elements in a node list so we have to iterate that node list and we have to work with their individual elements, we will do this a lot when we will make projects so you have to iterate that node list and work with their individual elements we will do this a lot when we will make projects so you have to remember this.
+
+Then there is one more, matches, closest, and contains I will tell you all these methods in short if you write in any element element.matches and give a css then it will check that does your element match the css selector or not, means if a css is targeted by a css selector then will it target or not, okay so this one element matches a given css or not, it will tell, I will show you the example:
+
+let e = document.getElementsByTagName("div");
+console.log(e[4].matches("#redbox"));
+Output: true
+console.log(e[3].matches("#redbox"));
+Output: false
+
+After that you will see which is the closest element which matches the CSS selector.
+
+console.log(e[3].closest("#redbox"));
+Output: null
+
+If nothing matches, then it will return null.
+
+Then it is contains, returns true if element b is inside element a, means if element b is inside element a, then it will return true and if element a is element b is inside element a then it will return true and if element a is inside element b then it will return true.
+
+let e = document.getElementsByTagName("div");
+console.log(document.querySelector(".container").contains(e[2]));
+console.log(document.querySelector(".container").contains(e[0]));
+// Output: true
+console.log(document.querySelector(".container").contains(document.querySelector("body")));
+// Output: false
+console.log(document.querySelector("body").contains(document.querySelector(".container")));
+// Output: true
