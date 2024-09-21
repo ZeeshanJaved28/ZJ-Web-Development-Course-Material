@@ -1,0 +1,8 @@
+JavaScript Exercise 12 - Color the Boxes
+
+Today's exercise is going to be related to dom I will give you an exercise in which you have to 
+use the methods of dom.
+
+Given 5 boxes, Assign a random color and a random background to each box using DOM Concepts.
+
+How will you assign random color?
