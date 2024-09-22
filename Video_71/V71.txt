@@ -1,0 +1,15 @@
+Inserting and Removing Elements using JavaScript
+
+We have seen a lot of DOM manipulation in JavaScript. In today's topic, I will tell you how you can insert elements in JavaScript and how you can remove elements from your DOM. This is very useful when you want to make single page applications or you want to do it without reloading the page.
+
+So 'outerHTML' is in the property fullHTML which is 'innerHTML' plus element itself.
+
+What is the difference between node name and tag name tag name is applicable only for element and node name is applicable for any type of node like comment node, text node.
+
+document.designMode = "on"
+
+There are data attributes, which you can add custom attributes, suppose I want that my box in this I give an attribute in my box in which I can store which element is this for some reason suppose I want to store that who has made this element it is a very weird attribute but I want to do data created by is equal to so I can write Shani.
+
+Now after this there is one more method, insert adjacent html we have talked about node that you had a node you made a node or you brought an element from somewhere else you can insert it and whatever you want to do you can do that but what if you have HTML, that means HTML is a string and you want to insert it, then how will you do it there is a method insert adjacent HTML.
+
+Suppose i have an element And i want it to rotate sometimes So i will make a class in which i will write the rotation animation And i will toggle that class in which I will write the rotation animation and then I will toggle that class and with this comes another method, toggle .toggle is a method toggle means if it is open then close it if it is closed then open it, this is called toggle if I say toggle the light switch, if it is open then close it and if it is closed then open it.
