@@ -1,0 +1,17 @@
+JavaScript Exercise 13 - Dynamic Website Builder
+
+In today's topic, I'll give you an exercise of a website builder With the help of which you can build your desired website I'll tell you what you have to do And you will get to know from this exercise What is the use of the DOMs we read.
+
+Here I tell you the question what you have to do I will give you a card I will give you a photo of that card.
+
+What you have to do that you have to put that card with some data the data in that card should be added whenever you run a function and you will give those functions to that card.
+
+Let me explain what you have to do then you will also know what to do so this is card.png, this is a png file what you have to do is this title this is channel name, this is number of views and this is how old the video is you have to design this card and this image of is you have to design this card and this image of yours, you have to put this image and this time is also to be given as an input so what you have to do is write a function
+
+Let me make it little more clearer script.js and i will also make script.js so you have to make a function now i don't know what you are going to write in this function but you have to finish this function one thing i will add for you is div.container which will have many cards and you have to use class.card and you have to use the class.card means you have to use the class called card and after using that you have to write this function means you have to write that in your card there will be a class called card what will this input take? first it will take title, second what will it take? second it will take this thing is channel name so i will write cName third one is number of views fourth one is number of views is an integer i don't know how you will do it with k yes the level has increased if 727000 then you have to write 727k if 7270000 then you have to write 727m you have to do it yourself.
+
+And after this how old is it, so I will keep it as months I will keep it as months i will keep it as months old although i can also tell you that i will give a date when it was published and you have to tell me how old is it i am not doing that now i have made it simple then duration duration is a string.
+
+One more thing will come, thumbnail so this thumbnail, you have to give a link for thumbnail so i will take the link from here open image in new tab so i have taken the thumbnail so i have given the URL of thumbnail.
+
+one more thing, whenever I run this create card, till then what should happen, the card should go inside the container ideally we will map it with a button, that if you click on a button, the card will be added dynamically but again, you have to give some styles to the container also, such that when that when cards are added, they are proper you have to keep that in mind.
