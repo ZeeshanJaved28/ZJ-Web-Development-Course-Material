@@ -1,0 +1,49 @@
+Events, Event Bubbling, setInterval & setTimeout in JS
+
+There are many events in JavaScript. Like you want to take the mouse inside an element. Or you want to take the mouse out of an element. You can click on any element. You can double click on it. We will see about all these events in this topic.
+
+Q: Why events are very important and why you will want to use it so much?
+
+Browser event is a signal that something has happened. You can also make custom events.
+
+but there are many events which you can see in JavaScript you can listen for events and there are different types of events which you can see from MDN.
+
+so the second argument takes the event object this is called event object.
+
+button.addEventListener("keydown", (e) => {
+  console.log(e);
+});
+
+Now you can see here that you can use keyboard events, document events, all these things, then there are some events of the form, like what to do when the form is submitted submitted what to do when the form is focused what to do when the input is focused what to do so you can check out all these events.
+
+JavaScript says we will do bubbling by default. Because technically things are sitting. You clicked on this and this. You said it's same but i don't want it. JavaScript says if you don't want it, stop propagation. You said what do you mean? I will tell you what it means. stop the propagation what does it mean? I told you that if you are using any event listener then you can take an event object and with that event, you can play with the fire so you say e.stoppropagation e.stoppropagation and what will this method do? it will stop the propagation means there will be no bubbling this behavior will not be shown.
+
+there will be no event fire this is called stop event bubbling.
+
+So the question is asked in interviews, what is event bubbling you will say that you will listen to an event on any element so its listener will be activated but its parent will also be activated because you are clicking on an element so technically you are clicking on it's parent if you are dancing in your room number 4 then you are dancing in your house, in your city and you are dancing in your state in this country, in this world in solar system so technically your you are doing is your event is propagated someone will ask you from above he will say he is dancing on earth he will not say he is dancing in room no.4 he will say he is dancing on earth so this is called event bubbling and if you want to be told that you are dancing in this room you don't want people to say you are dancing in this room you don't want people to say that you are dancing in this world, in this planet you stop the propagation you say that I am dancing here neither I am dancing in this house nor in this state ok so this is your way to stop event propagation.
+
+The way we add an event listener we can also remove an event listener.
+
+like add event listener is used to assign multiple handler to an event along with that, remove event listener you can see the same function same function object you can also remove an event listener so you can make a variable object you can remove event listener so you can make a variable and by giving handler you can add event listener and if you want to remove you can use the same variable and remove it so that event listener will be removed.
+
+Now one thing is left which i want to tell you and that is set timeout and set interval.
+
+If i want something to happen ok, it should happen again and again so what I will do I will do it on this page suppose I want something to happen repetitively every 2 seconds so I can use set interval.
+
+Set interval is a function which takes a function a function takes a function and takes time how much time it takes in milliseconds.
+
+setInterval(() => {
+  
+}, interval);
+
+Set timeout is only run once after a certain period of time.
+
+setTimeout(() => {
+  document.querySelector(".childContainer").style.backgroundColor = getRandomColor(); 
+}, 5000); // Every 5 seconds that whatever is happening inside it. 
+
+So to cancel set interval we use clear interval to cancel set timeout we use clear timeout.
+
+clearInterval(1); // the set interval will stop running.
+clearTimeout(1); // the set timeout will stop running.
+
