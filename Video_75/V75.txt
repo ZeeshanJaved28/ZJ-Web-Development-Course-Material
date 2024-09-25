@@ -1,0 +1,135 @@
+JavaScript Callbacks & Promises
+
+In today's topic, I will tell you about callback functions. 
+
+Callback functions are used whenever you want to call a function once a function executes.
+
+We will see how it works in a while and then we will see promise. Promise is a very important concept in Async JavaScript because it is a very confusing concept among JavaScript enthusiasts. But in this video, I will make it very obvious promises coach.
+
+Q: What are callbacks and promises?
+
+If we talk about callbacks, then callback function is simply a function that runs inside a function. we just saw that a function runs when we give an argument to it and run it. But here we can pass a callback function. And after that we will go to the promises and see what promises are.
+
+Before I tell you about callback and promises i want to tell you about asynchronous nature of javascript now what is this asynchronous nature of javascript.
+
+Asynchronous actions are the actions that we initiate now and they finish later. eg. setTimeout
+
+Synchronous actions are the actions that initiate and finish one-by-one.
+
+A callback function is a function passed into another function as an argument , which is their involved inside the outer function to complete an action.
+
+The one above will be executed first, Then the one below will be executed I say no, it does not always happen JavaScript has an asynchronous nature Whenever JavaScript gets a function which is asynchronous in nature, So it avoids JavaScript for later.
+
+I want to tell you something very quickly that you guys, react redux, es7 react redux, mine will be installed in the installed extension, that is this this is the extension that I have installed and this one too, so one is dsznajr in the extension, this is it. This is the extension which I have installed you can see and I have installed this too. So one is dsznajer and one is this. This is almost the same name of the extension but you can install this. What is the benefit of installing this? If I want to make an arrow function then I can write like this anfn I will hit enter and I will get an anonymous function.
+
+When we have callback inside callbacks, the code gets difficult to change called Pyramid of Doom or Callback Hell.
+
+If we want our code to be managed well then we use promises. so i told you that pyramid of doom is made and it becomes very difficult to handle the script so that's why we use promise now what is promise?
+
+The solution is to callback hell is promises. A promise  is a "promise of code execution", The code either executes or fails, in both the cases the subscriber will be notified.
+
+Now I will show you one more thing that you can make snippets in VS Code.
+
+Manage Icon -> Go to snippets -> you will write the name of your language.
+
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "clog",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"alert": {
+        "prefix": "alt",
+        "body": [
+	        "alert('$1');",
+            "$2"
+        ],
+	},
+}
+
+// console.log(''); --> clog
+// alert('Shani'); --> alt
+
+Promise means promise of code execution.
+
+In most of the cases what we do when we hit network request then we wait for network request we say that we wait for network request as soon as our network request will be finished what we will do we will print it, who will we print we will print the data we will print the data in the network.
+
+console.log("This is Promises");
+
+let prom1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log("Yes I am done");
+    resolve("Shani");
+  }, 3000);
+});
+
+prom1.then((a) => {
+  console.log(a);
+});
+
+So this is used for that, I have made dummy promise for you just to tell you that you can make your own promise whenever you want you can resolve it, whenever you want you can reject it in most of the cases you don't need to make your own promise you will run the promise you will get promises, you will use.then and.catch.
+
+let prom1 = new Promise((resolve, reject) => {
+  let a = Math.random();
+  if (a < 0.5) {
+    reject("No random number was not supporting you");
+  } else {
+    setTimeout(() => {
+      console.log("Yes I am done");
+      resolve("Shani");
+    }, 3000);
+  }
+});
+
+prom1
+  .then((a) => {
+    console.log(a);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+So here a network request can be rejected or it can be successful. If it is successful, then what would you want? If its data comes, then you will use this.then function. Or you will use.catch to handle the error. .catch, many people say that there will be no error in my code, if I write correctly, then I don't use.catch.
+
+No, you have to keep unexpected scenarios in mind, like if your net is gone, the user was doing something, his net is gone, then he will get an error, he will not be able to connect to your server, or suppose your server is down, take this possibility that my backend is down, so what will the users see, so at least the users should see that yes, we are working on a fix, our systems are not working, please wait after 3 minutes, so the user will say yes, it's fine, or say that my site is under maintenance, so at least the user will be cool, yes, it's fine, things are being checked, it will be fine, so this is the promise.
+
+promise.finally(()=>{}) which is used to do some general cleanups.
+
+We can chain promises and make them pass the resolved values to one another. 
+
+If I do .then and put different handlers on the same promise then it will run independently this handler 1 has no relation with this handler 2 so we can do this, we can attach multiple handlers with promise.
+
+Promise API:
+There are 6 static methods of promise class
+(1) Promise.all
+(2) Promise.allSettled
+(3) Promise.race
+(4) Promise.any
+(5) Promise.resolve
+(6) Promise.reject
+
+Now after this some methods of promise API which I want to show you so here see promise.all will do that it will wait for all promises to be resolved ok, and will return the array with their results.
+
+What is the meaning of promise to settle? to settle means either it will be resolved or rejected.
+
+It will be one of these two to resolve means that a value should be obtained without error so there is a difference between resolve and settle.
+
+What is the difference between resolve and settle because there is a difference in both and this is very important for you to know so listen again if you don't understand so promise.all settled is that whatever result comes, now it is resolved or rejected, we don't know anything but both promises are there, then what you have to use, all settled.
+
+What is promise.race, we are making a race of promises, whatever value is resolved or settled, the result or error will become the outcome.
+
+So we will make a race of these two promises, now sometimes we don't know like if i am hitting two network calls, one is google.com and the other is another API, which one is faster?
+
+It can be any of the two, suppose I have 5 links to download one image, and I want that whatever comes first out of the 5, whatever is running well, I get that.
+
+What is promise.any? Waits for the first promise to fulfill and its result becomes the ultimate it should not be reject, it should be fulfill, means promise should be resolve if it is resolve then you will get the value which is resolved first if all are rejected then it will be an aggregate error.
+
+Then promise.resolve and try it with multiple values I have done it with prom1,prom2,prom3,prom4,prom5 try it atleast promise.resolve makes a resolve promise with a given value so it will give a value. That will make it look like it will give a value that it will give a feeling that this value is from a resolved promise, ok? it will return a resolved promise that this promise was there and it got resolved it will give a feeling like this same for promise.reject it will give a feeling that this promise was rejected and with this error, the promise was rejected.
