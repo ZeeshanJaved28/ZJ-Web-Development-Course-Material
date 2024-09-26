@@ -1,0 +1,54 @@
+Async/Await & Fetch API in JavaScript with Examples:
+
+In JavaScript, the concept of async await is very important. If you see any big codebase, you will definitely see the implementation of async await. We will see why is async await so important to learn and why it makes things very easy when it comes to dealing with promises. And why we are going to prefer async await in our projects.
+
+So what is promise? Understand the promise. We have understood understood callback that we pass a function in a function and then call it from there this is callback, 100% what is promise? promise is the promise of code execution.
+
+
+suppose I have a function and that is getData so this function will bring the data from the server or not and how much time will it take to bring the data from the server how will I know this? I don't know suppose I am doing here console.log loading modules, suppose here is my code to load modules, I am doing many things console.log do something else do something else, here I am doing something else so my code of javascript is running from top to bottom now suddenly what I had to do I had to load data and after loading data you can think that there is a code written here here is a code to load module or something else or to load data now it is process data but we know that what does javascript.
+
+it runs this and that now you have done load data now you want process data only when it is loaded but i want load data and then wait because how will it process data how will it do it, think yourself so we have to put a wait here so what we will do, promise here get data let data is equal to get data, it will say what will get data do let data is equal to get data, it will say that this cannot run in a snap because it has to go and get data, so it will return a promise, it will give you an object which when it gets data you can extract data from it so it will give you a promise object, promise can be full or network error, so that promise can be rejected, so error so that promise can be rejected so get data will give a promise now here to simulate promise we can make it like this, so i will say return new promise, this is for me the way to make promise, i will not make this promise i will use fetch API and what is that i will tell you resolve reject and I am simulating this function in a way get data function and I will say set timeout and inside this what I will do I will resolve with value 455 suppose this is random value, suppose it takes 3 seconds or 3.5 seconds, this is value in millisecond.
+
+so what will happen if i do console.log data and i run it so you see that the data that data didn't come promise came which got fulfilled later so whenever you print a promise object it shows the data of that time So it shows the I, B. Ignore this for once But you understand that it will take time to get this data And because it will take time to get this data, it is returning a promise.
+
+Now I want that this function Keep bringing this data and my work below should not stop Suppose I am doing something else here stop suppose i am doing task 2 so if i stopped this function then also i want the function below to continue so basically i want to keep the asynchronous javascript in my control listen to me carefully, you will understand the whole video so see how javascript works this works, this works, this works, this works means we are saying that the code will run in the background and then it will come here then it will come here, then it will run if I make it 53 seconds 53 seconds, so you will see that when I reload it everything is printed, so this promise is pending it is still pending, because it is resolved after 53 seconds but the code below didn't stop so this is the benefit of asynchronous javascript but i want this to not happen till data comes so what i can do is i can use async await one way i can do is that i can say data is a promise so i will say data.then
+
+When data is done then run this function with value, here i will take v, v is value and here I will do whatever I want to do when this promise is resolved one way is this, so I will put all the code in this, in data.then but this is the same approach that we have to give a callback, this is a callback based approach we gave a callback function to.then and it will work if I don't want this approach let me show you that it works after 3.5 seconds you will see 1,2,3,3.5 and see as soon as the promise is fulfilled, all the other codes are running so this is one way to do things, but async await was introduced so that it doesn't have to do this that async await has made a new way of waiting for data has been made by Async await it was said in Async await, I do one thing that because I want to give this code to you all so I will comment it out this is one approach, we saw it, it was a good approach, applause for this approach but can we do better, can we write a cleaner code than this and the way to write that clean code is Async await, so I will right click and format document, I will do it like this so what I am saying is I want this function to stop here so I can make this function async function so I can say that this is an async function
+
+Async function means it will run in background and it will run in background, I don't care about it, my script will run so the benefit of making async function is that this function will keep running in the background
+
+I don't care about this function, it will keep running means this is how javascript engine says that what is this function doing it is not doing like this, it is doing in the background, I don't know it will keep running, it will keep running, it will keep running, it will keep running in the background then it will keep running, then it will keep running, then it will keep running so I will show you, immediately you will see everything so I reloaded it, so immediately you can see everything promise pending, you can see everything but I want to wait for this async function so if I want to wait for this async function so I will put await here, but to put await.
+
+I have to make another function, I have to wrap it in a function so I will do one thing, I have to make another function I have to wrap it in a function so let's make a main function async function main and I am doing this so that it is easy to wrap it so I have wrapped all my code in a main function so I have made it a main function and I will do format document so I have made it in a main function and after wrapping it in this function what I am doing is, I am running this function so main function will run, this will be this, this will be this it will say ok, await you are awaiting, we will wait for it.
+
+So it will wait for it to finish, and await can be used in async function that's why i made main here, there are other ways without using async await but for now you can understand that to use await, async should be in function so if you find it confusing then i am explaining again there is a function main and i have run this function here this function will run because it is async function this will run, this will run, it will run now if await is not written here then it will run it in the background but because I have written await here, it will wait for this async function and will bring its value in the data so I will show you here that as soon as I reload it so it is running, it is running, it is waiting for it it is running and the rest is running so I can apply this type of awaits and I can make this type of async functions so you should know this thing.
+
+Nothing more than this instead of dot then, use promises and racing commit.
+
+so fetch API is basically used in the same way in fetch we have options to give get request, post request and to see the syntax of fetch API properly you can open its mdn reference and we have to wait twice to parse fetch API because fetch API first returns this promise and then we parse it and it also returns a promise so there are two promises, one is to bring data and the other is to parse it which is parsed in JSON, you can also parse it in text.
+
+So if you want that data to come in a string form, you can do this or if you want to parse as JSON because most of the data we have we want to get it as a Javascript object when we do.json, it gives us a Javascript object in most of the cases you will write x.json then fetch API is built in Javascript you don't need to import any module to use fetch API is built in javascript you don't need to import any module to use fetch API, so we made an async function.
+
+Settle means resolve or reject
+resolve means promise has settled successfully.
+reject means promise has not settled successfully.
+
+=> Post request method from MDN and JSON Placeholder References.
+
+// Example POST method implementation:
+async function postData(url="", data {}) {
+const response await fetch(url, {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+// 'Content-Type': 'application/x-www-form-urlencoded",
+},
+body: JSON.stringify(data),
+});
+return response.json();
+}
+postData("https://example.com/answer", { answer: 42 }).then((data) => {
+console.log(data);
+});
+
+What is promise, promise is simply a promise of code execution it is thrown in the background, when it will run then you will take that value from that object so it is such an object that in a way it is referencing the code that is running in the background that when that code will run, you take its value from it or it is run or not it was fulfilled or not so it's a reference.
