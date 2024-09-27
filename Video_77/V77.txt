@@ -1,0 +1,4 @@
+JavaScript Exercise 13 - Solution
+
+Word Wrap short trick key:
+Alt + Z
