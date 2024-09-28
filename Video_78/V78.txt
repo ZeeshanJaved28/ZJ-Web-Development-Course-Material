@@ -1,0 +1,19 @@
+JavaScript Exercise 14 - Hacker's Terminal
+
+I told you guys about the concepts of JavaScript in which I hav covered Async JavaScript very closely so that you guys can understand Async JavaScript well, today I am giving you this exercise in which you will understand the concepts of Async JavaScript.
+
+Today I am going to give you guys an exercise which will be very important for you people because it will help you in solving your Async/Await will test your knowledge.
+
+Today's exercise is going to be related to hacking, We are not going to do hacking working in this topic but we will make it look like we are hacking and this is called hacking simulator.
+
+Create a hacking simulator which has green background and it shows these messages with random delay of 1 to 7 seconds 
+
+    Initializing Hacking... 
+    Reading your Files...
+    Password files Detected...
+    Sending all passwords and personal files to server...
+    Cleaning up...
+
+    The three dots must blink so that it looks like a real terminal 
+
+So if you guys don't know this dot What does blink mean, one two three these show This show happens, then this show happens, then all three disappear Then this show happens, then this show happens, then this The show should be something like this for you guys I want to show dots but how will you use CSS Will you use JavaScript? Will you write CSS JavaScript brother that is yours Head you know okay I gave the question It was my job to give the question.
