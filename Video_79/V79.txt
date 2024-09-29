@@ -1,0 +1,117 @@
+JavaScript try catch & Error Handling
+
+In today's topic, I will talk about error handling JavaScript has a mechanism With the help of which even after an error occurs You can handle it and continue the execution of your program.
+
+Today I am going to tell you about error handling in JavaScript error handling is very important because only because of error handling we can handle errors in JavaScript.
+
+let a = prompt("Enter first number: ");
+let b = prompt("Enter second number: ");
+
+let sum = a + b;
+console.log("The sum is", sum);
+
+Is whatever is the sum of these two numbers should come out now this code is correct or wrong many of you know also it will happen but let me tell you that this code is wrong why you will know in a second i will tell you guys why i am saying this the code is wrong if i type this code here.
+
+Let me tell you why I am saying this The code is wrong, if I preview this code here then it says enter For example, the first number is 12, I enter For example, the second number is 67, I enter 67 + 12 It becomes 79, but look at what is written on the console The console says 1267 That is, what did it do? It appended this number at the end, why would it have done this Do you know if I write four and I write seven here, it is writing 47 But it should have shown 11 here It did not say 11, it was wrong Why is it saying wrong, because Is this an error or not? It is not an error because fundamentally when you use when you use A and B here when A is also a string and B is also a string then it appends the plus operation to two strings, if you do it then it will append that is, it will add this string to this string.
+
+So what do we have to do we have to convert both of these into integers so what do I write here I will write here passant passant is A, function in JavaScript which passes an integer to a string and I will do the same thing with B
+
+let a = prompt("Enter first number: ");
+let b = prompt("Enter second number: ");
+
+let sum = parseInt(a) + parseInt(b);
+console.log("The sum is", sum);
+
+So what happens is that fundamentally If you use Promt, it gives you a string and you don't want to give people that string when you're dealing with numbers, so you used percent, but sometimes What will happen is that your user will give such an input that you did not ask him for it but brother he is a user, he will make mistakes, he will play around with your application.
+
+So if I write enter here I write the first number, Zee enter I will hit enter, second number, suppose I write let me say Shan enter the sum is none the sum is none
+
+Why is the sum is none the sum is none because brother when you pass the string, it will give you not a number it will give you a number, it will not give you a number it will give you not a number, okay and if you guys here, suppose you do something like this that you add anything to it or anything subtract If you do this then you will not be able to do it
+
+Because what is simply here is that this number is not actually a number It is a string so how can you give a string You can't do this to a person So I would like that this behavior is not acceptable to me, I don't want this behavior to be accepted.
+
+Because this will introduce bugs In my code I am not getting to see any error message And JavaScript does this Intentionally that you guys don't get to see the error message JavaScript has a forgiving nature but you don't Would you like that JavaScript is forgiving Sometimes because you will want that if there is an error then tell me friend then only I will fix So here to stop the forgiving nature you can throw an error.
+
+If you want a comprehensive list Errors in JS MDN then you can go to MDN Error Reference and you See, here you will find many errors in JavaScript, which There are different types of errors, like you want you can throw a type error or say you can throw a syntax error or you can throw an internal error, throw any error you can do it as per your wish, or you can throw a generic error.
+
+let a = prompt("Enter first number: ");
+let b = prompt("Enter second number: ");
+if (isNaN(a) || isNaN(b)) {
+  throw SyntaxError("Sorry this is not allowed");
+}
+let sum = parseInt(a) + parseInt(b);
+console.log("The sum is", sum);
+
+Just If I write here any string and again any string and I reload it again actually any string and any string then you See here it is written as unkown syntax error sorry this is not allowed so you can throw an error in JavaScript on your own will, did JavaScript throw this error internally.
+
+OR did you create it, did you want to tell the user of your application that yaar bhaiya user you are doing wrong you are not doing it right so fix this before moving forward only then it will fix it otherwise it will not know where it is making a mistake So Errors are good, just the way it happens Surf Excel stains are good, errors are good.
+
+
+Sometimes errors are good, you get to know what is it, okay, so here we can throw syntax error like this
+
+let a = prompt("Enter first number: ");
+let b = prompt("Enter second number: ");
+if (isNaN(a) || isNaN(b)) {
+  throw SyntaxError("Sorry this is not allowed");
+}
+let sum = parseInt(a) + parseInt(b);
+console.log("The sum is", sum*x);
+
+Now suppose I write here Sum = Sum * x What is x I have never defined x Suppose I am writing something like this And what will I do here I will reload it, okay I wrote four here, then I wrote Seven here, look here x is not I am getting defined reference error now I want that friend, I should not write any such Error If it comes, I can handle it.
+
+I don't want to see this error means I can take some action based on error thrown by a JavaScript library or any JavaScript internal error. So if I want to handle any type of error that JavaScript is giving me means I am getting two types of errors you people will encounter one error, you will give me, that means you will say that Bhai sahab you are doing wrong take this error, then you will throw error, this is called throwing error, so you will create custom errors and throw them. One is that you people will handle errors, that means You accidentally something like this happened in your application. like suppose there was a network error sorry you made a network call and the data received from there was unexpected and it threw an error for you okay so here you can handle that error.
+
+
+Now I want to tell you a very important thing which I have also written in the notes if you look here, I have told you about the two main blocks of try catch, which are I told you that you try the code, try to catch it and then after that I have also told you that if no error comes then the catch is ignored, try catch which works synchronously if you have an async function like set time out, if you have then the script will die And the catch will not work if an error is occured.
+
+let a = prompt("Enter first number: ");
+let b = prompt("Enter second number: ");
+if (isNaN(a) || isNaN(b)) {
+  throw SyntaxError("Sorry this is not allowed");
+}
+let sum = parseInt(a) + parseInt(b);
+
+try {
+  console.log("The sum is", sum * x);
+} catch (error) {
+    console.log('Error Occured!');
+}
+
+I have told you about the error object.
+
+try {
+  console.log("The sum is", sum * x);
+} catch (error) { // Error Object
+    console.log('Error Occured!');
+}
+
+Now the final thing that I want to tell you is finally clause I have told you guys here how to throw a custom error already you can throw a new error throw new error. So here I will quickly tell you about the finally clause What happens in finally Clause is not try catch Sometimes in construct you also use finally And you would not want to do this whenever You want to clean up.
+
+try {
+  console.log("The sum is", sum * x);
+} catch (error) {
+  console.log("Error Occured!");
+} finally {
+  console.log("Files are being closed and DB connection is being closed");
+}
+
+What do I need to do finally I will tell you what do I need to do to write it If it was just this Try or catch will definitely work then Finally it doesn't happen, I would have written it down This is mainly used in functions now Suppose I run this code Suppose I will show you this code by running it I wrote here what is the first number It is three what is the second number five error came It's done brother, it's fine and here an error came brother Actually no, I reloaded it again Yes, actually it didn't refresh properly 4, 2 so what happened here, an error came Bhai The files are being closed and the DB connection It is being closed, okay, now assume there is no error It means I define x here Let me make x = 5, let's say or Let me make it one, okay, then there will be no error It will come, then finally will it work, I will just refresh it.
+
+Again so that It has been updated, wait a minute, I will refresh it again I wrote here one I wrote here five is equal to six The files are being closed and the DB connection Is being closed, so finally write it If the writing is equal, then should I finally remove it I can't do it like this then even then it will be the same yes it will be the same then too but there is a catch I will tell you what that catch is and this is asked in the interview I let me tell you here in the second number suppose I wrote four then it became 10 files aa being closed then also it is the same okay so what is the advantage of writing finally finally the advantage of writing finally is mainly in functions suppose I wrap this in a function in a function named main suppose I wrap this okay so when I wrap this in a function named main and I run the main function then it is possible that I let a I mean I do it like this, okay and suppose I do something like this and this main function is mine or let's say I do it main. I have already defined it, I do it Okay so here you see that if I I am returning this, here I return true and here suppose I am doing return false, then whenever the function is returned then the code after that does not run, so now you see here that when I am returning true okay you guys see this I am refreshing it, I am returning true
+
+So I wrote one here and wrote something else file being closed it is coming By writing Okay, now if I remove this finally from here then you guys will see I wrote the first number and then the second number See, this did not come here, that means whenever there is a return statement inside the function and even after that if you want the code below to run in try or catch, then brother, after return the code below does not run but finally runs your return code the one below is mainly used for finally otherwise if you want that it should go inside try or inside catch finally should run then write finally only Don't just write a simple line below but sometimes We are inside a function and here we have to return inside the try or return inside the catch and after the return the function runs If not then return means go back.
+
+function main() {
+  let x = 1;
+  try {
+    console.log("The sum is", sum * x);
+    return true;
+  } catch (error) {
+    console.log("Error Occured!");
+    return false;
+  } finally {
+    console.log("Files are being closed and DB connection is being closed");
+  }
+}
+
+let c = main();
