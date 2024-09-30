@@ -1,0 +1,35 @@
+Classes & Objects - Object Oriented Programming in Js
+
+In today's topic, I will tell you how you can work with classes and objects in JavaScript we can do object oriented those who follow programming very closely what are classes why will we use constructors and how will we use them.
+
+Today I will tell you guys about object oriented programming first, I will tell you that object Oriented Programming will not be used at all in your beginner level projects of JavaScript.
+
+What a Great start to object oriented Programming but when you guys Complex Oriented Programming is going to be needed a lot and That is why we are studying this topic Because we are going to become Sigma Developers so here you guys see that.
+
+Q: What is object oriented programming?
+
+Let's understand it first, let me tell you guys about object oriented programming There is nothing that you guys can do Object You can achieve this through oriented programming You can also achieve this through functional programming The difference is that you Whenever you do object oriented programming You create real world objects What do you mean by real word template. Rohan filled that template and then It becomes their form. Then Ramesh's Form Rohan's form is these objects.
+
+Q: What is a class? 
+
+Class is a blueprint.
+
+For example, a template is a template for what? The template for creating these objects. So the Form can be considered as a class and The filled form can be considered as an object.
+
+[[Prototype]] : Object
+
+JavaScript objects have a special property called prototype that is either null or references another object.
+
+When we try to read a property from a prototype and its missing, JavaScript automatically takes it from the prototype. This is called Prototypal Inheritance.
+
+Static Methods:
+They are used to implement functions that belongs to a class as a whole and not to any particular object.
+
+Getters and Setters:
+Classes may include getters and setters to get and set the computed properties.
+
+instanceof operator: 
+The instanceof operator allows to check whether an object belongs to a certain class.
+The syntax is:
+<obj> instanceof <class>
+It returns true if obj belongs to the class or any other class inheriting from it.
