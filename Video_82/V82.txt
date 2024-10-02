@@ -1,0 +1,63 @@
+Advanced JavaScript:
+
+There are some concepts in JavaScript which are going to be very useful for you For example, destructuring There is a concept which will be very useful You have spread operator which proves to be very useful, then there are IIFs in JavaScript of hoisting.
+
+IIFE: (Independently invoke function expression)
+
+IIFE is a JavaScript function that runs as soon as it is defined.
+It is used to avoid polluting the global namespace, execute an async-await, etc.
+
+(async function main() {
+  let a = await sleep();
+  let b = await sleep();
+})();
+
+Destructuring:
+
+Destructuring assignment is used to unpack values from an array, or properties from objects, into distinct variables.
+
+let [x, y, ...rest] = [1, 5, 7, 8, 9, 10]
+console.log(x,y,rest);
+
+Similary we can destructure objects on the left hand side of the assignment.
+
+let obj = {
+    a:1,
+    b: 2
+}
+
+let {a,b} = obj
+console.log(a,b);
+
+
+Spread Operator:
+
+Spread syntax allows an iterable such as an array or string to be expanded in places where zero or more arguments are expected . In an object literal, the spread syntax enumerates the properties of an object and adds the key-value pairs to the object being created.
+
+function sum(a, b, c){
+    return a + b + c
+}
+let arr = [1, 5, 14]
+console.log(arr[0]+arr[1]+arr[2]);
+console.log(sum(arr[0],arr[1],arr[2]));
+console.log(sum(...arr));
+
+
+local, global and block scopes:
+JS has three types of scopes are given below:
+
+Block scope:
+let and const provide block level scope which means that the variable declared inside {} cannot be accusssed from outside the block
+
+Function (local) scope:
+variable declared within a JavaScript function, becomes local to the function.
+
+Global scope: 
+A variable declared outside a function, becomes global.
+
+Hoisting: (Using var)
+hoisting refers to the process whereby the intepreter appears to move the declarations to the top of the code before execution.
+
+Variables can thus be referenced before they are declared in JavaScript.
+
+Hoisting doesn't applicable for let and const.
