@@ -1,0 +1,78 @@
+Backend, Node.js & npm
+
+HTML completed successfully
+CSS completed successfully
+JS for the client side (Frontend) completed successfully (script tag used)
+
+Now we have start JS Backend, How we use it and also we will see nodejs and npm basics. How to setup project by using nodejs and npm.
+
+JS for the Backend
+
+System information type in search command to see system type: x64-based PC
+
+install nodejs and npm in your PC's.
+
+node --version : v22.2.0
+
+npm --version : 10.7.0
+
+The back end server will not be visible to your clients This is the code that will not be visible to your clients and this is the code where I will connect to the database, I will do password authentications and along with that I will do some things that I integrate with my business logic.
+
+npm init
+
+you will see package.json in your PC folder and This is a npm project. Then you will install multiple packages in it. We also initialize as a single entity.
+
+npm I or npm install
+
+Q: What is Node JS? 
+
+Node JS Basically it is nothing but v8 of JavaScript It is an engine of the powers of chromecast.com, that is, the power of processing JavaScript inside the browser, using that we can write our back end programs or even write our standalone programs.
+
+When JS started becoming so popular, people said that why JavaScript is used only for all these things, why should we use it only for the web When JavaScript can actually be used for even more functions.
+
+For example We can use JavaScript to list the folders inside a folder We can use it to copy files We can do a lot of things inside a server So when we want to run JavaScript as a back end language i.e. on a server then we use Node JS and NPM.
+
+Q: Why do we use NPM?
+
+Whenever we have created a Node JS package then we want to install some packages in Node modules by installing NPM in it and when we want to do that we will be able to do that because NPM is installed on our computer npm.
+
+Writing install sluggyfi will give sluggyfi Package in this project which is our npm Project will have edge node inside it Modules and its information will go in package.json So if you double click on package.json then you will see here.
+
+Q: What are the dependencies? 
+
+Dependencies Its slugify, you can see it in pacckage.json,
+
+So let's say Suppose someone deleted the node modules now What happens is that when I push on the gate Or give this code to anyone, then I will not give the node If I don't give the modules, then I will delete the node module I delete it, I deleted it By pressing the delete key and you guys see this node modes is gone from here, now I can recreate the node module again I just write npm install and npm If there is no package installed, then what will it It will go inside the package djson and see Which packages are there, it will install again
+
+It will make it okay for me, so Node There is a lot of code inside the module Complicated modules are very big.
+
+The overall point of memes coding is that you guys can use node js to run JavaScript on the back end.
+
+https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+
+const { createServer } = require('node:http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+Node js Express:
+
+https://expressjs.com/
+
+npm install express --save
+
+Express is used mostly as a back end for building applications.
+
+When you learn, you will know that In frameworks like React, you can take back end and something else like Jungo backend with React, because If you are using JS, then it has its own package in it, so by learning Express you will make learning JS easier for yourself because JavaScript has back end.
+
+Let me tell you the way you will write code in JS and the code you will write in Express will be quite similar There are many middleware concepts all those things are going to be the same.
