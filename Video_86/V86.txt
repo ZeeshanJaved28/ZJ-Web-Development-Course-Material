@@ -1,0 +1,49 @@
+CommonJs Vs EcmaScript Modules
+
+There are two ways to create modules in Guys NodeJS: 
+one is using EcmaScript ES7 module and the other is using CommonJs module in this topic we are going to see both these methods
+
+if you skip set of questions then you will write command:
+npm init -y 
+
+npm i express jsonwebtoken dotenv
+
+create script file like main.js OR server.js OR script.js OR anything else.
+
+There is a glitch in starting server again and again.
+npm install --global nodemon
+
+nodemon fileName.js
+
+nodejs version install and use command:
+
+nvm use 16
+nvm install 22
+
+if you import something modules then you write:
+ require("fs")
+ fs.read
+
+Let me type it which is es6 onward which is new and relatively new syntax and this solves many problems syntax for example that the modules loaded by it are loaded asynchronously, the modules required are loaded synchronously i.e. are imported using blocking code.
+
+we cannot used require in es6 incase we will see app crashed error.
+
+default export ko kisi name se bhi import kersakta hon.
+likn named export ko nahi kersakte kisi bhi name sy.
+
+Note:
+In default export we cannot used curly brackets.
+
+Old code --> require
+Modern Code --> import
+
+You can used modules in a browser:
+<script type="module" src="main.js"></script>
+<script type="module" src="script86.js"></script>
+
+CommonJs:
+(function(exports, require, module, __filename, __dirname){
+    // Module code actually lives here
+});
+
+
