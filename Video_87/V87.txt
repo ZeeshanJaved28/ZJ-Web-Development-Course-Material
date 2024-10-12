@@ -1,0 +1,70 @@
+Working with Files: fs and path Modules
+
+In today's topic I will tell you How files and fs Modules work in JavaScript Inside we will see the path of the files We will see how the modules Work all these detailing.
+
+FS Module:
+
+One of the things we looked at today is the FS module, how with the help of the FS module you can read the file system, how you can read and write files using promises, and then here is a very nice practical 
+
+npm init -y
+
+used writeFile instead of writeFileSync
+
+const fs = require("fs");
+// console.log(fs);
+
+console.log("starting");
+
+fs.writeFileSync("Shani87.txt", "Shani is a good boy.");
+
+// console.log("ending");
+
+fs.writeFile("Shani87_2.txt", "Shani is a good boy 2", () => {
+  console.log("done");
+  fs.readFile("Shani87_2.txt", (error, data) => {
+    console.log(error, data.toString());
+    //Callback Hell occured when you re-write or re-read files.
+    // again
+  });
+});
+
+// console.log("ending");
+
+fs.appendFile(
+  "Shani87.txt",
+  " And he is brave like a lion.",
+  (e, d) => {
+    console.log(d);
+  }
+);
+
+console.log("ending");
+
+
+Promises:
+
+To avoid callback health, FS has provided a new module that uses promise Do I need to use the require syntax in require FS here? No, I can go to package gen and type it in.
+
+import { writeFile } from "fs";
+import fs from "fs/promises";
+
+// let a = await fs.readFile("Shani87.txt");
+let a = await fs.readFile("Shani87_2.txt");
+// let b = await fs.writeFile("Shani87_2.txt","\n\n\n\n\nThis is amazing promise")
+let b = await fs.appendFile("Shani87_2.txt","\n\n\n\n\nThis is amazing promise")
+
+console.log(a.toString(),b);
+
+Path Module:
+
+console.log("About Path");
+
+import path from "path";
+let myPath = "D:\\Sigma Web Development Course\\Video_87\\V87.txt";
+console.log(path.extname(myPath)); // extension
+
+console.log(path.dirname(myPath)); // directory
+
+console.log(path.basename(myPath)); // file name
+
+console.log("D:/", "Sigma Web Development Course\\Video87");
