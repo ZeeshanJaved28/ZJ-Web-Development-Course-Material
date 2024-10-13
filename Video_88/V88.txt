@@ -1,0 +1,115 @@
+Introduction to Express Js
+
+Express is a framework for web development, With the help of Node JS, you can create production level web applications.
+
+Agenda:
+
+(1) What is Express and Why should we use Express?
+(2) Why Nodemon?
+(3) Instaling Express@4
+(4) Request parameters and queries
+(5) Static files
+
+https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+
+const { createServer } = require('node:http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+Server don't start automatically. So we use Nodemon for start the server automatically. We dont't start manually server. 
+
+npm i --global nodemon
+
+npm init -y
+
+Why use express You people will say that we have used express Why do we need to use it when this work is being done Our work is being done here html2text is made of ATTP package Capabilities are limited like you people Static files cannot be served Security has to be implemented from the beginning How many times will you have to write how much code on the server After making it, how will you manage things Request, post request, etc. will be handled Who will have to write custom code to do it It has been made to do so much work If this framework named express is fine.
+
+Install Express:
+
+https://expressjs.com/
+
+$ npm install express --save
+
+OR
+
+npm i express
+
+Express upgrade fastly. changes are more minor just like say res.sendfile -> res.sendFile, So 5 Version coming soon. Today 5 Version is in beta Version. In future it convert to Default Version.
+
+https://expressjs.com/en/guide/migrating-5.html
+
+Express with Version install:
+npm i express@4
+
+Now we create express minimal application.
+
+https://expressjs.com/en/starter/hello-world.html
+
+const express = require('express') //import
+const app = express() // app define
+const port = 3000 //
+
+// app.get or app.post or app.put or app.delete(path, handler)
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+}) //Handler
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+by default get request in the browser.
+
+http://127.0.0.1:3000/blog
+
+http://127.0.0.1:3000/blog/intro-to-js
+
+;slug is the parameter.
+
+url parameters:
+/blog/:slug/:slug2
+Q; Where params located?
+params in the url as variable.
+
+app.get("/blog/:slug", (req, res) => {
+  // logic to fetch {slug} from the db
+  // console.log(req);
+  // For URL: http://localhost:3000/blog/Zeeshan-Shani?mode=dark&region=pk 
+  console.log(req.params); // will output params: { slug: 'Zeeshan-Shani' },
+  console.log(req.query); // will output query: { mode: 'dark', region: 'pk' }
+  res.send(`Hello ${req.params.slug}!`);
+}); // http://127.0.0.1:3000/blog/Zeeshan-Shani
+
+Static Files:
+
+https://expressjs.com/en/starter/static-files.html
+
+app.use(express.static('public'))
+
+Now what is this, what does app.use? If you guys are in a hurry, let me tell you that app.use is a middle used to use the ware and express.static is a built in middle ware which says make the public folder into public.
+
+What if I write this by the way I will show you one thing suppose I am Harry here. txt.gz If the source code of the backend is shown, it means It is your mistake, it means that it is a blunder It means that you have messed up and That is why it is said that do not write websites using HTTP packages This is why Express is made, Express is made to make your work easier, production
+
+Will package.json be served as a static file?
+Answer will NO. Because I don't move this file in a public folder. I don't want to serve as public.
+
+Now look here, multiple static You can also use asset directory If you want the files inside the public to be accessible even the files inside the files If you can, then do it like this, make multiples.
+
+Now, you can load the files that are in the public directory:
+
+http://localhost:3000/images/kitten.jpg
+http://localhost:3000/css/style.css
+http://localhost:3000/js/app.js
+http://localhost:3000/images/bg.png
+http://localhost:3000/hello.html
