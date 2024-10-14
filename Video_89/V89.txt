@@ -1,0 +1,111 @@
+Response, Request and Routers in Express
+
+In today's video we will see How can we handle get request, post request delete request, put request With the help of Express GS we will see the concept of chaining And then after that we will see how to serve static files in Express.
+
+Agenda:
+
+(1) Handling post and other handlers
+(2) Chaining of requests
+(3) Serving HTML files
+(4) Installing Postman
+(5) Express Router
+
+npm init -y
+npm i express
+npm i --global nodemon
+nodemon script89.js
+
+https://expressjs.com/en/starter/hello-world.html
+
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+Requests: (Get,Post,Put,Delete)
+Get request is a basic request in browser. Default Request. 
+Get Request Limit: https://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request
+There is character limit so here it is 8192.
+
+Now what happens is that sometimes we have to send passwords, sensitive information has to be sent Like login I want to do it I don't want anyone to see it at all So that's why we use post request.
+
+https://expressjs.com/en/starter/static-files.html
+app.use(express.static('public'))
+
+Put request for updating something in the browser server.
+Delete request for deleting something in the browser server.
+
+app.get("/", (req, res) => {
+    console.log("Hey its a get request");
+    res.send("Hello World2!");
+  }).post("/", (req, res) => {
+    console.log("Hey its a post request");
+    res.send("Hello World post!");
+  }).put("/", (req, res) => {
+    console.log("Hey its a put request");
+    res.send("Hello World put!");
+  }).delete("/", (req, res) => {
+    console.log("Hey its a delete request");
+    res.send("Hello World delete!");
+  }); // Chaining of requests
+
+
+
+Postman is kind of a software/extension.
+
+What happens is that if you like any other extension The Postman industry is a great thing Wherever you go, you will be caught by a Postman and you will have to work for the Postman.
+
+SignUp for free and also download Postman it in your PC.
+Authorizing it with Postman: Winddow Desktop App.
+Create New Workspace.
+Name Workspace
+Create Blank Workspace
+Rewrite Name of Workspace ... Only me
+Select New and Go to HTTP
+http://localhost:3000
+get home
+post home
+api home (get)
+Postman is an Industry Standard.
+In Home you can create multiple sub-folder as well as export collection with your friends.
+There are many features in Postman, you would drive ownself.
+
+Q: What is Express Router?
+It helps in organizing things for people.
+
+https://expressjs.com/en/guide/routing.html
+
+const express = require('express')
+const router = express.Router()
+
+// define the home page route
+router.get('/', (req, res) => {
+  res.send('Birds home page')
+})
+// define the about route
+router.get('/about', (req, res) => {
+  res.send('About birds')
+})
+
+module.exports = router
+
+const birds = require('./birds')
+
+// ...
+
+app.use('/birds', birds)
+
+http://localhost:3000/blog
+http://localhost:3000/blog/about
+http://localhost:3000/blog/blogpost/1
+http://localhost:3000/blog/blogpost/intro-to-express
+
+http://localhost:3000/shop
+http://localhost:3000/shop/about
