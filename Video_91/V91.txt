@@ -1,0 +1,21 @@
+Exercise 15 - Clear the Clutter
+
+We have seen a lot of notes and concepts In today's topic, we will use those concepts to clear the letter in a folder, I will explain to you guys
+What is the question?
+
+// You have to write a Node.js program to clear the clutter inside of a directory and organize the contents of that directory into different folders
+
+// for example, these files become:
+// 1. name.jpg
+// 2. name.png
+// 3. this.pdf
+// 4. shani.zip
+// 5. zee.zip
+// 6. cat.jpg
+// 7. shani.pdf
+
+// this:
+// jpg/name.jpg, jpg/catch.jpg
+// png/name.png
+// pdf/this.pdf, pdf/shani.pdf
+// zip/shani.zip, zip/zee.zip
