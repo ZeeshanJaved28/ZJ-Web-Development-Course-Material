@@ -1,0 +1,118 @@
+Installing MongoDB & MongoDB Compass
+
+Today we will install Mongo DB and we will proceed towards the database. Mongo DB is a document based database whose syntax is very similar to the syntax of Java script we will start from scratch we will see how to use Mongo DB what will be done from installation to the whole procedure, how everything works.
+
+First install MongoDB
+Download Community Edition of MongoDB
+https://www.mongodb.com/try/download/community
+Download Community Server
+msi extension.
+What is Database: database is an organized collection of structured information or data, typically stored electronically in a computer system. OR A collection of organized information on a particular subject.
+
+What is MySQL: mysql is a relational database.
+
+Databases, Tables, Rows and Columns and also we can reference each data point to any other data point in another table So this is relational database, so a relational database is considered a little complicated to learn.
+But it is very efficient.
+
+Relational database is for some specific tasks, but what does Mango DB say? It says that brother, the way we write documents in JavaScript, exactly in the same way you can store data and develop it.
+
+Keep it simple Just like our object is in JavaScript, in the same way we will store the data and this will be easy for us because we have already learned JavaScript.
+
+you can also save it as favorite here but that means if you guys are dealing with multiple databases then here you can make different types of connections.
+
+New Connection in MongoDB
+MongoDB running on compass.
+Default port of MongoDB: mongodb://localhost:27017
+
+Now I am connected to the Mango DB instance installed on my computer.
+We are connection with MongoDB instance. What means MongoDB instances?
+
+Mango DB Instance means that this database that I will create inside this Mango DB instance means that Mango DB instance Basically it can be either in my local host or in any server I can work on multiple instances I can say I created an e-commerce company I will create an instance for it Suppose I created another company like I created a blogging company or I created a social marketing agency So I will create another instance and that too will be on some other server so basically this one which I have created on the local host is good for development but whenever we do some big work in future or do anything which is related to our website.
+
+let's say www.sigmadev.com if we want to connect to Mango DB on the cloud then what we can do is that Mango DB will be disconnected from here and we will put that address here and as soon as we put that address here, that means the address of our Mango DB instance, we will connect to that remote Mango DB instance.
+
+In MongoDB data will be persist means that permanently stored data in MongoDB.
+
+We will interact with Mango DB Now Mango DB has code, okay What does code mean behind the Scenes, you will definitely write code in Mango DB And there is Mongo Shell which helps you People to interact with Mango DB.
+
+commands of mongodb:
+show databases
+use sigma
+db.courses.find()
+
+In vscode we have an extension of mongodb: MongoDB for VS Code, install it.
+
+🍀 leave icon show in activity bar.
+Add Connection -> open form -> save and connect
+
+MongoDB work as a real time.
+
+Create New Playground
+
+/* global use, db */
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+// The result of the last command run in a playground is shown on the results panel.
+// By default the first 20 documents will be returned with a cursor.
+// Use 'console.log()' to print to the debug output.
+// For more documentation on playgrounds please refer to
+// https://www.mongodb.com/docs/mongodb-vscode/playgrounds/
+
+// Select the database to use.
+use('mongodbVSCodePlaygroundDB');
+
+// Insert a few documents into the sales collection.
+db.getCollection('sales').insertMany([
+  { 'item': 'abc', 'price': 10, 'quantity': 2, 'date': new Date('2014-03-01T08:00:00Z') },
+  { 'item': 'jkl', 'price': 20, 'quantity': 1, 'date': new Date('2014-03-01T09:00:00Z') },
+  { 'item': 'xyz', 'price': 5, 'quantity': 10, 'date': new Date('2014-03-15T09:00:00Z') },
+  { 'item': 'xyz', 'price': 5, 'quantity': 20, 'date': new Date('2014-04-04T11:21:39.736Z') },
+  { 'item': 'abc', 'price': 10, 'quantity': 10, 'date': new Date('2014-04-04T21:23:13.331Z') },
+  { 'item': 'def', 'price': 7.5, 'quantity': 5, 'date': new Date('2015-06-04T05:08:13Z') },
+  { 'item': 'def', 'price': 7.5, 'quantity': 10, 'date': new Date('2015-09-10T08:43:00Z') },
+  { 'item': 'abc', 'price': 10, 'quantity': 5, 'date': new Date('2016-02-06T20:20:13Z') },
+]);
+
+// Run a find command to view items sold on April 4th, 2014.
+const salesOnApril4th = db.getCollection('sales').find({
+  date: { $gte: new Date('2014-04-04'), $lt: new Date('2014-04-05') }
+}).count();
+
+// Print a message to the output window.
+console.log(`${salesOnApril4th} sales occurred in 2014.`);
+
+// Here we run an aggregation and open a cursor to the results.
+// Use '.toArray()' to exhaust the cursor to return the whole result set.
+// You can use '.hasNext()/.next()' to iterate through the cursor page by page.
+db.getCollection('sales').aggregate([
+  // Find all of the sales that occurred in 2014.
+  { $match: { date: { $gte: new Date('2014-01-01'), $lt: new Date('2015-01-01') } } },
+  // Group the total sales for each product.
+  { $group: { _id: '$item', totalSaleAmount: { $sum: { $multiply: [ '$price', '$quantity' ] } } } }
+]);
+
+
+Clic on Run
+
+Right click on localhost name and refresh it.
+
+[
+  {
+    "_id": "jkl",
+    "totalSaleAmount": 20
+  },
+  {
+    "_id": "xyz",
+    "totalSaleAmount": 150
+  },
+  {
+    "_id": "abc",
+    "totalSaleAmount": 120
+  }
+]
+
+In this topic I will keep only this much now you Will say Mango db is running in local host How will it run in remote How will we connect our application in the coming time By cloud I mean this is in my computer Mango db is database how in cloud What is happening will come slowly one step at a time We will do it for now just understand this much.
+
+you can save playground in your pc folder, extension: fileName.mongodb.js
