@@ -1,0 +1,174 @@
+Installing Mongoose & Using it with Express 
+
+In today's topic we are going to install Mongoose which is Mongo DB based ODM, why should we use it what are its benefits?
+
+Mongoose is a JavaScript library that does what makes validation easier and provides a schema base solution, what does it mean?
+
+This means that type casting validation, query building becomes easy goes, there is a package for us If you guys Let me tell you the name of MangoDB But this package is not very raw and Beginners like it because It is a very raw package. nd there are no restrictions in it, you guys can easily do npm install mongo db and easily do the operations in Mongo DB in such a way that what you did simply was that after waiting for all first connect the client dot and then after that whatever you want to do, you have to do that You can insert and update, create, update, delete, etc.
+
+So this is a package, keep it in mind but there is an advanced package named Mongoose and in the beginning many users don't like it they say this is such a difficult
+
+npm init -y
+
+npm i mongoose
+
+Mongoose is just a package, there is nothing more than this by using it we can basically add a very nice tadka of database to our express apps we can connect to mongoose dev very easily and we get to see very nice queries etc.
+
+https://mongoosejs.com/docs/
+
+npm i express OR npm express@4
+
+https://expressjs.com/en/starter/hello-world.html
+
+{
+  "name": "video_96",
+  "version": "1.0.0",
+  "main": "script96.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon script96"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2"
+  }
+}
+
+npm run dev : server start 
+
+{
+  "_id": {
+    "$oid": "671a44d6d0c19a6a93038fc8"
+  },
+  "title": "1",
+  "desc": "Description of this Todo",
+  "isDone": false,
+  "__v": 0
+}
+
+Number convert to String.
+
+{
+  "_id": {
+    "$oid": "671a4537cc1c726d4d17991b"
+  },
+  "title": "1",
+  "desc": "Description of this Todo",
+  "isDone": false,
+  "days": 3,
+  "__v": 0
+}
+
+Correct 
+
+ValidationError: Todo validation failed: days: Cast to Number failed for value "Shani" (type string) at path "days"
+    at Document.invalidate (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:3318:32)
+    at model.$set (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:1474:12)
+    at model.$set (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:1128:16)
+    at model.Document (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:177:12)
+    at model.Model (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\model.js:125:12)
+    at new model (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\model.js:4611:15)
+    at file:///D:/Sigma%20Web%20Development%20Course/Video_96/script96.js:19:16
+    at Layer.handle [as handle_request] (D:\Sigma Web Development Course\Video_96\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Sigma Web Development Course\Video_96\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Sigma Web Development Course\Video_96\node_modules\express\lib\router\route.js:119:3) {
+  errors: {
+    days: CastError: Cast to Number failed for value "Shani" (type string) at path "days"
+        at SchemaNumber.cast (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\schema\number.js:380:11)
+        at SchemaType.applySetters (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at model.$set (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:1432:22)
+        at model.$set (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:1128:16)
+        at model.Document (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:177:12)
+        at model.Model (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\model.js:125:12)
+        at new model (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\model.js:4611:15)
+        at file:///D:/Sigma%20Web%20Development%20Course/Video_96/script96.js:19:16
+        at Layer.handle [as handle_request] (D:\Sigma Web Development Course\Video_96\node_modules\express\lib\router\layer.js:95:5)
+        at next (D:\Sigma Web Development Course\Video_96\node_modules\express\lib\router\route.js:149:13) {
+      stringValue: '"Shani"',
+      messageFormat: undefined,
+      kind: 'Number',
+      value: 'Shani',
+      path: 'days',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+        assert.ok(!isNaN(val))
+
+          at castNumber (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\cast\number.js:27:10)
+          at SchemaNumber.cast (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\schema\number.js:378:12)
+          at SchemaType.applySetters (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\schemaType.js:1236:12)
+          at model.$set (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:1432:22)
+          at model.$set (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:1128:16)
+          at model.Document (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\document.js:177:12)
+          at model.Model (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\model.js:125:12)
+          at new model (D:\Sigma Web Development Course\Video_96\node_modules\mongoose\lib\model.js:4611:15)
+          at file:///D:/Sigma%20Web%20Development%20Course/Video_96/script96.js:19:16
+          at Layer.handle [as handle_request] (D:\Sigma Web Development Course\Video_96\node_modules\express\lib\router\layer.js:95:5) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Todo validation failed'
+}
+
+Node.js v22.2.0
+[nodemon] app crashed - waiting for file changes before starting...
+
+Validation Error Occured
+
+app.get("/", (req, res) => {
+  const todo = new Todo({
+    title: 1,
+    desc: "Description of this Todo",
+    isDone: false,
+    days: Math.floor(Math.random()*45+5*Math.random()),
+  }); 
+  todo.save();
+  res.send("Hello World!");
+});
+
+{
+  "_id": {
+    "$oid": "671a494fec9305ce3f1ab287"
+  },
+  "title": "1",
+  "desc": "Description of this Todo",
+  "isDone": false,
+  "days": 16,
+  "__v": 0
+}
+
+app.get("/", (req, res) => {
+  const todo = new Todo({
+    desc: "Description of this Todo",
+    isDone: false,
+    days: Math.floor(Math.random()*45+5*Math.random()),
+  }); 
+  todo.save();
+  res.send("Hello World!");
+});
+
+
+{
+  "_id": {
+    "$oid": "671a4f02e5c337cd11cf28bd"
+  },
+  "title": "Hey",
+  "desc": "Description of this Todo",
+  "isDone": false,
+  "days": 11,
+  "__v": 0
+}
+
+https://mongoosejs.com/docs/guide.html
+
+https://mongoosejs.com/docs/schematypes.html
