@@ -1,0 +1,24 @@
+Spotify Clone using HTML, CSS & JavaScript
+
+In this Project we will create spotify clone in which we add features like
+
+Music Play/Pause
+Volume equalizer
+Responsive
+Each folder has album and its will automatically detect.
+Free Hosting
+Seek Bar
+Hamburger
+Much more...
+
+Create account in Web Host Most site.
+https://webhostmost.com/?language=english
+Free subdomain
+Free Hosting 125Mb
+
+Ctrl + Shift + I
+
+WhatFont: Chrome extension download in your browser.
+
+Hugeicons is a library of icons. 
+
