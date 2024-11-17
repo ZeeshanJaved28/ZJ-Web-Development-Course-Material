@@ -1,0 +1,6 @@
+Exercise 17 - Design Card Layout 
+
+Design the basic card layout using Tailwind CSS 
+
+Problem Statement:
+Design layout.png using node.js and tailwind css
